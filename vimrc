@@ -119,3 +119,9 @@ set nomodeline
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
+
+
+if filereadable(expand("~/.vimrc.after"))
+  source ~/.vimrc.after
+endif
+

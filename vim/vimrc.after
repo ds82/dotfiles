@@ -54,3 +54,8 @@ silent! nmap <F2> :NERDTreeToggle<CR>
 
 " close current buffer without losing split
 nnoremap <C-w> :bp\|bd #<CR>
+
+" bindings for jshint quickfix next/prev
+nmap <silent> <F11> :lprev<CR>
+nmap <silent> <F12> :lnext<CR>
+

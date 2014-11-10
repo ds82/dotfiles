@@ -5,6 +5,8 @@ let &runtimepath.=','. $HOME . "/.dotfiles/snippets/vim"
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
 
+" close html tags
+:iabbrev </ </<C-X><C-O>
 
 " let g:ctrlp_custom_ignore = {
 "   \ 'dir':  '\v[\/]\.(git|hg|svn)$|.*node_modules.*',
@@ -13,9 +15,10 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
 "   \ }
 " let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g "" --ignore "\.git" --ignore "node_modules"'
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g "" --ignore "\.git" --ignore "node_modules" --ignore "dist"'
 let g:ctrlp_use_caching = 1
 
+nmap ,wt :CtrlP<CR><C-\>w
 
 set colorcolumn=80
 set cursorline
@@ -59,3 +62,5 @@ nnoremap <C-w> :bp\|bd #<CR>
 nmap <silent> <F11> :lprev<CR>
 nmap <silent> <F12> :lnext<CR>
 
+" new command for wrap by word
+" :command Wrap 'set wrap linebreak nolist'

@@ -1,1 +1,0 @@
-/Users/dennis/.zshrc.dennis

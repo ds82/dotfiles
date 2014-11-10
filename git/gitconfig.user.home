@@ -1,0 +1,9 @@
+[include]
+  path = ~/.yadr/git/gitconfig.user
+
+[user]
+  name = Dennis Sänger
+  email = mail@dennis.io
+
+[alias]
+

@@ -1,0 +1,16 @@
+[include]
+  path = ~/.yadr/git/gitconfig.user
+
+[user]
+  name = Dennis Saenger
+  email = dsaenger@rea.de
+
+[alias]
+
+  push-user = "!git push --recurse-submodules=check origin $(git branch-name):user/dsaenger/$(git branch-name)"
+  push-build = "!git push --recurse-submodules=check origin $(git branch-name):build/dsaenger/$(git branch-name)"
+
+  push-review = "!git push gerrit HEAD:refs/for/master%topic=$(git branch-name)"
+  push-master = "!git push origin HEAD:master && git push gerrit HEAD:refs/heads/master"
+  pm = "!git push-master"
+

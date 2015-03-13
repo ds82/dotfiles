@@ -113,7 +113,7 @@
 [core]
   autocrlf = false
   editor = vim
-  excludesfile = ~/.yadr/git/gitignore
+	excludesfile = ~/.gitignore
 [advice]
   statusHints = false
 [diff]
@@ -127,3 +127,4 @@
   enabled = true
 [include]
   path = ~/.gitconfig.user
+

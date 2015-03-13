@@ -1,6 +1,9 @@
+[core]
+  editor = "vim '+set colorcolumn=60,80'"
+
 [user]
-  name = Dennis Saenger
-  email = dsaenger@rea.de
+  name = Dennis Sänger
+  email = mail@dennis.io
 
 [alias]
 
@@ -13,7 +16,7 @@
 
   show-full = show --pretty=full
 
-  ps = push --recurse-submodules=check
+  ps = push
   push = push --recurse-submodules=check
 
   csm = "!f() { pushd . && cd $1 && SUBMOD=$(git rev-parse HEAD | cut -c1-6) && popd && git add -A $1 && git commit -m \"${1}: submodule -> ${SUBMOD}\"; }; f"

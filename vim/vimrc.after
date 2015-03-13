@@ -1,5 +1,14 @@
 " Plugin 'airblade/vim-gitgutter'
 
+" add .es6 as javascript file extension
+au BufNewFile,BufRead *.es6 set filetype=javascript
+
+" add auto-wrap to doc/md/.. files
+:autocmd BufNewFile,BufRead * set nowrap
+:autocmd BufNewFile,BufRead *.md set wrap
+:autocmd BufNewFile,BufRead *.ngdoc set wrap
+:autocmd BufNewFile,BufRead *.txt set wrap
+
 " add my vim snippets
 let &runtimepath.=','. $HOME . "/.dotfiles/snippets/vim"
 
@@ -20,7 +29,7 @@ let g:ctrlp_use_caching = 1
 
 nmap ,wt :CtrlP<CR><C-\>w
 
-set colorcolumn=80
+set colorcolumn=80,100
 set cursorline
 
 set guifont=Source\ Code\ Pro:h14
@@ -35,12 +44,14 @@ let g:syntastic_mode_map = { 'mode': 'active',
 
 let g:syntastic_enable_signs = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['jscs', 'jshint']
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '!'
 let g:syntastic_style_error_symbol = '>'
 let g:syntastic_style_warning_symbol = '>'
 let g:syntastic_auto_loc_list=1
+let g:syntastic_aggregate_errors = 1
+
 
 let g:syntastic_javascript_jshint_exec='/usr/local/bin/jshint'
 let g:syntastic_quiet_messages = {}
@@ -64,3 +75,19 @@ nmap <silent> <F12> :lnext<CR>
 
 " new command for wrap by word
 " :command Wrap 'set wrap linebreak nolist'
+
+" Zoom / Restore window.
+function! s:ZoomToggle() abort
+    if exists('t:zoomed') && t:zoomed
+        execute t:zoom_winrestcmd
+        let t:zoomed = 0
+    else
+        let t:zoom_winrestcmd = winrestcmd()
+        resize
+        vertical resize
+        let t:zoomed = 1
+    endif
+endfunction
+command! ZoomToggle call s:ZoomToggle()
+nnoremap <silent> <Leader><Leader> :ZoomToggle<CR>
+

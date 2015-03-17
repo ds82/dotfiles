@@ -75,6 +75,7 @@ nnoremap <C-w> :bp\|bd #<CR>
 " bindings for jshint quickfix next/prev
 nmap <silent> <F11> :lprev<CR>
 nmap <silent> <F12> :lnext<CR>
+nmap <silent> <C-F12> :llast<CR>
 
 " new command for wrap by word
 " :command Wrap 'set wrap linebreak nolist'

@@ -3,6 +3,9 @@
 " add .es6 as javascript file extension
 au BufNewFile,BufRead *.es6 set filetype=javascript
 
+" set colorcolumn to 60,8o when commiting with git
+au FileType gitcommit set colorcolumn=60,80
+
 " add auto-wrap to doc/md/.. files
 :autocmd BufNewFile,BufRead * set nowrap
 :autocmd BufNewFile,BufRead *.md set wrap

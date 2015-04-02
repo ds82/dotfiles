@@ -1,0 +1,21 @@
+# main window
+neww -n main
+split-window -v
+split-window -h
+selectp -t 1
+split-window -h
+split-window -v
+selectp -t 5
+split-window -v
+
+# server window
+neww -n server
+split-window -v
+split-window -h
+selectp -t 1
+split-window -h
+
+
+# select window 1 pane 4
+selectw -t main
+selectp -t 4

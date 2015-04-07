@@ -14,6 +14,10 @@ au FileType gitcommit set colorcolumn=60,80
 :autocmd BufNewFile,BufRead *.md set wrap
 :autocmd BufNewFile,BufRead *.ngdoc set wrap
 :autocmd BufNewFile,BufRead *.txt set wrap
+:autocmd BufNewFile,BufRead *.js set nowrap
+
+" enable spell checking form md files
+:autocmd BufRead,BufNewFile *.md setlocal spell spelllang=de_de
 
 " add my vim snippets
 let &runtimepath.=','. $HOME . "/.dotfiles/snippets/vim"

@@ -121,7 +121,7 @@ set nomodeline
 so ~/.yadr/vim/settings.vim
 
 
-if filereadable(expand("~/.vimrc.after"))
-  source ~/.vimrc.after
+if filereadable(expand("~/.yadr/vim/vimrc.after"))
+  source ~/.yadr/vim/vimrc.after
 endif
 

@@ -117,7 +117,7 @@ set smartcase       " ...unless we type a capital
 so ~/.yadr/vim/settings.vim
 
 
-if filereadable(expand("~/.vimrc.after"))
-  source ~/.vimrc.after
+if filereadable(expand("~/.yadr/vim/vimrc.after"))
+  source ~/.yadr/vim/vimrc.after
 endif
 

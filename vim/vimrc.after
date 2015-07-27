@@ -1,4 +1,4 @@
-" Plugin 'airblade/vim-gitgutter'
+  " Plugin 'airblade/vim-gitgutter'
 
 " fix clipboard
 set clipboard=unnamed
@@ -46,6 +46,27 @@ set guifont=Source\ Code\ Pro:h14
 
 nmap =J :%!python -m json.tool<CR>
 
+function SetSyntaxChecker() 
+  let syntastic_checkers = []
+  " check if eslintrc file is there
+  if findfile('.eslintrc', '.;') != ''
+    call add(syntastic_checkers, 'eslint')
+  endif
+
+  " check if eslintrc file is there
+  if findfile('.jshintrc', '.;') != ''
+    call add(syntastic_checkers, 'jshint')
+  endif
+
+  " check if eslintrc file is there
+  if findfile('.jscsrc', '.;') != ''
+    call add(syntastic_checkers, 'jscs')
+  endif
+  let b:syntastic_checkers = syntastic_checkers
+endfunction
+
+
+autocmd FileType javascript call SetSyntaxChecker()
 
 " syntastic syntax checker
 let g:syntastic_mode_map = { 'mode': 'active',
@@ -54,7 +75,8 @@ let g:syntastic_mode_map = { 'mode': 'active',
 
 let g:syntastic_enable_signs = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_javascript_checkers = ['jscs', 'jshint']
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_javascript_checkers = ['jscs', 'jshint']
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '!'
 let g:syntastic_style_error_symbol = '>'

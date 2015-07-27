@@ -19,7 +19,7 @@
   ps = push
   push = push --recurse-submodules=check
 
-  csm = "!f() { pushd . && cd $1 && SUBMOD=$(git rev-parse HEAD | cut -c1-6) && popd && git add -A $1 && git commit -m \"${1}: submodule -> ${SUBMOD}\"; }; f"
+  csm = "!f() { git reset $1; HEAD=$(git diff --ignore-submodules=dirty --submodule=log $1 | head -n1 | sed -e 's/^Submodule //g' -e 's/:$//g'); TAIL=$(git diff --ignore-submodules=dirty --submodule=log $1 | tail -n +2); git add -A $1 && git commit -m \"${HEAD}\" -m \"${TAIL}\"; }; f"
 
   branch-name = "!git rev-parse --abbrev-ref HEAD"
   push-user = "!git push --recurse-submodules=check origin $(git branch-name):user/dsaenger/$(git branch-name)"

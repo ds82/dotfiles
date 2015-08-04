@@ -1,3 +1,6 @@
+[push]
+  followTags = true
+
 [core]
   editor = "vim '+set colorcolumn=60,80'"
 
@@ -19,7 +22,7 @@
   ps = push
   push = push --recurse-submodules=check
 
-  csm = "!f() { git reset $1; HEAD=$(git diff --ignore-submodules=dirty --submodule=log $1 | head -n1 | sed -e 's/^Submodule //g' -e 's/:$//g'); TAIL=$(git diff --ignore-submodules=dirty --submodule=log $1 | tail -n +2); git add -A $1 && git commit -m \"${HEAD}\" -m \"${TAIL}\"; }; f"
+  csm = "!f() { git reset $1; HEAD=$(git diff --ignore-submodules=dirty --submodule=log $1 | head -n1 | sed -e 's/^Submodule //g' -e 's/:$//g'); TAIL=$(git diff --ignore-submodules=dirty --submodule=log $1 | tail -n +2 | sed -e 's/$/  /g'); git add -A $1 && git commit -m \"${HEAD}\" -m \"${TAIL}\"; }; f"
 
   branch-name = "!git rev-parse --abbrev-ref HEAD"
   push-user = "!git push --recurse-submodules=check origin $(git branch-name):user/dsaenger/$(git branch-name)"

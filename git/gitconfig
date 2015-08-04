@@ -104,6 +104,7 @@
   whitespace = nowarn
 [branch]
   autosetupmerge = true
+	autosetuprebase = always
 [push]
   # 'git push' will push the current branch to its tracking branch
   # the usual default is to push all branches

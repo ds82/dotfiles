@@ -6,6 +6,9 @@ set clipboard=unnamed
 " add .es6 as javascript file extension
 au BufNewFile,BufRead *.es6 set filetype=javascript
 
+" add .jade as HTML file extension
+au BufNewFile,BufRead *.jade set filetype=html
+
 " set colorcolumn to 60,8o when commiting with git
 au FileType gitcommit set colorcolumn=60,80
 
@@ -46,7 +49,7 @@ set guifont=Source\ Code\ Pro:h14
 
 nmap =J :%!python -m json.tool<CR>
 
-function SetSyntaxChecker() 
+function! SetSyntaxChecker()
   let syntastic_checkers = []
   " check if eslintrc file is there
   if findfile('.eslintrc', '.;') != ''
@@ -66,7 +69,7 @@ function SetSyntaxChecker()
 endfunction
 
 
-autocmd FileType javascript call SetSyntaxChecker()
+autocmd BufReadPost call SetSyntaxChecker()
 
 " syntastic syntax checker
 let g:syntastic_mode_map = { 'mode': 'active',
@@ -81,7 +84,7 @@ let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '!'
 let g:syntastic_style_error_symbol = '>'
 let g:syntastic_style_warning_symbol = '>'
-let g:syntastic_auto_loc_list=1
+let g:syntastic_auto_loc_list=2
 let g:syntastic_aggregate_errors = 1
 
 

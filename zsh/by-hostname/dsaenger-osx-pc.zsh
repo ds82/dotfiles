@@ -3,6 +3,8 @@ export WEB=$FW/titan-web
 export TGW=$WEB/titan-gui-web
 export TGN=$WEB/titan-nodedaemon
 
+alias grl='git checkout -- $FW/titan-gui-languages'
+
 # include proxy settings
 source ~/.proxy
 

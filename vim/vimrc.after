@@ -126,3 +126,4 @@ endfunction
 command! ZoomToggle call s:ZoomToggle()
 nnoremap <silent> <Leader><Leader> :ZoomToggle<CR>
 
+colorscheme gruvbox

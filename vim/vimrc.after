@@ -5,6 +5,7 @@ set clipboard=unnamed
 
 " add .es6 as javascript file extension
 au BufNewFile,BufRead *.es6 set filetype=javascript
+au BufNewFile,BufRead *.coffee set filetype=javascript
 
 " add .jade as HTML file extension
 au BufNewFile,BufRead *.jade set filetype=html

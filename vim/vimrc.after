@@ -111,10 +111,14 @@ silent! nmap <F2> :NERDTreeToggle<CR>
 " close current buffer without losing split
 nnoremap <C-w> :bp\|bd #<CR>
 
+
 " bindings for jshint quickfix next/prev
 nmap <silent> <F11> :lprev<CR>
 nmap <silent> <F12> :lnext<CR>
 nmap <silent> <C-F12> :llast<CR>
+
+" recognize ctrl+f12 in iterm
+map ^[[0024~ <C-F12>
 
 " new command for wrap by word
 " :command Wrap 'set wrap linebreak nolist'

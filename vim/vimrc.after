@@ -25,7 +25,7 @@ au FileType gitcommit set colorcolumn=60,80
 
 " latex files
 :autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=de_de
-:autocmd BufWritePost,FileWritePost *.tex :silent !pdflatex %
+:autocmd BufWritePost,FileWritePost *.tex :silent exec "!pdf.sh %"
 let g:vimtex_fold_enabled = 0
 let g:latex_indent_enabled = 0
 

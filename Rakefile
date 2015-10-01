@@ -272,7 +272,7 @@ def install_prezto
   puts
   puts "Creating directories for your customizations"
   run %{ mkdir -p $HOME/.zsh.before }
-  run %{ mkdir -p $HOME/.zsh.after }
+  run %{ test -e $HOME/.zsh.after && mv $HOME/.zsh.after $(mktemp -d /tmp/zsh-backup.XXXX)/; ln -s $HOME/.yadr/zsh/zsh.after $HOME/.zsh.after }
   run %{ mkdir -p $HOME/.zsh.prompts }
 
   if "#{ENV['SHELL']}".include? 'zsh' then

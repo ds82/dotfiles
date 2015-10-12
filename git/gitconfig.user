@@ -38,6 +38,8 @@
 
   review = "!f() { git difftool $(git merge-base $1 HEAD); }; f"
 
+  col = "!f() { git checkout $(git last-branch-name); }; f"
+
 [mergetool "vimdiff"]
   cmd="vim -c 'let g:syntastic_auto_loc_list=0' -c ':lclose' -c 'Gdiff' $MERGED"     # use fugitive.vim for 3-way merge
   keepbackup=false

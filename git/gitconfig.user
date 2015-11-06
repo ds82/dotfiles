@@ -38,7 +38,11 @@
 
   review = "!f() { git difftool $(git merge-base $1 HEAD); }; f"
 
+  lbn = "!git last-branch-name"
   col = "!f() { git checkout $(git last-branch-name); }; f"
+
+  l = "log --graph --date=short --pretty=format:'%C(blue)%cd%Creset %C(yellow)%h%Creset %C(green)%<|(80,trunc)%s%Creset %C(yellow)%<(40,trunc)%d%Creset %C(red)[%an]%Creset'"
+  #tl = "!f() { echo $(git tag -l | grep -v build/); }; f"
 
 [mergetool "vimdiff"]
   cmd="vim -c 'let g:syntastic_auto_loc_list=0' -c ':lclose' -c 'Gdiff' $MERGED"     # use fugitive.vim for 3-way merge

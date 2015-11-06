@@ -47,6 +47,10 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
 
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g "" --ignore "\.git" --ignore "node_modules" --ignore "dist"'
 let g:ctrlp_use_caching = 1
+let g:ctrlp_working_path_mode = 'ra'
+
+let g:ctrlp_regexp = 1
+let g:ctrlp_by_filename = 0
 
 nmap ,wt :CtrlP<CR><C-\>w
 

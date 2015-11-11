@@ -97,7 +97,6 @@ let g:syntastic_style_error_symbol = '>'
 let g:syntastic_style_warning_symbol = '>'
 let g:syntastic_auto_loc_list = 2
 let g:syntastic_aggregate_errors = 1
-
 let g:syntastic_check_on_wq = 0
 let g:syntastic_always_populate_loc_list = 1
 
@@ -124,6 +123,7 @@ nmap <silent> <F12> :lnext<CR>
 nmap <silent> <C-F12> :llast<CR>
 
 " recognize ctrl+f12 in iterm
+" needs keymapping in iTerm profile: SendText: ^[[0024~]]
 map ^[[0024~ <C-F12>
 
 " new command for wrap by word
@@ -145,3 +145,7 @@ command! ZoomToggle call s:ZoomToggle()
 nnoremap <silent> <Leader><Leader> :ZoomToggle<CR>
 
 colorscheme gruvbox
+
+command! -nargs=1 Run | execute ':silent !'.<q-args> | execute ':redraw!'
+
+

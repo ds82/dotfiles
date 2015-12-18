@@ -6,7 +6,7 @@ export TGN=$WEB/titan-nodedaemon
 alias grl='git checkout -- $FW/titan-gui-languages'
 
 # include proxy settings
-source ~/.proxy
+# source ~/.proxy
 
 export PATH=$PATH:/usr/local/Cellar/ruby/2.0.0-p0/bin/
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/X11/lib/pkgconfig

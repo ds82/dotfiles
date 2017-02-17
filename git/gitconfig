@@ -91,15 +91,6 @@
   svnl = svn log --oneline --show-commit
 [format]
   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
-[mergetool]
-  prompt = false
-[mergetool "mvimdiff"]
-  cmd="mvim -c 'Gdiff' $MERGED"     # use fugitive.vim for 3-way merge
-  keepbackup=false
-[merge]
-  summary = true
-  verbosity = 1
-  tool = mvimdiff
 [apply]
   whitespace = nowarn
 [branch]
@@ -109,6 +100,8 @@
   # 'git push' will push the current branch to its tracking branch
   # the usual default is to push all branches
   default = upstream
+	recurseSubmodules = on-demand
+	followtags = false
 [core]
   autocrlf = false
   editor = vim
@@ -126,6 +119,7 @@
   enabled = true
 [include]
   path = ~/.gitconfig.user
+  path = ~/code/rea-git-config/gitconfig.rea
 
 [filter "lfs"]
 	clean = git-lfs clean %f
@@ -133,3 +127,31 @@
 	required = true
 [credential]
 	helper = osxkeychain
+
+[difftool "Kaleidoscope"]
+    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[difftool]
+    prompt = false
+[diff]
+    tool = Kaleidoscope
+
+[mergetool "mvimdiff"]
+  cmd="mvim -c 'Gdiff' $MERGED"     # use fugitive.vim for 3-way merge
+  keepbackup=false
+
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
+
+# If you want to set up Kaleidoscope as the default merge tool,
+# then also set the following variables:
+[mergetool]
+	prompt = false
+[merge]
+	tool = Kaleidoscope
+
+#[merge]
+#  summary = true
+#  verbosity = 1
+#  tool = mvimdiff
+

@@ -1,5 +1,5 @@
 export FW=/Users/dsaenger/code/firmware
-export WEB=$FW/titan-web
+export WEB=/Users/dsaenger/code/titan-web
 export TGW=$WEB/titan-gui-web
 export TGN=$WEB/titan-nodedaemon
 

@@ -152,10 +152,21 @@ endfunction
 command! ZoomToggle call s:ZoomToggle()
 nnoremap <silent> <Leader><Leader> :ZoomToggle<CR>
 
-" colorscheme gruvbox
-
+set background=dark
 let base16colorspace=256
-colorscheme base16-oceanicnext
+
+let g:airline_theme='one'
+colorscheme gruvbox
+" colorscheme base16-oceanicnext
+" colorscheme one
+
+let g:one_allow_italics = 1
+
+" tmux <> vim-one
+" https://github.com/rakr/vim-one
+" set t_8b=^[[48;2;%lu;%lu;%lum
+" set t_8f=^[[38;2;%lu;%lu;%lum
+
 
 command! -nargs=1 Run | execute ':silent !'.<q-args> | execute ':redraw!'
 

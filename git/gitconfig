@@ -157,3 +157,6 @@
 #  verbosity = 1
 #  tool = mvimdiff
 
+[grep]
+	extendRegexp = true
+	lineNumber = true

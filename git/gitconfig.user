@@ -10,39 +10,51 @@
 
 [alias]
 
+  fa = fetch --all
+
   branch-start = "!f() { git log $1 --reverse --ancestry-path $(git merge-base $1 HEAD)..HEAD --pretty=%H | head -n1; }; f"
   branch-end = "!f() { git log $1 --ancestry-path $(git merge-base $1 HEAD)..HEAD --pretty=%H | head -n1; }; f"
   merge-commit = "!f() { FROM=$(git branch-start $1 | cut -c1-6); TO=$(git branch-end $1 | cut -c1-6); git merge --ff-only $1; git commit --allow-empty -m \"merge ${1} ${FROM}..${TO}\"; }; f"
 
   ff = merge --ff-only
+  ffl = "!f() { git ff $(git lbn); }; f"
   into = "!f() { BRANCH=$(git rev-parse --abbrev-ref HEAD); git rebase $1 && git checkout $1 && git merge --ff-only $BRANCH; export BRANCH=$BRANCH; }; f"
   take = "!f() { BRANCH=$(git rev-parse --abbrev-ref HEAD); git co $1; git into $BRANCH; }; f"
+  rbl = "!git rebase $(git lbn)"
 
   show-full = show --pretty=full
 
   ps = push
   push = push --recurse-submodules=check
 
-  csm = "!f() { git reset $1; HEAD=$(git diff --ignore-submodules=dirty --submodule=log $1 | head -n1 | sed -e 's/^Submodule //g' -e 's/:$//g'); TAIL=$(git diff --ignore-submodules=dirty --submodule=log $1 | tail -n +2 | sed -e 's/$/  /g'); git add -A $1 && git commit -m \"${HEAD}\" -m \"${TAIL}\"; }; f"
+  csm1 = "!f() { git reset $1; HEAD=$(git diff --ignore-submodules=dirty --submodule=log $1 | head -n1 | sed -e 's/^Submodule /submodule(/g' -e 's/ /): /' -e 's/:$//g'); TAIL=$(git diff --ignore-submodules=dirty --submodule=log $1 | tail -n +2 | sed -e 's/$/  /g'); FROM=$(git submodule status --cached $1 | head | sed 's/^\\+\\([0-9a-fA-F]\\{1,\\}\\).*$/\\1/'); TO=$(git submodule status $1 | head | sed 's/^\\+\\([0-9a-fA-F]\\{1,\\}\\).*$/\\1/'); cd $1; FIXES=$(git log -E --grep='fixes|closes' --format=%B ${FROM}..${TO} | grep -E -o '(fixes|closes) #([0-9]+)'); cd -; git add -A $1 && git commit -m \"${HEAD}\" -m \"${FIXES}\" -m \"${TAIL}\"; }; f"
+
+  #csm = "!f() { git reset $1; HEAD=$(git diff --ignore-submodules=dirty --submodule=log $1 | head -n1 | sed -e 's/^Submodule //g' -e 's/:$//g'); TAIL=$(git diff --ignore-submodules=dirty --submodule=log $1 | tail -n +2 | sed -e 's/$/  /g'); git add -A $1 && git commit -m \"${HEAD}\" -m \"${TAIL}\"; }; f"
 
   branch-name = "!git rev-parse --abbrev-ref HEAD"
   last-branch-name = "!f() { echo $(git rev-parse --symbolic-full-name @{-1} | sed -e 's/refs\\/heads\\///' );  }; f"
   push-user = "!git push --recurse-submodules=check origin $(git branch-name):user/dsaenger/$(git branch-name)"
   push-build = "!git push --recurse-submodules=check origin $(git branch-name):build/dsaenger/$(git branch-name)"
 
-  push-review = "!git push gerrit HEAD:refs/for/master%topic=$(git branch-name)"
   push-master = "!git push origin HEAD:master && git push gerrit HEAD:refs/heads/master"
   pm = "!git push-master"
+  push-all = "!f() { B=$(git branch-name); for r in $(git remote); do git push $r $B:$B $@; done }; f"
 
   msg = "!f() { git cat-file commit $1 | sed '1,/^$/d'; }; f"
-
-  review = "!f() { git difftool $(git merge-base $1 HEAD); }; f"
 
   lbn = "!git last-branch-name"
   col = "!f() { git checkout $(git last-branch-name); }; f"
 
   l = "log --graph --date=short --pretty=format:'%C(blue)%cd%Creset %C(yellow)%h%Creset %C(green)%<|(80,trunc)%s%Creset %C(yellow)%<(40,trunc)%d%Creset %C(red)[%an]%Creset'"
   #tl = "!f() { echo $(git tag -l | grep -v build/); }; f"
+
+  cp = cherry-pick
+  cpc = cherry-pick --continue
+  cpa = cherry-pick --abort
+
+  ir = rebase -i --autosquash
+
+  subup = submodule update --init --recursive
 
 [mergetool "vimdiff"]
   cmd="vim -c 'let g:syntastic_auto_loc_list=0' -c ':lclose' -c 'Gdiff' $MERGED"     # use fugitive.vim for 3-way merge

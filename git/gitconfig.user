@@ -38,6 +38,8 @@
 
   push-master = "!git push origin HEAD:master && git push gerrit HEAD:refs/heads/master"
   pm = "!git push-master"
+  push-branch = "!f() { B=$(git branch-name); r=$(git remote | head -n1); git push $r $B:$B $@; }; f"
+  pb = "!git push-branch"
   push-all = "!f() { B=$(git branch-name); for r in $(git remote); do git push $r $B:$B $@; done }; f"
   pa = "!git push-all"
 

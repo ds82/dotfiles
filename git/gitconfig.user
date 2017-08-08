@@ -39,6 +39,7 @@
   push-master = "!git push origin HEAD:master && git push gerrit HEAD:refs/heads/master"
   pm = "!git push-master"
   push-all = "!f() { B=$(git branch-name); for r in $(git remote); do git push $r $B:$B $@; done }; f"
+  pa = "!git push-all"
 
   msg = "!f() { git cat-file commit $1 | sed '1,/^$/d'; }; f"
 

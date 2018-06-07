@@ -158,3 +158,6 @@
 [grep]
 	extendRegexp = true
 	lineNumber = true
+[user]
+	email = github.com@mail.ds82.de
+	name = Dennis

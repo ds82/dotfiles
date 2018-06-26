@@ -5,4 +5,4 @@ bind-key -Tcopy-mode-vi 'y' send -X copy-selection
 bind-key -Tcopy-mode-vi 'C-v' send -X rectangle-toggle
 
 bind-key j command-prompt -p "join pane from:"  "join-pane -s '%%'"
-bind-key s command-prompt -p "send pane to:"  "join-pane -t '%%'"
+bind-key d command-prompt -p "send pane to:"  "join-pane -t '%%'"

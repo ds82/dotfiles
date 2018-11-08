@@ -1,5 +1,5 @@
 addssh() {
-  ssh-add -K ~/.ssh/rea; ssh-add -K ~/.ssh/id_rsa; ssh-add -K ~/.ssh/bd_rsa
+  ssh-add -K ~/.ssh/rea; ssh-add -K ~/.ssh/id_rsa; ssh-add -K ~/.ssh/bd_rsa; ssh-add -K ~/.ssh/id_rea_4096
 }
 
 fixssh() {

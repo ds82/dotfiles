@@ -1,4 +1,5 @@
 const HYPER = ['ctrl', 'alt', 'cmd'];
+const STRG_CMD = ['ctrl', 'cmd'];
 
 const match = (pattern, searchIn) => searchIn && !!searchIn.match(pattern);
 
@@ -11,6 +12,42 @@ Key.on('m', HYPER, () => {
   const window = Window.focused();
   if (!window) return;
   window.maximize();
+});
+
+/*
+  move window right
+*/
+Key.on('right', STRG_CMD, () => {
+  const window = Window.focused();
+  if (!window) {
+    return;
+  }
+
+  const screen = window.screen();
+  const frame = screen.frame();
+
+  const topLeft = window.topLeft();
+  const xNext = topLeft.x + frame.width;
+
+  window.setTopLeft({ x: xNext, y: topLeft.y });
+});
+
+/*
+  move window left
+*/
+Key.on('left', STRG_CMD, () => {
+  const window = Window.focused();
+  if (!window) {
+    return;
+  }
+
+  const screen = window.screen();
+  const frame = screen.frame();
+
+  const topLeft = window.topLeft();
+  const xNext = Math.max(0, topLeft.x - frame.width);
+
+  window.setTopLeft({ x: xNext, y: topLeft.y });
 });
 
 Event.on('appDidActivate', () => {

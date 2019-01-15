@@ -2,7 +2,7 @@
   followTags = true
 
 [core]
-  editor = "vim '+set colorcolumn=60,80'"
+  editor = "vim '+set colorcolumn=72,80'"
 
 [user]
   name = Dennis Sänger
@@ -60,6 +60,7 @@
   subup = submodule update --init --recursive
   bs = "!f() { for branch in $(git branch -a | grep -v HEAD); do echo -e $(git show --format='%ci %cr' $branch | head -n 1) \\t$branch; done | sort -r; }; f"
 
+  rb = "!git rev-parse --abbrev-ref --symbolic-full-name '@{u}'"
 
 [mergetool "vimdiff"]
   cmd="vim -c 'let g:syntastic_auto_loc_list=0' -c ':lclose' -c 'Gdiff' $MERGED"     # use fugitive.vim for 3-way merge

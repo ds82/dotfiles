@@ -21,6 +21,7 @@
   into = "!f() { BRANCH=$(git rev-parse --abbrev-ref HEAD); git rebase $1 && git checkout $1 && git merge --ff-only $BRANCH; export BRANCH=$BRANCH; }; f"
   take = "!f() { BRANCH=$(git rev-parse --abbrev-ref HEAD); git co $1; git into $BRANCH; }; f"
   rbl = "!git rebase $(git lbn)"
+  ro = "!git rebase origin/$(git bn)"
 
   show-full = show --pretty=full
 

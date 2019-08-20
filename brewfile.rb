@@ -43,6 +43,7 @@ cask 'appcleaner'
 cask 'franz'
 
 cask 'visual-studio-code'
+cask 'mailmate'
 
 mas install 824183456   # Affinity Photo (1.7.2)
 mas install 824171161   # Affinity Designer (1.7.2)

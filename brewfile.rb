@@ -23,6 +23,7 @@ brew 'zsh'
 brew 'iterm2'
 brew 'nvm'
 brew 'pandoc'
+brew 'gpg-suite'
 
 brew 'vim', args: ['with-python3', 'with-lua', 'with-luajit']
 brew 'neovim'
@@ -41,10 +42,20 @@ cask 'owncloud'
 cask 'colorpicker-skalacolor'
 cask 'appcleaner'
 cask 'franz'
-
+cask 'keepingyouawake'
+cask 'discord'
+cask 'slack'
+cask 'google-chrome'
 cask 'visual-studio-code'
 cask 'mailmate'
 
+# Quicklook
+cask 'qlcolorcode'
+cask 'qlmarkdown'
+cask 'quicklook-json'
+cask 'qlstephen'
+
+# mas
 mas 'Affinity Photo', id: 824183456
 mas 'Affinity Designe', id: 824171161
 mas 'Xcode', id: 497799835
@@ -54,4 +65,11 @@ mas 'Keka', id: 470158793
 mas 'Marked 2', id: 890031187
 mas 'Reeder', id: 880001334
 
-
+# Fonts
+cask 'font-lato'
+cask 'font-open-sans'
+cask 'font-roboto'
+cask 'font-source-code-pro-for-powerline'
+cask 'font-source-code-pro'
+cask 'font-source-sans-pro'
+cask 'font-source-serif-pro'

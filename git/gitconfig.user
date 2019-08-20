@@ -22,6 +22,7 @@
   take = "!f() { BRANCH=$(git rev-parse --abbrev-ref HEAD); git co $1; git into $BRANCH; }; f"
   rbl = "!git rebase $(git lbn)"
   ro = "!git rebase origin/$(git bn)"
+  po = "!git push origin $(git bn):$(git bn)"
 
   show-full = show --pretty=full
 

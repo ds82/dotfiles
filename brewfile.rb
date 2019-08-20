@@ -45,13 +45,13 @@ cask 'franz'
 cask 'visual-studio-code'
 cask 'mailmate'
 
-mas install 824183456   # Affinity Photo (1.7.2)
-mas install 824171161   # Affinity Designer (1.7.2)
-mas install 497799835   # Xcode (10.3)
-mas install 1054607607  # Helium (2.0)
-mas install 1384080005  # Tweetbot (3.3.1)
-mas install 470158793   # Keka (1.1.17)
-mas install 890031187   # Marked 2 (2.5.33)
-mas install 880001334   # Reeder (3.2.1)
+mas 'Affinity Photo', id: 824183456
+mas 'Affinity Designe', id: 824171161
+mas 'Xcode', id: 497799835
+mas 'Helium', id: 1054607607
+mas 'Tweetbot', id: 1384080005
+mas 'Keka', id: 470158793
+mas 'Marked 2', id: 890031187
+mas 'Reeder', id: 880001334
 
 

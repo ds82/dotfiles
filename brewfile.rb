@@ -20,21 +20,23 @@ brew 'ncdu'
 brew 'rsync'
 brew 'tldr'
 brew 'zsh'
-brew 'iterm2'
-brew 'nvm'
+brew 'wget'
+# brew 'nvm' # disabled, because its not supported by nvm and causes prefix errors
 brew 'pandoc'
-brew 'gpg-suite'
-
-brew 'vim', args: ['with-python3', 'with-lua', 'with-luajit']
-brew 'neovim'
+brew 'openvpn'
 
 brew 'haskell-stack'
-
 brew 'mas'
+
+# haskell
+brew 'ghc'
+brew 'cabal-install'
+brew 'haskell-stack'
+
 cask 'spotify'
 cask 'vlc'
 
-
+cask 'iterm2'
 cask 'dash'
 cask 'alfred'
 cask 'docker'
@@ -48,6 +50,13 @@ cask 'slack'
 cask 'google-chrome'
 cask 'visual-studio-code'
 cask 'mailmate'
+cask 'phoenix'
+cask 'gpg-suite'
+cask 'tunnelblick'
+cask 'hazel'
+cask 'istat-menus'
+cask 'nvalt'
+cask 'brave-browser'
 
 # Quicklook
 cask 'qlcolorcode'

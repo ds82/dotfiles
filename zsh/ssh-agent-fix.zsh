@@ -6,3 +6,13 @@ fixssh() {
     fi
   done
 }
+
+addssh() {
+  set -o shwordsplit
+  files=$(find ~/.ssh -type f)
+  for f in $files; do
+    if grep -q "PRIVATE KEY"  "$f"; then
+      ssh-add -K $f
+    fi
+  done
+}

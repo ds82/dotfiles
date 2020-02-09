@@ -64,23 +64,31 @@ Event.on('appDidActivate', () => {
 
   const name = app.name();
   const main = app.mainWindow();
+  const { width, height } = main.size();
+  const screens = Screen.all();
+
+  const [overallWidth, overallHeight] = screens
+    .map(s => s.frame())
+    .reduce(([w, h], { width, height }) => [w + width, h + height], [0, 0]);
+  // Phoenix.log(JSON.stringify(overallWidth));
+
   if (!main) {
     return;
   }
 
   if (match(/tweetbot/i, name)) {
-    main.setTopLeft({ x: 1920 * 2 - 500, y: 20 });
+    main.setTopLeft({ x: overallWidth - 500, y: 20 });
     main.setSize({ width: 500, height: 1180 });
   } else if (match(/messages/i, name)) {
-    main.setTopLeft({ x: 1920 * 2 - 500, y: 20 });
+    main.setTopLeft({ x: overallWidth - 500, y: 20 });
     main.setSize({ width: 500, height: 400 });
   } else if (match(/.*openhab/i, name)) {
     const width = 845;
-    main.setTopLeft({ x: 1920 * 2 - width, y: 20 });
+    main.setTopLeft({ x: overallWidth - width, y: 20 });
     main.setSize({ width, height: 1180 });
   } else if (match(/.*franz/i, name)) {
     const width = 845;
-    main.setTopLeft({ x: 1920 * 2 - width, y: 20 });
+    main.setTopLeft({ x: overallWidth - width, y: 20 });
     main.setSize({ width, height: 600 });
   }
 });

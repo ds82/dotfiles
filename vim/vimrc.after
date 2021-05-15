@@ -152,11 +152,13 @@ endfunction
 command! ZoomToggle call s:ZoomToggle()
 nnoremap <silent> <Leader><Leader> :ZoomToggle<CR>
 
-set background=dark
-let base16colorspace=256
+" set background=dark
+" let base16colorspace=256
 
 let g:airline_theme='one'
-colorscheme gruvbox
+
+colorscheme dracula
+" colorscheme gruvbox
 " colorscheme base16-oceanicnext
 " colorscheme one
 

@@ -34,6 +34,7 @@
   #csm = "!f() { git reset $1; HEAD=$(git diff --ignore-submodules=dirty --submodule=log $1 | head -n1 | sed -e 's/^Submodule //g' -e 's/:$//g'); TAIL=$(git diff --ignore-submodules=dirty --submodule=log $1 | tail -n +2 | sed -e 's/$/  /g'); git add -A $1 && git commit -m \"${HEAD}\" -m \"${TAIL}\"; }; f"
 
   branch-name = "!git rev-parse --abbrev-ref HEAD"
+  bn = branch-name
   last-branch-name = "!f() { echo $(git rev-parse --symbolic-full-name @{-1} | sed -e 's/refs\\/heads\\///' );  }; f"
   push-user = "!git push --recurse-submodules=check origin $(git branch-name):user/dsaenger/$(git branch-name)"
   push-build = "!git push --recurse-submodules=check origin $(git branch-name):build/dsaenger/$(git branch-name)"
@@ -58,11 +59,15 @@
   cpa = cherry-pick --abort
 
   ir = rebase -i --autosquash
+  ro = "!git rebase origin/$(git branch-name)"
 
   subup = submodule update --init --recursive
+  sm  = submodule update --init --recursive
   bs = "!f() { for branch in $(git branch -a | grep -v HEAD); do echo -e $(git show --format='%ci %cr' $branch | head -n 1) \\t$branch; done | sort -r; }; f"
 
   rb = "!git rev-parse --abbrev-ref --symbolic-full-name '@{u}'"
+
+  reseto = "!git reset origin/$(git branch-name)"
 
 [mergetool "vimdiff"]
   cmd="vim -c 'let g:syntastic_auto_loc_list=0' -c ':lclose' -c 'Gdiff' $MERGED"     # use fugitive.vim for 3-way merge

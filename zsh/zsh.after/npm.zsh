@@ -1,0 +1,2 @@
+source ~/.npm-token
+

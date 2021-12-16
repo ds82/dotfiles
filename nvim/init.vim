@@ -237,6 +237,10 @@ nmap <leader>k :let @+ = expand("%")<CR>
 
 " yank everything from curso to end of line
 nnoremap Y yg$
+
+" join lines but keep cursor position
+nnoremap J mzJ`z
+
 " coc
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"

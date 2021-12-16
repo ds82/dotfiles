@@ -241,6 +241,13 @@ nnoremap Y yg$
 " join lines but keep cursor position
 nnoremap J mzJ`z
 
+" undo breakpoints 
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
+inoremap <space> <space><c-g>u
+
 " coc
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"

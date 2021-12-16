@@ -235,6 +235,8 @@ nnoremap ss <C-W>s
 noremap <C-l> <C-w>l
 nmap <leader>k :let @+ = expand("%")<CR>
 
+" yank everything from curso to end of line
+nnoremap Y yg$
 " coc
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"

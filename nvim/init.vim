@@ -233,7 +233,6 @@ nnoremap vv <C-W>v
 nnoremap ss <C-W>s
 
 noremap <C-l> <C-w>l
-nmap <leader>k :let @+ = expand("%")<CR>
 
 " yank everything from curso to end of line
 nnoremap Y yg$
@@ -282,7 +281,7 @@ nnoremap <S-TAB> :bprevious<CR>
 cmap w!! w !sudo tee %
 
 " copy filepath to clipboard
-nmap <leader>k :let @+ = expand("%")<cr>
+nmap <leader>p :let @+ = expand("%")<cr>
 
 " search word under cursor with ag
 nnoremap <silent> <Leader>ag :Ag <C-R><C-W><CR>

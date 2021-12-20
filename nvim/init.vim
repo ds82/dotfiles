@@ -66,6 +66,7 @@ Plug 'nvim-treesitter/playground'
 Plug 'vimwiki/vimwiki'
 
 " Themes
+set background=dark
 " Plug 'mhartington/oceanic-next'
 Plug 'morhetz/gruvbox'
 " Plug 'joshdick/onedark.vim'
@@ -117,7 +118,7 @@ set relativenumber
 
 " Theme config
 " colorscheme OceanicNext
-let g:gruvbox_contrast_dark=1
+let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
 " colorscheme onedark
 

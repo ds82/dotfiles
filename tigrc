@@ -1,0 +1,13 @@
+
+#set show-changes
+set git-colors = no
+color cursor			black	green	bold
+
+set main-view = id:yes date:default author commit-title:refs=true,overflow=80
+
+bind status P !git stash push -- %(file)
+
+
+bind main F !git commit --fixup %(commit)
+bind generic 9 !@sh -c "git rev-parse --short %(commit) | tr -d '[:space:]' | pbcopy"
+

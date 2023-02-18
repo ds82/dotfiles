@@ -1,0 +1,8 @@
+for config_file ($HOME/code/dotfiles/zsh/before/*.zsh) source $config_file
+
+# load prezto
+source "$HOME/code/dotfiles/zsh/prezto/init.zsh"
+
+for config_file ($HOME/code/dotfiles/zsh/after/*.zsh) source $config_file
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

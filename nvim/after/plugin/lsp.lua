@@ -2,6 +2,8 @@ local lsp = require('lsp-zero')
 -- local lsp_format = require("lsp-format")
 local telescope = require("telescope.builtin")
 local null_ls = require("null-ls")
+
+require 'lspconfig'.tsserver.setup {}
 lsp.preset('recommended')
 
 local null_opts = lsp.build_options('null-ls', {
@@ -104,10 +106,6 @@ lsp.on_attach(function(client, bufnr)
 
   local opts = { buffer = bufnr, remap = true }
 
-  if client.name == "eslint" then
-    vim.cmd.LspStop('eslint')
-    return
-  end
 
   vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
   vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)

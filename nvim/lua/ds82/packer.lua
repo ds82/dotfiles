@@ -94,4 +94,30 @@ return require('packer').startup(function(use)
       -- https://github.com/VonHeikemen/lsp-zero.nvim/issues/17
       use('jose-elias-alvarez/null-ls.nvim')
       use('MunifTanjim/prettier.nvim')
+
+
+
+      use { 'ojroques/vim-oscyank', branch = 'main' }
+
+      use {
+          "nvim-neorg/neorg",
+          config = function()
+            require('neorg').setup {
+                load = {
+                    ["core.defaults"] = {}, -- Loads default behaviour
+                    ["core.norg.concealer"] = {}, -- Adds pretty icons to your documents
+                    ["core.norg.dirman"] = { -- Manages Neorg workspaces
+                        config = {
+                            workspaces = {
+                                work = "~/ownCloud/notes/work",
+                                home = "~/ownCloud/notes/home",
+                            },
+                        },
+                    },
+                },
+            }
+          end,
+          run = ":Neorg sync-parsers",
+          requires = "nvim-lua/plenary.nvim",
+      }
     end)

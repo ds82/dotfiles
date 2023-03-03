@@ -29,7 +29,7 @@ null_ls.setup({
 lsp.ensure_installed({
     'tsserver',
     'eslint',
-    'sumneko_lua',
+    -- 'sumneko_lua',
     'rust_analyzer',
 })
 
@@ -107,6 +107,7 @@ lsp.on_attach(function(client, bufnr)
   local opts = { buffer = bufnr, remap = true }
 
 
+  vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, opts)
   vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
   vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
   vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)

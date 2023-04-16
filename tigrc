@@ -1,13 +1,16 @@
 
 #set show-changes
 set git-colors = no
+set blame-options = -C -C -C
+set diff-options = --submodule
+
 color cursor			black	green	bold
 
-set main-view = id:yes date:default author commit-title:refs=true,overflow=80
+set main-view = id:yes date:default author commit-title:refs=true,overflow=72
 
 bind status P !git stash push -- %(file)
 
-
-bind main F !git commit --fixup %(commit)
+bind main F !git commit --fixup %(commit) --no-verify
+bind main I !git rebase -i --autosquash %(commit)^1
 bind generic 9 !@sh -c "git rev-parse --short %(commit) | tr -d '[:space:]' | pbcopy"
 

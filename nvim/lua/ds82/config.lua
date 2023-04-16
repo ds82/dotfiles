@@ -25,7 +25,7 @@ vim.opt.backup         = false
 vim.opt.undodir        = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile       = true
 
-vim.opt.hlsearch       = false
+vim.opt.hlsearch       = true
 vim.opt.incsearch      = true
 
 vim.opt.termguicolors  = true
@@ -42,3 +42,7 @@ vim.opt.colorcolumn = "60,72"
 -- splits
 vim.opt.splitbelow = true
 vim.opt.splitright = true
+
+-- other
+vim.opt.listchars = { eol = '↲', tab = '▸ ', trail = '·', space = '·' }
+vim.opt.list = true

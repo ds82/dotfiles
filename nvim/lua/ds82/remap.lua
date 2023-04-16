@@ -40,6 +40,8 @@ vim.keymap.set("n", "Q", function()
   vim.api.nvim_win_close(0, 1)
 end)
 
+vim.keymap.set("n", "gbt", "'<Cmd>GitBlameToggle<CR>", { desc = "Toggle Git Blame annotations" });
+
 
 -- buffer navigation
 vim.keymap.set("n", "<TAB>", "<cmd>bnext<CR>")

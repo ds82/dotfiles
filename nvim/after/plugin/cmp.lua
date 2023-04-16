@@ -1,9 +1,16 @@
--- local cmp = require("cmp")
--- cmp.setup {
---     mapping = {
---         ['<M-;>'] = cmp.mapping(function(fallback)
---           vim.api.nvim_feedkeys(vim.fn['copilot#Accept'](vim.api.nvim_replace_termcodes('<Tab>', true, true, true)), 'n',
---               true)
---         end)
---     },
--- }
+local cmp = require('cmp')
+
+cmp.setup({
+    sources = {
+        { name = 'copilot' },
+        { name = 'nvim_lsp' },
+    },
+    mapping = {
+        ['<CR>'] = cmp.mapping.confirm({
+            -- documentation says this is important.
+            -- I don't know why.
+            behavior = cmp.ConfirmBehavior.Replace,
+            select = false,
+        })
+    }
+})

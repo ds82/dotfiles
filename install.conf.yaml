@@ -1,0 +1,18 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    ~/.tmux.conf: tmux.conf
+    ~/.config/nvim: nvim
+    ~/.tigrc: tigrc
+    ~/.config/bat/themes: bat/themes
+    ~/.phoenix.js: phoenix/phoenix.js
+    ~/.phoenix/utils.js: phoenix/utils.js
+
+- create: ~/.phoenix
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]

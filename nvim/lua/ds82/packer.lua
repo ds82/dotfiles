@@ -80,23 +80,6 @@ return require('packer').startup(function(use)
 	use { 'numToStr/FTerm.nvim' }
 
 
-	-- use { 'github/copilot.vim' }
-	use {
-		"zbirenbaum/copilot.lua",
-		cmd = "Copilot",
-		event = "InsertEnter",
-		config = function()
-			require("copilot").setup(require("ds82.copilot"))
-		end
-	}
-	use {
-		"zbirenbaum/copilot-cmp",
-		after = { "copilot.lua" },
-		config = function()
-			require("copilot_cmp").setup()
-		end
-	}
-
 	use {
 		"folke/trouble.nvim",
 		requires = "nvim-tree/nvim-web-devicons",
@@ -204,4 +187,22 @@ return require('packer').startup(function(use)
 	-- 		"rcarriga/nvim-notify",
 	-- 	}
 	-- })
+
+  -- use { 'github/copilot.vim' }
+  use {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = function()
+      require("copilot").setup(require("ds82.copilot"))
+    end
+  }
+  use {
+    "zbirenbaum/copilot-cmp",
+    after = { "copilot.lua" },
+    config = function()
+      require("copilot_cmp").setup()
+    end
+  }
+
 end)

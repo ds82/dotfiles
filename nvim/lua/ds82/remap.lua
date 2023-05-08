@@ -40,10 +40,3 @@ vim.keymap.set("n", "gbt", "'<Cmd>GitBlameToggle<CR>", { desc = "Toggle Git Blam
 -- buffer navigation
 vim.keymap.set("n", "<TAB>", "<cmd>bnext<CR>")
 vim.keymap.set("n", "<S-TAB>", "<cmd>bprevious<CR>")
-
-
-vim.g.copilot_no_tab_map = true
-vim.keymap.set('i', '<C-j>', '<Plug>(copilot-next)')
-vim.keymap.set('i', '<C-k>', '<Plug>(copilot-previous)')
-vim.keymap.set('i', '<C-l>', 'copilot#Accept("<CR>")', { expr = true, silent = true, replace_keycodes = false })
-vim.g.copilot_assume_mapped = true

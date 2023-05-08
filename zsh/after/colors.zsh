@@ -1,0 +1,1 @@
+export GREP_COLORS="1;33;100"

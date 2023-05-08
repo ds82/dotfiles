@@ -16,11 +16,22 @@ t.setup({
 			'.gitignore'
 		},
 	},
+	pickers = {
+		find_files = {
+			hidden = true
+		}
+	}
 })
 
 
 
-vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
+vim.keymap.set('n', '<leader>R', builtin.resume, {})
+
+vim.keymap.set('v', '<leader>gf', function()
+	vim.cmd('noau normal! "vy"')
+	local visual_selection = vim.fn.getreg('v')
+	require("telescope.builtin").find_files { default_text = visual_selection }
+end, {})
 vim.keymap.set('n', '<leader>t', builtin.find_files, {})
 
 vim.keymap.set('n', '<leader>o', builtin.oldfiles, {})

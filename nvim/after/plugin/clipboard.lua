@@ -69,6 +69,9 @@
 
 local function copy(lines, _)
 	vim.fn.OSCYankString(table.concat(lines, "\n"))
+	if vim.fn.has('macunix') then
+		vim.fn.systemlist("pbcopy", lines)
+	end
 end
 
 local function paste()

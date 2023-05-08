@@ -25,13 +25,6 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 
-vim.keymap.set("n", "<leader>1", function()
-  vim.api.nvim_command(":so ~/.config/nvim/init.lua");
-end)
-vim.keymap.set("n", "<leader><leader>1", function()
-  vim.api.nvim_command(":so ~/.config/nvim/init.lua");
-  vim.cmd.PackerSync();
-end)
 
 vim.keymap.set("n", "vv", "<C-W>v")
 vim.keymap.set("n", "ss", "<C-W>s")

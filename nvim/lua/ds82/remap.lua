@@ -31,7 +31,7 @@ vim.keymap.set("n", "ss", "<C-W>s")
 -- TODO
 -- vim.keymap.set("n", "Q", "<C-W>q")
 vim.keymap.set("n", "Q", function()
-  vim.api.nvim_win_close(0, 1)
+	vim.api.nvim_win_close(0, 1)
 end)
 
 vim.keymap.set("n", "gbt", "'<Cmd>GitBlameToggle<CR>", { desc = "Toggle Git Blame annotations" });

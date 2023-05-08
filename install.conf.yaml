@@ -11,7 +11,9 @@
     ~/.config/bat/themes: bat/themes
     ~/.phoenix.js: phoenix/phoenix.js
     ~/.phoenix/utils.js: phoenix/utils.js
-
+    ~/.gitconfig: git/gitconfig
+    ~/.gitconfig.user: git/gitconfig.user
+    ~/.gitconfig.rea: git/gitconfig.rea
 - create: ~/.phoenix
 
 - shell:

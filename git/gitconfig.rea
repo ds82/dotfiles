@@ -1,0 +1,80 @@
+[include]
+   path = ~/code/rea-git-config/gitconfig.rea
+
+[user]
+  name = Dennis Saenger
+  email = dsaenger@rea.de
+
+[alias]
+  a = add
+  ir = rebase -i --autosquash
+  cp = cherry-pick
+  cpc = cherry-pick --continue
+  cpa = cherry-pick --abort
+  subup = submodule update --init --recursive
+  rs = rebase --skip
+  rc = rebase --continue
+	amend = commit --amend
+	ane = commit --amend --no-edit
+
+[rebase]
+	autoSquash = true
+
+[grep]
+	extendRegexp = true
+	lineNumber = true
+
+[color]
+  ui = true
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red
+  new = green
+
+[format]
+  #pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
+
+[apply]
+  whitespace = nowarn
+
+[core]
+  whitespace = -trailing-space,-indent-with-non-tab,-tab-in-indent
+  autocrlf = false
+  editor = nvim
+	excludesfile = /Users/dsaenger/.gitignore
+
+[credential]
+	helper = osxkeychain
+
+[difftool "nvim"]
+    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+
+[difftool]
+    prompt = false
+[diff]
+    tool = nvim
+
+[mergetool "nvim"]
+  cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
+
+# If you want to set up Kaleidoscope as the default merge tool,
+# then also set the following variables:
+[mergetool]
+	prompt = false
+[merge]
+	tool = nvim
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[http]
+	sslcert = /Users/dsaenger/.certs/client.crt
+	sslKey = /Users/dsaenger/.certs/client.key

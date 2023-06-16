@@ -77,8 +77,7 @@ return require('packer').startup(function(use)
     tag = 'nightly'               -- optional, updated every week. (see issue #1193)
   }
 
-  use { 'numToStr/FTerm.nvim' }
-
+  use { "akinsho/toggleterm.nvim", tag = '*' }
 
   -- use { 'github/copilot.vim' }
   use {

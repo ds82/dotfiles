@@ -10,3 +10,5 @@ alias fix-perms='sudo chown -R dsaenger $WEB/node_modules $WEB/modules/*/package
 alias commit-cache="git add yarn.lock cache/ && git commit -m 'chore(lock/cache): update lock & cache'"
 
 alias ll='lsd -a -l'
+
+alias reflog='git reflog --pretty=raw | tig --pretty=raw'

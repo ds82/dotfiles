@@ -8,9 +8,16 @@ color cursor			black	green	bold
 
 set main-view = id:yes date:default author commit-title:refs=true,overflow=72
 
-bind status P !git stash push -- %(file)
+#
+# bindings
+#
+bind generic 9 !@sh -c "git rev-parse --short %(commit) | tr -d '[:space:]' | pbcopy"
 
 bind main F !git commit --fixup %(commit) --no-verify
 bind main I !git rebase -i --autosquash %(commit)^1
-bind generic 9 !@sh -c "git rev-parse --short %(commit) | tr -d '[:space:]' | pbcopy"
+
+bind status P !git stash push -- %(file)
+bind status a !git commit --amend
+bind status A !git commit --amend --no-edit
+
 

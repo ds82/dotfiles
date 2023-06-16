@@ -14,6 +14,7 @@
     ~/.gitconfig: git/gitconfig
     ~/.gitconfig.user: git/gitconfig.user
     ~/.gitconfig.rea: git/gitconfig.rea
+    ~/.alacritty.yml: alacritty.yml
 - create: ~/.phoenix
 
 - shell:

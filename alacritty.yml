@@ -1,0 +1,9 @@
+font:
+  normal:
+    family: "BerkeleyMono Nerd Font Mono"
+  size: 15.5
+key_bindings:
+  - { key: N, mods: Command, action: CreateNewWindow }
+  # - { key: "Key6", mods: Control, chars: "\x1e" }
+  - { key: "Key6", mods: Control, chars: "\x1e^[\x94" }
+  - { key: Space, mods: Control, chars: "\x00" }

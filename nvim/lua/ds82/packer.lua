@@ -210,4 +210,5 @@ return require('packer').startup(function(use)
 	use 'wakatime/vim-wakatime'
 	use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
 	use { 'echasnovski/mini.starter', branch = 'stable' }
+  use 'folke/flash.nvim'
 end)

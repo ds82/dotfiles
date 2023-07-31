@@ -3,6 +3,7 @@ local builtin = require('telescope.builtin')
 
 t.setup({
 	defaults = {
+		path_display = { 'truncate' },
 		ripgrep_arguments = {
 			'rg',
 			'--hidden',

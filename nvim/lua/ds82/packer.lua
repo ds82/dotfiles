@@ -14,7 +14,14 @@ return require('packer').startup(function(use)
 	-- themes
 	use 'folke/tokyonight.nvim'
 	use 'rebelot/kanagawa.nvim'
+	use 'AlexvZyl/nordic.nvim'
+	use { 'srcery-colors/srcery-vim', as = 'srcery' }
+	use 'rafalbromirski/vim-aurora'
+	use { "ellisonleao/gruvbox.nvim" }
+	use { "catppuccin/nvim", as = "catppuccin" }
+
 	use 'nvim-tree/nvim-web-devicons'
+
 
 	use {
 		'nvim-treesitter/nvim-treesitter',
@@ -59,6 +66,11 @@ return require('packer').startup(function(use)
 
 	use { 'junegunn/fzf', run = 'fzf#install()' }
 	use { 'junegunn/fzf.vim' }
+	-- use { "ibhagwan/fzf-lua",
+	-- 	-- optional for icon support
+	-- 	requires = { "nvim-tree/nvim-web-devicons" }
+	-- }
+
 
 	use { 'nvim-lua/plenary.nvim' }
 	use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
@@ -131,6 +143,8 @@ return require('packer').startup(function(use)
 							},
 						},
 					},
+					["core.export"] = {},
+					["core.export.markdown"] = {}
 				},
 			}
 		end,
@@ -174,18 +188,18 @@ return require('packer').startup(function(use)
 	use 'HiPhish/nvim-ts-rainbow2'
 
 	-- use 'echasnovski/mini.nvim'
-	-- use {
-	--     "folke/which-key.nvim",
-	--     config = function()
-	--       vim.o.timeout = true
-	--       vim.o.timeoutlen = 300
-	--       require("which-key").setup {
-	--           -- your configuration comes here
-	--           -- or leave it empty to use the default settings
-	--           -- refer to the configuration section below
-	--       }
-	--     end
-	-- }
+	use {
+		"folke/which-key.nvim",
+		config = function()
+			vim.o.timeout = true
+			vim.o.timeoutlen = 300
+			require("which-key").setup {
+				-- your configuration comes here
+				-- or leave it empty to use the default settings
+				-- refer to the configuration section below
+			}
+		end
+	}
 
 	-- use({
 	-- 	"folke/noice.nvim",
@@ -210,5 +224,79 @@ return require('packer').startup(function(use)
 	use 'wakatime/vim-wakatime'
 	use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
 	use { 'echasnovski/mini.starter', branch = 'stable' }
-  use 'folke/flash.nvim'
+
+	use({
+		"nvim-treesitter/nvim-treesitter-textobjects",
+		after = "nvim-treesitter",
+		requires = "nvim-treesitter/nvim-treesitter",
+	})
+
+	use 'folke/flash.nvim'
+
+	use {
+		"nvim-neotest/neotest",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"nvim-treesitter/nvim-treesitter",
+			"antoinemadec/FixCursorHold.nvim",
+			"haydenmeade/neotest-jest",
+		},
+		config = function()
+			require('neotest').setup({
+				adapters = {
+					require('neotest-jest')({
+						jestCommand = "npm test --",
+						jestConfigFile = "custom.jest.config.ts",
+						env = { CI = true },
+						cwd = function(path)
+							return vim.fn.getcwd()
+						end,
+					}),
+				}
+			})
+		end
+	}
+	use {
+		"rest-nvim/rest.nvim",
+		requires = { "nvim-lua/plenary.nvim" },
+		config = function()
+			require("rest-nvim").setup({
+				-- Open request results in a horizontal split
+				result_split_horizontal = false,
+				-- Keep the http file buffer above|left when split horizontal|vertical
+				result_split_in_place = false,
+				-- Skip SSL verification, useful for unknown certificates
+				skip_ssl_verification = false,
+				-- Encode URL before making request
+				encode_url = true,
+				-- Highlight request on run
+				highlight = {
+					enabled = true,
+					timeout = 150,
+				},
+				result = {
+					-- toggle showing URL, HTTP info, headers at top the of result window
+					show_url = true,
+					-- show the generated curl command in case you want to launch
+					-- the same request via the terminal (can be verbose)
+					show_curl_command = false,
+					show_http_info = true,
+					show_headers = true,
+					-- executables or functions for formatting response body [optional]
+					-- set them to false if you want to disable them
+					formatters = {
+						json = "jq",
+						html = function(body)
+							return vim.fn.system({ "tidy", "-i", "-q", "-" }, body)
+						end
+					},
+				},
+				-- Jump to request line on run
+				jump_to_request = false,
+				env_file = '.env',
+				custom_dynamic_variables = {},
+				yank_dry_run = true,
+			})
+		end
+	}
 end)

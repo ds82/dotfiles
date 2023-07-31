@@ -12,12 +12,18 @@ set main-view = id:yes date:default author commit-title:refs=true,overflow=72
 # bindings
 #
 bind generic 9 !@sh -c "git rev-parse --short %(commit) | tr -d '[:space:]' | pbcopy"
+bind generic H !tig log %(file)
 
 bind main F !git commit --fixup %(commit) --no-verify
 bind main I !git rebase -i --autosquash %(commit)^1
+bind main c !git commit -c %(commit)
+bind main r ?git reset %(commit)
+bind main R ?git reset --hard %(commit)
 
 bind status P !git stash push -- %(file)
 bind status a !git commit --amend
-bind status A !git commit --amend --no-edit
+bind status A ?git commit --amend --no-edit
 
+bind status v !>sh -c "cd %(repo:git-dir)/../%(file) ; tig"
+bind status U ?git csmu %(file)
 

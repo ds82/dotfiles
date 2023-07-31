@@ -92,6 +92,12 @@ vim.g.clipboard = {
 		["*"] = paste
 	}
 }
+
+vim.keymap.set("n", "<leader>G", function()
+	copy({ vim.fn.expand("%:p") })
+end, { desc = "Copy current file path to clipboard" })
+
+
 --
 -- *******************************************************
 --

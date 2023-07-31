@@ -28,11 +28,12 @@ return {
 			accept = "<C-l>",
 			accept_word = false,
 			accept_line = false,
-			next = "<M-]>",
-			prev = "<M-[>",
-			dismiss = "<C-]>",
+			next = "<C-k>",
+			prev = "<C-j>",
+			dismiss = "<C-m>",
 		},
 	},
+
 	filetypes = {
 		yaml = false,
 		markdown = false,

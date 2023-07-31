@@ -27,3 +27,4 @@ bind status A ?git commit --amend --no-edit
 bind status v !>sh -c "cd %(repo:git-dir)/../%(file) ; tig"
 bind status U ?git csmu %(file)
 
+bind status Y @git stash -- %(file)

@@ -15,7 +15,15 @@
     ~/.gitconfig.user: git/gitconfig.user
     ~/.gitconfig.rea: git/gitconfig.rea
     ~/.alacritty.yml: alacritty.yml
-- create: ~/.phoenix
+    ~/.zlogin: zsh/prezto/runcoms/zlogin
+    ~/.zlogout: zsh/prezto/runcoms/zlogout
+    ~/.zpreztorc: zsh/prezto/runcoms/zpreztorc
+    ~/.zprofile: zsh/prezto/runcoms/zprofile
+    ~/.zshenv: zsh/prezto/runcoms/zshenv
+    ~/.zshrc: zsh/zshrc
+
+- create:
+    - ~/.phoenix
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

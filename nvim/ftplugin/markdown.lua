@@ -1,2 +1,1 @@
-vim.bo.wrap = true
-
+vim.o.wrap = true

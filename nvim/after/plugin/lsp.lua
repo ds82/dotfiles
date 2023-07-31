@@ -14,8 +14,12 @@ lsp.on_attach(function(client, bufnr)
 	-- vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "" })
 	vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, { desc = "" })
 	vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "" })
-	vim.keymap.set("n", "<leader>gW", telescope.lsp_dynamic_workspace_symbols, { desc = "" })
-	vim.keymap.set("n", "<leader>gB", telescope.lsp_document_symbols, { desc = "" })
+
+	vim.keymap.set("n", "gW", telescope.lsp_dynamic_workspace_symbols, { desc = "" })
+	vim.keymap.set("n", "gB", telescope.lsp_document_symbols, { desc = "" })
+	vim.keymap.set("n", "gW", telescope.lsp_dynamic_workspace_symbols, { desc = "" })
+	vim.keymap.set("n", "gB", telescope.lsp_document_symbols, { desc = "" })
+
 	vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "" })
 	vim.keymap.set("n", "[d", vim.diagnostic.goto_next, { desc = "" })
 	vim.keymap.set("n", "]d", vim.diagnostic.goto_prev, { desc = "" })
@@ -51,7 +55,7 @@ lsp.format_on_save({
 	servers = {
 		['lua_ls'] = { 'lua' },
 		['rust_analyzer'] = { 'rust' },
-		['null-ls'] = { 'javascript', 'typescript', 'typescriptreact', 'javascriptreact', 'markdown', 'json', 'yaml', 'html',
+		['null-ls'] = { 'javascript', 'typescript', 'typescriptreact', 'javascriptreact', 'markdown', 'json', 'html',
 			'css' }
 	}
 })

@@ -181,6 +181,9 @@
   extendRegexp = true
   lineNumber = true
 
+[includeIf "hasconfig:remote.*.url:**rea.de*/**"]
+	path = ~/code/rea-git-config/gitconfig.rea
+
 [include]
   path = ~/.gitconfig.user
 

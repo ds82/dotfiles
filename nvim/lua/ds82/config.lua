@@ -46,3 +46,16 @@ vim.opt.splitright = true
 -- other
 vim.opt.listchars = { eol = '↲', tab = '▸ ', trail = '·', space = '·' }
 vim.opt.list = true
+
+
+local wr_group = vim.api.nvim_create_augroup('WinResize', { clear = true })
+
+vim.api.nvim_create_autocmd(
+	'VimResized',
+	{
+		group = wr_group,
+		pattern = '*',
+		command = 'wincmd =',
+		desc = 'Automatically resize windows when the host window size changes.'
+	}
+)

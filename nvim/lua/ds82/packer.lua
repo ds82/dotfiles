@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
   use 'rafalbromirski/vim-aurora'
   use { "ellisonleao/gruvbox.nvim" }
   use { "catppuccin/nvim", as = "catppuccin" }
+  use 'RRethy/nvim-base16'
 
   use 'nvim-tree/nvim-web-devicons'
 
@@ -28,7 +29,6 @@ return require('packer').startup(function(use)
     run = ':TSUpdate'
   }
   use { 'nvim-treesitter/playground' }
-  use { 'nvim-treesitter/nvim-treesitter-textobjects' }
 
   use { 'tpope/vim-fugitive' }
   use { 'airblade/vim-gitgutter' }
@@ -230,7 +230,7 @@ return require('packer').startup(function(use)
     requires = "nvim-treesitter/nvim-treesitter",
   })
 
-  use 'folke/flash.nvim'
+  -- use 'folke/flash.nvim'
 
   use {
     "nvim-neotest/neotest",

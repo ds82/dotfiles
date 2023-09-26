@@ -11,4 +11,7 @@ alias commit-cache="git add yarn.lock cache/ && git commit -m 'chore(lock/cache)
 
 alias ll='lsd -a -l'
 
+alias dotenv="set -a; source .env; set +a"
+
 alias reflog='git reflog --pretty=raw | tig --pretty=raw'
+alias xdu='sudo ncdu -x -o /tmp/ncdu.db && ncdu -f /tmp/ncdu.db'

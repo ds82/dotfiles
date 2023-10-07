@@ -97,6 +97,9 @@
   svnl = svn log --oneline --show-commit
 
   jump = "!$(brew --prefix git)/share/git-core/contrib/git-jump/git-jump"
+	grepall = "!f() { git branch -a | tr -d \\* | sed '/->/d' | xargs git grep; }; f"
+	search = log -p --all -S
+	regex = log -p --all -G
 
 [format]
   #pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
@@ -138,9 +141,9 @@
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge --skip -- %f
+	smudge = git-lfs smudge -- %f
   required = true
-	process = git-lfs filter-process --skip
+	process = git-lfs filter-process
 [credential]
   helper = osxkeychain
 

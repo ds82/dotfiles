@@ -7,12 +7,12 @@ set diff-options = --submodule
 color cursor			black	green	bold
 
 set main-view = id:yes date:default author commit-title:refs=true,overflow=72
-
 #
 # bindings
 #
-bind generic 9 !@sh -c "git rev-parse --short %(commit) | tr -d '[:space:]' | pbcopy"
+bind generic Y !@sh -c "git rev-parse --short %(commit) | tr -d '[:space:]' | pbcopy"
 bind generic H !tig log %(file)
+bind generic B view-refs
 
 bind main F !git commit --fixup %(commit) --no-verify
 bind main I !git rebase -i --autosquash %(commit)^1
@@ -24,6 +24,9 @@ bind status P !git stash push -- %(file)
 bind status a !git commit --amend
 bind status A ?git commit --amend --no-edit
 
-bind status v !>sh -c "cd %(repo:git-dir)/../%(file) ; tig"
+bind status v !>sh -c "cd %(repo:git-dir)/%(file) ; tig"
 bind status U ?git csmu %(file)
 
+bind diff D :toggle diff-options --minimal	# Use minimal diff algorithm
+bind diff [ :toggle diff-context -3		# Decrease context (-U arg)
+bind diff ] :toggle diff-context +3		# Increase context

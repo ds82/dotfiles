@@ -1,3 +1,11 @@
+-- vim.g.loaded_netrw = 0
+-- vim.g.loaded_netrwPlugin = 0
+
+-- vim.g.nvim_tree_disable_netrw = 0
+-- vim.g.nvim_tree_hijack_netrw = 0
+
+
+
 -- Install packer
 local install_path = vim.fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
 local is_bootstrap = false

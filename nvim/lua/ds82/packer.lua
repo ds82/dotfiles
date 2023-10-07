@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
 	use 'rafalbromirski/vim-aurora'
 	use { "ellisonleao/gruvbox.nvim" }
 	use { "catppuccin/nvim", as = "catppuccin" }
+	use 'sainnhe/edge'
 
 	use 'nvim-tree/nvim-web-devicons'
 
@@ -28,7 +29,6 @@ return require('packer').startup(function(use)
 		run = ':TSUpdate'
 	}
 	use { 'nvim-treesitter/playground' }
-	use { 'nvim-treesitter/nvim-treesitter-textobjects' }
 
 	use { 'tpope/vim-fugitive' }
 	use { 'airblade/vim-gitgutter' }
@@ -126,7 +126,8 @@ return require('packer').startup(function(use)
 
 
 
-	use { 'ojroques/vim-oscyank', branch = 'v1.0.0' }
+	-- use { 'ojroques/vim-oscyank', branch = 'v1.0.0' }
+	use { 'ojroques/nvim-osc52', branch = 'main' }
 
 	use {
 		"nvim-neorg/neorg",
@@ -222,7 +223,11 @@ return require('packer').startup(function(use)
 	-- use { "Cassin01/wf.nvim", config = function() require("wf").setup() end }
 
 	use 'wakatime/vim-wakatime'
-	use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
+
+	-- use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
+	use 'romgrk/barbar.nvim'
+
+
 	use { 'echasnovski/mini.starter', branch = 'stable' }
 
 	use({
@@ -299,4 +304,7 @@ return require('packer').startup(function(use)
 			})
 		end
 	}
+
+	use 'mfussenegger/nvim-dap'
+	use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
 end)

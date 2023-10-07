@@ -12,3 +12,8 @@ alias commit-cache="git add yarn.lock cache/ && git commit -m 'chore(lock/cache)
 alias ll='lsd -a -l'
 
 alias reflog='git reflog --pretty=raw | tig --pretty=raw'
+
+alias dotenv="set -a; source .env; set +a"
+
+alias n='nvim'
+alias r='ranger'

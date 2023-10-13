@@ -8,6 +8,7 @@
     ~/.tmux.conf: tmux.conf
     ~/.config/nvim: nvim
     ~/.tigrc: tigrc
+    ~/.config/bat/config: bat/config
     ~/.config/bat/themes: bat/themes
     ~/.phoenix.js: phoenix/phoenix.js
     ~/.phoenix/utils.js: phoenix/utils.js

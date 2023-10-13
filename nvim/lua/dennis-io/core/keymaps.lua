@@ -17,17 +17,15 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- quickfix window
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 -- search/replace prefilled
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("v", "<leader>s", function()
-  vim.cmd('noau normal! "vy"')
-  local text = vim.fn.getreg('v')
-  vim.cmd('[[:%s/' .. text .. ']]')
+	vim.cmd('noau normal! "vy"')
+	local text = vim.fn.getreg("v")
+	vim.cmd("[[:%s/" .. text .. "]]")
 end, { desc = "Open visual selection with default application" })
 
 vim.keymap.set("n", "<C-F>", "<C-^>")
@@ -40,7 +38,7 @@ vim.keymap.set("n", "ss", "<C-W>s")
 --
 -- vim.keymap.set("n", "Q", "<C-W>q")
 vim.keymap.set("n", "Q", function()
-  vim.api.nvim_win_close(0, 1)
+	vim.api.nvim_win_close(0, 1)
 end)
 
 -- vim.keymap.set("n", "gbt", "'<Cmd>GitBlameToggle<CR>", { desc = "Toggle Git Blame annotations" });
@@ -49,8 +47,6 @@ end)
 -- vim.keymap.set("n", "<C-9>", "<C-o>zz")
 -- vim.keymap.set("n", "<C-0>", "<C-i>zz")
 
-
-
 -- buffer navigation
 vim.keymap.set("n", "<TAB>", "<cmd>bnext<CR>", { desc = "Next Buffer" })
 vim.keymap.set("n", "<S-TAB>", "<cmd>bprevious<CR>", { desc = "Previous Buffer" })
@@ -58,9 +54,9 @@ vim.keymap.set("n", "<S-TAB>", "<cmd>bprevious<CR>", { desc = "Previous Buffer" 
 -- open selection/word
 vim.keymap.set("n", "<leader>O", "!open <C-R><C-W><CR>", { desc = "Open word under cursor with default application" })
 vim.keymap.set("v", "<leader>O", function()
-  vim.cmd('noau normal! "vy"')
-  local text = vim.fn.getreg('v')
-  vim.cmd('!open ' .. text)
+	vim.cmd('noau normal! "vy"')
+	local text = vim.fn.getreg("v")
+	vim.cmd("!open " .. text)
 end, { desc = "Open visual selection with default application" })
 
 -- save

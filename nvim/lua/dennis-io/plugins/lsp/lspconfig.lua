@@ -27,10 +27,8 @@ return {
 			keymap.set("n", "gt", vim.lsp.buf.type_definition, { desc = "" })
 			keymap.set("n", "K", vim.lsp.buf.hover, { desc = "" })
 
-			keymap.set("n", "gW", telescope.lsp_dynamic_workspace_symbols, { desc = "" })
 			keymap.set("n", "gB", telescope.lsp_document_symbols, { desc = "" })
 			keymap.set("n", "gW", telescope.lsp_dynamic_workspace_symbols, { desc = "" })
-			keymap.set("n", "gB", telescope.lsp_document_symbols, { desc = "" })
 
 			keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "" })
 			keymap.set("n", "[d", vim.diagnostic.goto_next, { desc = "" })
@@ -157,6 +155,18 @@ return {
 		-- 	on_attach = on_attach,
 		-- 	filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
 		-- })
+
+		-- configure clangd
+		-- lspconfig["clangd"].setup({
+		-- 	capabilities = capabilities,
+		-- 	on_attach = on_attach,
+		-- })
+
+		lspconfig["ccls"].setup({
+			use_defaults = true,
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
 
 		-- configure python server
 		lspconfig["pyright"].setup({

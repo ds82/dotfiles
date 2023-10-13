@@ -24,7 +24,8 @@ bind status P !git stash push -- %(file)
 bind status a !git commit --amend
 bind status A ?git commit --amend --no-edit
 
-bind status v !>sh -c "cd %(repo:git-dir)/%(file) ; tig"
+bind status v !>sh -c "cd %(repo:git-dir)/../%(file) ; tig"
+bind status V !>sh -c "cd %(repo:git-dir)/../%(file) ; git pa"
 bind status U ?git csmu %(file)
 
 bind diff D :toggle diff-options --minimal	# Use minimal diff algorithm

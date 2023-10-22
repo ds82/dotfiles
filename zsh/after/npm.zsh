@@ -1,2 +1,2 @@
-source ~/.npm-token
+F=$HOME/.npm-token; [ -f $F ] && . $F
 

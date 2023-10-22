@@ -10,8 +10,6 @@
     ~/.tigrc: tigrc
     ~/.config/bat/config: bat/config
     ~/.config/bat/themes: bat/themes
-    ~/.phoenix.js: phoenix/phoenix.js
-    ~/.phoenix/utils.js: phoenix/utils.js
     ~/.gitconfig: git/gitconfig
     ~/.gitconfig.user: git/gitconfig.user
     ~/.gitconfig.rea: git/gitconfig.rea
@@ -22,6 +20,12 @@
     ~/.zprofile: zsh/prezto/runcoms/zprofile
     ~/.zshenv: zsh/prezto/runcoms/zshenv
     ~/.zshrc: zsh/zshrc
+    ~/.phoenix.js:
+      if: "[ `uname` = Darwin ]"
+      path: phoenix/phoenix.js
+    ~/.phoenix/utils.js:
+      if: "[ `uname` = Darwin ]"
+      path: phoenix/utils.js
 
 - create: ~/.phoenix
 

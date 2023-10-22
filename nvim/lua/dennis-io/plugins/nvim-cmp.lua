@@ -36,8 +36,10 @@ return {
 				["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
 				["<C-e>"] = cmp.mapping.abort(), -- close completion window
 				["<CR>"] = cmp.mapping.confirm({
-					-- documentation says this is important.
-					-- I don't know why.
+					behavior = cmp.ConfirmBehavior.Insert,
+					select = true,
+				}),
+				["<Tab>"] = cmp.mapping.confirm({
 					behavior = cmp.ConfirmBehavior.Replace,
 					select = false,
 				}),

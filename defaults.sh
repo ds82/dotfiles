@@ -808,8 +808,18 @@ defaults write com.operasoftware.OperaDeveloper PMPrintingExpandedStateForPrint2
 # Tweetbot.app                                                                #
 ###############################################################################
 
+###############################################################################
 # Bypass the annoyingly slow t.co URL shortener
+###############################################################################
 defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
+
+
+###############################################################################
+# disable playstation gamepad ps button
+###############################################################################
+defaults write com.apple.GameController bluetoothPrefsMenuLongPressAction -integer 0
+defaults write com.apple.GameController bluetoothPrefsShareLongPressSystemGestureMode -integer -1
+
 
 ###############################################################################
 # Kill affected applications                                                  #

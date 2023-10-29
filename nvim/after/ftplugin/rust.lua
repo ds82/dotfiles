@@ -1,6 +1,11 @@
-vim.keymap.set("n", "gK", ":RustOpenExternalDocs<CR>")
+local rt = require("rust-tools")
 
-vim.bo.tabstop = 2
-vim.bo.shiftwidth = 2
-vim.bo.expandtab = false
-vim.bo.softtabstop = 2
+vim.keymap.set("n", "gK", ":RustOpenExternalDocs<CR>")
+vim.keymap.set("n", "<leader>K", rt.hover_actions.hover_actions, { buffer = 0 })
+
+vim.keymap.set({ "n", "v" }, "<C-k>", rt.code_action_group.code_action_group, { buffer = 0 })
+
+vim.bo.tabstop = 4
+vim.bo.shiftwidth = 4
+vim.bo.expandtab = true
+vim.bo.softtabstop = 4

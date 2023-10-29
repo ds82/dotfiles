@@ -7,6 +7,17 @@ return {
 	config = function()
 		local on_attach = require("dennis-io.core.lsp.on_attach")
 
+		local dap = require("dap")
+		local mason_registry = require("mason-registry")
+
+		local codelldb_root = mason_registry.get_package("codelldb"):get_install_path() .. "/extension/"
+		local codelldb_path = codelldb_root .. "adapter/codelldb"
+		local liblldb_path = codelldb_root .. "lldb/lib/liblldb"
+		local this_os = vim.loop.os_uname().sysname
+
+		-- The liblldb extension is .so for linux and .dylib for macOS
+		liblldb_path = liblldb_path .. (this_os == "Linux" and ".so" or ".dylib")
+
 		require("rust-tools").setup({
 			tools = {
 				-- rust-tools options
@@ -164,14 +175,17 @@ return {
 				},
 			},
 			-- debugging stuff
-			dap = {
-				adapter = require("dap").adapters.lldb,
-				-- adapter = {
-				-- 	type = "executable",
-				-- 	command = "lldb-vscode",
-				-- 	name = "rt_lldb",
-				-- },
-			},
+			dap = { adapter = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path) },
+			-- dap = {
+			-- 	adapter = require("dap").adapters.lldb,
+			-- 	-- adapter = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path),
+			-- 	-- adapter = require("dap").adapters.lldb,
+			-- 	-- adapter = {
+			-- 	-- 	type = "executable",
+			-- 	-- 	command = "lldb-vscode",
+			-- 	-- 	name = "rt_lldb",
+			-- 	-- },
+			-- },
 		})
 	end,
 }

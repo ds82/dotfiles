@@ -32,8 +32,5 @@
 
     ~/.config/kitty: kitty
 
-- create: ~/.phoenix
-  if: "[ `uname` = Darwin ]"
-
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

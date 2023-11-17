@@ -37,7 +37,7 @@ return {
 				["<C-e>"] = cmp.mapping.abort(), -- close completion window
 				["<CR>"] = cmp.mapping.confirm({
 					behavior = cmp.ConfirmBehavior.Insert,
-					select = true,
+					select = false,
 				}),
 				["<Tab>"] = cmp.mapping.confirm({
 					behavior = cmp.ConfirmBehavior.Replace,

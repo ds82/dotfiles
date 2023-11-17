@@ -86,10 +86,10 @@ return {
 		-- })
 
 		-- configure clangd
-		-- lspconfig["clangd"].setup({
-		-- 	capabilities = capabilities,
-		-- 	on_attach = on_attach,
-		-- })
+		lspconfig["clangd"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
 
 		lspconfig["ccls"].setup({
 			use_defaults = true,

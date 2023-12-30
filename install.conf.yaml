@@ -6,7 +6,11 @@
 
 - link:
     ~/.tmux.conf: tmux.conf
-    ~/.config/nvim: nvim
+
+    ~/.config/nvim:
+      path: nvim
+      force: true
+
     ~/.tigrc: tigrc
     ~/.config/bat/config: bat/config
     ~/.config/bat/themes: bat/themes

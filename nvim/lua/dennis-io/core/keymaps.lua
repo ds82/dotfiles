@@ -65,3 +65,6 @@ vim.keymap.set("n", "<leader><leader>w", "<cmd>:Gwrite<CR>")
 
 -- rest
 vim.keymap.set("n", "<leader>rr", "<Plug>RestNvim", { desc = "Run REST Request under Cursor" })
+
+-- lazy
+vim.keymap.set("n", "<leader><leader>1", "<cmd>Lazy update<CR>", { desc = "Update Plugins using Lazy" })

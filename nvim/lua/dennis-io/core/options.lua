@@ -51,9 +51,6 @@ opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
--- turn off swapfile
-opt.swapfile = false
-
 -- window resize
 local wr_group = vim.api.nvim_create_augroup("WinResize", { clear = true })
 vim.api.nvim_create_autocmd("VimResized", {

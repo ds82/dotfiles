@@ -5,7 +5,7 @@ return {
 	},
 	config = function()
 		vim.keymap.set("n", "<leader>T", function()
-			require("trouble").toggle()
+			require("trouble").toggle("quickfix")
 		end)
 	end,
 }

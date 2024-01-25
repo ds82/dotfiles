@@ -19,6 +19,7 @@ bind main I !git rebase -i --autosquash %(commit)^1
 bind main c !git commit -c %(commit)
 bind main r ?git reset %(commit)
 bind main R ?git reset --hard %(commit)
+bind main 5 refresh
 
 bind status P !git stash push -- %(file)
 bind status a !git commit --amend

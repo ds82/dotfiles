@@ -47,7 +47,7 @@ return {
 			capabilities = capabilities,
 			on_attach = on_attach,
 			commands = {
-				OrganizeImports = {
+				TSOrganizeImports = {
 					ts_organize_imports,
 					description = "Organize Imports",
 				},

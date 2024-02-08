@@ -1,4 +1,15 @@
+##
+#
+# Disabled loading this file
+# nvm is now LAZY! loaded via zsh-nvm plugin
+#
+##
+return 0
+
+
 setopt no_aliases
+
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -12,7 +23,7 @@ load-nvmrc() {
   if [ -n "$nvmrc_path" ]; then
     local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
 
-    if [ "$nvmrc_node_version" = "N/A" ]; then
+    if [ "$nvmrc_node_ersion" = "N/A" ]; then
       nvm install
     elif [ "$nvmrc_node_version" != "$node_version" ]; then
       nvm use

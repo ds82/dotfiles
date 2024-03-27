@@ -19,7 +19,7 @@ return {
 			defaults = {
 				path_display = { "truncate" },
 				file_ignore_patterns = {
-					".git",
+					"%.git", -- INFO: % is the escape character for lua regexp magic chars
 					"node_modules",
 				},
 				ripgrep_arguments = {

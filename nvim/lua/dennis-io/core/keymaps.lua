@@ -68,3 +68,9 @@ vim.keymap.set("n", "<leader>rr", "<Plug>RestNvim", { desc = "Run REST Request u
 
 -- lazy
 vim.keymap.set("n", "<leader><leader>1", "<cmd>Lazy update<CR>", { desc = "Update Plugins using Lazy" })
+
+-- disable arrow keys in normal mode
+vim.keymap.set("n", "<S-Up>", "<Nop>")
+vim.keymap.set("n", "<S-Down>", "<Nop>")
+vim.keymap.set("n", "<S-Left>", "<Nop>")
+vim.keymap.set("n", "<S-Right>", "<Nop>")

@@ -44,8 +44,8 @@ end)
 -- vim.keymap.set("n", "gbt", "'<Cmd>GitBlameToggle<CR>", { desc = "Toggle Git Blame annotations" });
 
 -- rebind ctrl-o, ctrl-o
--- vim.keymap.set("n", "<C-9>", "<C-o>zz")
--- vim.keymap.set("n", "<C-0>", "<C-i>zz")
+vim.keymap.set("n", "<C-o>", "<C-o>zz")
+vim.keymap.set("n", "<C-i>", "<C-i>zz")
 
 -- buffer navigation
 vim.keymap.set("n", "<TAB>", "<cmd>bnext<CR>", { desc = "Next Buffer" })
@@ -61,7 +61,7 @@ end, { desc = "Open visual selection with default application" })
 
 -- save
 vim.keymap.set("n", "<leader>w", "<cmd>:w<CR>")
-vim.keymap.set("n", "<leader><leader>w", "<cmd>:Gwrite<CR>")
+-- vim.keymap.set("n", "<leader><leader>w", "<cmd>:Gwrite<CR>")
 
 -- rest
 vim.keymap.set("n", "<leader>rr", "<Plug>RestNvim", { desc = "Run REST Request under Cursor" })

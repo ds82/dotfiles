@@ -15,8 +15,8 @@ local on_attach = function(_client, bufnr)
 	opts.desc = ""
 	keymap.set("n", "gr", telescope.lsp_references, opts)
 
-	opts.desc = ""
-	keymap.set("n", "gr", vim.lsp.buf.references, opts)
+	-- opts.desc = ""
+	-- keymap.set("n", "gr", vim.lsp.buf.references, opts)
 
 	opts.desc = ""
 	keymap.set("n", "gt", vim.lsp.buf.type_definition, opts)

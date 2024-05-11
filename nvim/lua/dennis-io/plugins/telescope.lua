@@ -88,5 +88,7 @@ return {
 		end)
 
 		keymap.set("n", "<leader>b", builtin.buffers)
+
+		keymap.set("n", "<leader><leader>G", builtin.git_status)
 	end,
 }

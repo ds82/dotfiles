@@ -19,6 +19,10 @@ return {
 		liblldb_path = liblldb_path .. (this_os == "Linux" and ".so" or ".dylib")
 
 		require("rust-tools").setup({
+			runnables = {
+				use_telescope = true,
+			},
+
 			tools = {
 				-- rust-tools options
 

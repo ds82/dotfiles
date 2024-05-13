@@ -20,8 +20,8 @@ return {
 				graphql = { "prettier" },
 				lua = { "stylua" },
 				python = { "isort", "black" },
-				sh = { "bashls" },
-				bash = { "bashls" },
+				sh = { "shfmt" },
+				bash = { "shfmt" },
 			},
 			format_on_save = {
 				lsp_fallback = true,

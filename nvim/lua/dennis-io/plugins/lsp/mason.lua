@@ -52,6 +52,7 @@ return {
 				"pylint", -- python linter
 				"eslint_d", -- js linter
 				"codelldb",
+				"shfmt",
 			},
 		})
 	end,

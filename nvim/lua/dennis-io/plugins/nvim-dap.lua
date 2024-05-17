@@ -140,8 +140,8 @@ return {
 			dapui.open()
 		end
 
-		dap.adapters.lldb = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path)
-		dap.adapters.rust = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path)
+		-- dap.adapters.lldb = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path)
+		-- dap.adapters.rust = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path)
 		--
 		dap.configurations.rust = {
 			{

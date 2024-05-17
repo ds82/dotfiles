@@ -28,4 +28,5 @@ alias reflog='git reflog --pretty=raw | tig --pretty=raw'
 alias dotenv="set -a; source .env; set +a"
 
 alias n='nvim'
+alias vim='nvim' # overwrite vim with nvim
 alias r='ranger'

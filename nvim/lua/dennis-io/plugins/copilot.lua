@@ -8,6 +8,7 @@ return {
 				typescriptreact = true,
 				sh = true,
 				rust = true,
+				lua = true,
 				["*"] = false, -- disable for all other filetypes and ignore default `filetypes`
 			},
 			panel = {

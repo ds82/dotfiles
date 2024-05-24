@@ -81,6 +81,7 @@ return {
 
 		keymap.set("n", "<leader>o", builtin.oldfiles, {})
 		keymap.set("n", "<leader>D", builtin.diagnostics, {})
+		keymap.set("n", "<leader>J", builtin.jumplist, {})
 
 		keymap.set("n", "<C-p>", builtin.git_files, {})
 		keymap.set("n", "<leader>ps", function()
@@ -90,5 +91,28 @@ return {
 		keymap.set("n", "<leader>b", builtin.buffers)
 
 		keymap.set("n", "<leader><leader>G", builtin.git_status)
+
+		vim.keymap.set(
+			"n",
+			"<leader>rg",
+			":Telescope grep_string search=<C-R><C-W><CR>",
+			{ desc = "Search word under cursor in project" }
+		)
+		vim.keymap.set("v", "<leader>rg", function()
+			vim.cmd('noau normal! "vy"')
+			local text = vim.fn.getreg("v")
+			vim.cmd(":Telescope grep_string search=" .. text)
+		end, { desc = "Search visual selection in project" })
+
+		vim.api.nvim_create_user_command("Rg", function(opts)
+			local s = table.concat(opts.fargs, " ")
+			require("telescope.builtin").grep_string({ search = s })
+		end, { nargs = 1 })
+
+		vim.api.nvim_create_user_command("Rgd", function(opts)
+			local file_dir = vim.fn.expand("%:h")
+			local s = table.concat(opts.fargs, " ")
+			require("telescope.builtin").grep_string({ cwd = file_dir, search = s })
+		end, { nargs = 1 })
 	end,
 }

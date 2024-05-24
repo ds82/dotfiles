@@ -44,6 +44,7 @@ return {
 					"lua",
 					"xml",
 					"http",
+					"rust",
 				},
 				incremental_selection = {
 					enable = true,

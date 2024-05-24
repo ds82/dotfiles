@@ -4,5 +4,6 @@ review() {
   glab api /projects/:id/merge_requests/$MR >> $T
   SHA=$(jq -r '.sha' $T)
   TARGET=$(jq -r '.target_branch' $T)
-  nvim +"DiffviewOpen $SHA..origin/$TARGET"
+  echo "compare origin/$TARGET..$SHA"
+  nvim +"DiffviewOpen origin/$TARGET..$SHA"
 }

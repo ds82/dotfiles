@@ -35,6 +35,7 @@ brew 'exa'
 # brew 'nvm' # disabled, because its not supported by nvm and causes prefix errors
 brew 'pandoc'
 brew 'ranger'
+brew 'atuin'
 
 brew 'mas'
 

@@ -51,6 +51,9 @@ vim.keymap.set("n", "<C-i>", "<C-i>zz")
 vim.keymap.set("n", "<TAB>", "<cmd>bnext<CR>", { desc = "Next Buffer" })
 vim.keymap.set("n", "<S-TAB>", "<cmd>bprevious<CR>", { desc = "Previous Buffer" })
 
+vim.keymap.set("n", "<S-Left>", "<cmd>tabprevious<CR>", { desc = "Previous Tab" })
+vim.keymap.set("n", "<S-Right>", "<cmd>tabnext<CR>", { desc = "Next Tab" })
+
 -- open selection/word
 vim.keymap.set("n", "<leader>O", "!open <C-R><C-W><CR>", { desc = "Open word under cursor with default application" })
 vim.keymap.set("v", "<leader>O", function()
@@ -69,8 +72,6 @@ vim.keymap.set("n", "<leader>rr", "<Plug>RestNvim", { desc = "Run REST Request u
 -- lazy
 vim.keymap.set("n", "<leader><leader>1", "<cmd>Lazy update<CR>", { desc = "Update Plugins using Lazy" })
 
--- disable arrow keys in normal mode
+-- disable shift-arrow keys in normal mode (left/right are used above)
 vim.keymap.set("n", "<S-Up>", "<Nop>")
 vim.keymap.set("n", "<S-Down>", "<Nop>")
-vim.keymap.set("n", "<S-Left>", "<Nop>")
-vim.keymap.set("n", "<S-Right>", "<Nop>")

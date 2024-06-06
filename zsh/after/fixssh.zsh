@@ -3,7 +3,7 @@ addssh() {
 }
 
 fixssh() {
-  SOCK=$(fd -p '.*ssh-.*/agent.*' /var/ /tmp/)
+  SOCK=$(fd -1 -p '.*ssh-.*/agent.*' /var/ /tmp/)
   if [[ ! -z "${SOCK}" ]]; then
     export SSH_AUTH_SOCK="$SOCK" 
     # echo "set SSH_AUTH_SOCK=${SOCK}"

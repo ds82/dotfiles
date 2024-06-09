@@ -11,12 +11,13 @@ return {
 	},
 	config = function()
 		local cmp = require("cmp")
-
 		local luasnip = require("luasnip")
-
 		local lspkind = require("lspkind")
 
 		-- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
+		for _, ft_path in ipairs(vim.api.nvim_get_runtime_file("lua/dennis-io/snippets/*.lua", true)) do
+			loadfile(ft_path)()
+		end
 		require("luasnip.loaders.from_vscode").lazy_load()
 
 		cmp.setup({

@@ -87,7 +87,9 @@ return {
 		keymap.set("n", "<leader>e", telescope.extensions.emoji.emoji, {})
 
 		keymap.set("n", "<leader>o", builtin.oldfiles, {})
-		keymap.set("n", "<leader>D", builtin.diagnostics, {})
+		keymap.set("n", "<leader>D", function()
+			builtin.diagnostics({ sort_by = "severity" })
+		end, {})
 		keymap.set("n", "<leader>J", builtin.jumplist, {})
 
 		keymap.set("n", "<C-p>", builtin.git_files, {})

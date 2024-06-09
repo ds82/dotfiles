@@ -31,13 +31,11 @@ return {
 		-- end, { desc = "Open Neogit Status", silent = true }) -- mapping to restart lsp if necessary
 
 		keymap.set("n", "<leader><leader>w", function()
-			vim.cmd(":w<CR>")
+			vim.cmd(":silent w!<CR>")
 
-			local file_uri = vim.fn.expand("%")
-			local file_dir = vim.fn.expand("%:h")
+			local file_uri = vim.fn.expand("%:t")
+			local file_dir = vim.fn.expand("%:p:h")
 			local exec_result = vim.system({ "git", "add", file_uri }, { text = true, cwd = file_dir }):wait()
-
-			print(exec_result)
 		end, { desc = "Save & stage current file" })
 
 		keymap.set("n", "<leader><leader>g", function()
@@ -52,10 +50,6 @@ return {
 		keymap.set("n", "<leader><leader>l", function()
 			neogit.action("log", "log_current", {})()
 		end, { desc = "Open Git Log", silent = true }) -- mapping to restart lsp if necessary
-
-		keymap.set("n", "<leader><leader>w", function()
-			vim.cmd(":silent !git add %")
-		end, { desc = "Stage current file in git", silent = true }) -- mapping to restart lsp if necessary
 
 		keymap.set("n", "<leader><leader>m", function()
 			local file_dir = vim.fn.expand("%:h")

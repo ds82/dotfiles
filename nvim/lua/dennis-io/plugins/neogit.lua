@@ -16,6 +16,13 @@ return {
 			neogit.action("log", "log_current", {})()
 		end, {})
 
+		vim.api.nvim_create_user_command("Gread", function()
+			local file_uri = vim.fn.expand("%")
+			local file_dir = vim.fn.expand("%:h")
+			local exec_result = vim.system({ "git", "checkout", "--", file_uri }, { text = true }):wait()
+			vim.cmd(":e!")
+		end, {})
+
 		neogit.setup()
 
 		local keymap = vim.keymap

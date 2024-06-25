@@ -8,8 +8,8 @@ vim.g.rustaceanvim = {
 	---@type RustaceanLspClientOpts
 	server = {
 		on_attach = function(client, bufnr)
-			vim.lsp.inlay_hint.enable(bufnr, false)
-			vim.lsp.inlay_hint.enable(bufnr, true)
+			vim.lsp.inlay_hint.enable(false)
+			vim.lsp.inlay_hint.enable(true)
 			on_attach(client, bufnr)
 		end,
 		default_settings = {

@@ -31,7 +31,7 @@ return {
 		-- end, { desc = "Open Neogit Status", silent = true }) -- mapping to restart lsp if necessary
 
 		keymap.set("n", "<leader><leader>w", function()
-			vim.cmd(":silent w!<CR>")
+			vim.cmd(":silent w!")
 
 			local file_uri = vim.fn.expand("%:t")
 			local file_dir = vim.fn.expand("%:p:h")

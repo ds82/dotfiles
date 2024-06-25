@@ -23,6 +23,7 @@ return {
 			local hl = "DiagnosticSign" .. type
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
+
 		vim.diagnostic.config({
 			severity_sort = true,
 		})
@@ -45,7 +46,11 @@ return {
 
 		lspconfig["tsserver"].setup({
 			capabilities = capabilities,
-			on_attach = on_attach,
+			on_attach = function(client, bufnr)
+				vim.lsp.inlay_hint.enable(false)
+				vim.lsp.inlay_hint.enable(true)
+				on_attach(client, bufnr)
+			end,
 			commands = {
 				TSOrganizeImports = {
 					ts_organize_imports,

@@ -6,6 +6,7 @@ return {
 		dependencies = {
 			"nvim-treesitter/nvim-treesitter-textobjects",
 			"windwp/nvim-ts-autotag",
+			"nushell/tree-sitter-nu",
 		},
 		config = function()
 			-- import nvim-treesitter plugin
@@ -45,6 +46,7 @@ return {
 					"xml",
 					"http",
 					"rust",
+					"vimdoc",
 				},
 				incremental_selection = {
 					enable = true,

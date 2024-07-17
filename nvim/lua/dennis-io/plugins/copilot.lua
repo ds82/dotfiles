@@ -9,7 +9,13 @@ return {
 				sh = true,
 				rust = true,
 				lua = true,
-				["*"] = false, -- disable for all other filetypes and ignore default `filetypes`
+
+				-- ["*"] = false, -- disable for all other filetypes and ignore default `filetypes`
+				["*"] = function()
+					local fullpath = vim.fn.expand("%:p")
+					local is_in_firmware = fullpath:find("firmware") ~= nil
+					return not is_in_firmware
+				end,
 			},
 			panel = {
 				enabled = false,

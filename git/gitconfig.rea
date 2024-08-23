@@ -1,6 +1,3 @@
-[include]
-   path = ~/code/rea-git-config/gitconfig.rea
-
 [user]
   name = Dennis Saenger
   email = dsaenger@rea.de

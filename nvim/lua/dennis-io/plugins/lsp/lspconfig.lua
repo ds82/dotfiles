@@ -34,6 +34,11 @@ return {
 			on_attach = on_attach,
 		})
 
+		lspconfig["bashls"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
 		-- configure typescript server with plugin
 		local function ts_organize_imports()
 			local params = {

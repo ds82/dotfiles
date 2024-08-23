@@ -1,8 +1,9 @@
 return {
 	"folke/noice.nvim",
 	event = "VeryLazy",
-	opts = {
-		-- add any options here
+	opts = {},
+	keys = {
+		{ "<leader>q", "<cmd>Noice dismiss<cr>", desc = "Close all noice popups" },
 	},
 	setup = function()
 		require("noice").setup({
@@ -25,9 +26,10 @@ return {
 		})
 	end,
 	dependencies = {
+		"nvim-lualine/lualine.nvim",
 		-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
 		"MunifTanjim/nui.nvim",
-		-- OPTIONAL:
+		-- OPTIONAL
 		--   `nvim-notify` is only needed, if you want to use the notification view.
 		--   If not available, we use `mini` as the fallback
 		"rcarriga/nvim-notify",

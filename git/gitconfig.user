@@ -62,6 +62,10 @@
   reseto = "!git reset origin/$(git branch-name)"
   rho = "!git reset --hard origin/$(git branch-name)"
 
+  up = "!f() { git fa && git ro; }; f" 
+  rom = "!f() { git rebase origin/main; }; f"
+  ron = "!f() { git rebase origin/next; }; f"
+
 [mergetool "vimdiff"]
   cmd="vim -c 'let g:syntastic_auto_loc_list=0' -c ':lclose' -c 'Gdiff' $MERGED"     # use fugitive.vim for 3-way merge
   keepbackup=false

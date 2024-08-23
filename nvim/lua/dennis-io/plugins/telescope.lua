@@ -83,6 +83,8 @@ return {
 			local visual_selection = vim.fn.getreg("v")
 			builtin.find_files({ default_text = visual_selection })
 		end, {})
+		keymap.set("n", "<leader>gf", ":Telescope find_files default_text=<C-R><C-W><CR>", {})
+
 		keymap.set("n", "<leader>t", builtin.find_files, {})
 		keymap.set("n", "<leader>e", telescope.extensions.emoji.emoji, {})
 

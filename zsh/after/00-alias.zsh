@@ -30,3 +30,7 @@ alias dotenv="set -a; source .env; set +a"
 alias n='nvim'
 alias vim='nvim' # overwrite vim with nvim
 alias r='ranger'
+
+if command -v bat &> /dev/null; then
+  alias cat='bat'
+fi 

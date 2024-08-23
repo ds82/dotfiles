@@ -6,6 +6,9 @@ return {
 		search = {
 			multi_window = false,
 		},
+		char = {
+			enable = false,
+		},
 		modes = {
 			search = {
 				enabled = false,

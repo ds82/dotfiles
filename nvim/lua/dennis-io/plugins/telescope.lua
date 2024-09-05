@@ -101,7 +101,7 @@ return {
 
 		keymap.set("n", "<leader>b", builtin.buffers)
 
-		keymap.set("n", "<leader><leader>G", builtin.git_status)
+		-- keymap.set("n", "<leader><leader>G", builtin.git_status)
 
 		vim.keymap.set(
 			"n",

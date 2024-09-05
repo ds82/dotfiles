@@ -25,7 +25,7 @@ return {
 				ripgrep_arguments = {
 					"rg",
 					"--hidden",
-					"--color=never",
+					-- "--color=never",
 					"--no-heading",
 					"--with-filename",
 					"--line-number",

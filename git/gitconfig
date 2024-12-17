@@ -34,6 +34,7 @@
   ci = commit                       # commit
   amend = commit --amend            # ammend your last commit
   ammend = commit --amend           # ammend your last commit
+	ane = commit --amend --no-edit
   wip = !git add -A . && git commit -m "WIP" --no-verify
 
   # checkout

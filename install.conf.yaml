@@ -40,6 +40,7 @@
       force: true
 
     ~/.config/atuin: atuin
+    ~/.config/zellij: zellij
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

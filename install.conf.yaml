@@ -44,3 +44,4 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm]
+    - [for bin in ./autoexec/*; do; $bin; done;]

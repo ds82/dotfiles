@@ -34,7 +34,9 @@
       if: "[ `uname` = Darwin ]"
       path: phoenix/utils.js
 
-    ~/.config/kitty: kitty
+    ~/.config/kitty:
+      path: kitty
+      force: true
 
     ~/.config/atuin: atuin
 

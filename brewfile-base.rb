@@ -1,0 +1,46 @@
+# use this file like this:
+# brew bundle --file=./brewfile-base.rb
+cask_args appdir: '/Applications'
+
+tap 'caskroom/cask'
+tap 'caskroom/fonts'
+
+brew 'zsh'
+brew 'bat'
+brew 'rg'
+brew 'ag'
+brew 'jq'
+brew 'xq'
+brew 'yq'
+brew 'fzf'
+brew 'tmux'
+brew 'wget'
+brew 'curl'
+brew 'nmap'
+brew 'tcpdump'
+brew 'entr'
+brew 'gawk'
+brew 'htop'
+brew 'ncdu'
+brew 'rsync'
+brew 'kitty'
+
+brew 'tig'
+brew 'git'
+brew 'git-extras'
+brew 'git-lfs'
+brew 'neovim'
+
+brew 'iproute2mac'
+brew 'fd'
+
+brew 'mas'
+
+cask 'spotify'
+cask 'vlc'
+cask 'nextcloud'
+cask 'appcleaner'
+cask 'keepingyouawake'
+cask 'discord'
+cask 'google-chrome'
+cask 'hazel'

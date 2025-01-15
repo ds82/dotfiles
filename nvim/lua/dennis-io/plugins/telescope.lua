@@ -76,6 +76,7 @@ return {
 		-- set keymaps
 		local keymap = vim.keymap -- for conciseness
 
+		keymap.set("n", "<leader>h", builtin.help_tags, {})
 		keymap.set("n", "<leader>R", builtin.resume, {})
 
 		keymap.set("v", "<leader>gf", function()
@@ -100,6 +101,7 @@ return {
 		end)
 
 		keymap.set("n", "<leader>b", builtin.buffers)
+		keymap.set("n", "<leader>m", builtin.marks)
 
 		-- keymap.set("n", "<leader><leader>G", builtin.git_status)
 

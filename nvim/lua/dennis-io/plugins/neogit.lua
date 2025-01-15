@@ -30,6 +30,7 @@ return {
 		-- 	neogit.open({ kind = "replace" })
 		-- end, { desc = "Open Neogit Status", silent = true }) -- mapping to restart lsp if necessary
 
+		-- save & add
 		keymap.set("n", "<leader><leader>w", function()
 			vim.cmd(":silent w!")
 
@@ -38,6 +39,7 @@ return {
 			local exec_result = vim.system({ "git", "add", file_uri }, { text = true, cwd = file_dir }):wait()
 		end, { desc = "Save & stage current file" })
 
+		-- status
 		keymap.set("n", "<leader><leader>g", function()
 			local file_dir = vim.fn.expand("%:h")
 			local exec_result = vim.system({ "git", "rev-parse", "--show-toplevel" }, { text = true, cwd = file_dir })
@@ -47,6 +49,7 @@ return {
 			neogit.open({ kind = "replace", cwd = root })
 		end, { desc = "Neogit status", silent = true })
 
+		-- log
 		keymap.set("n", "<leader><leader>l", function()
 			neogit.action("log", "log_current", {})()
 		end, { desc = "Open Git Log", silent = true }) -- mapping to restart lsp if necessary
@@ -61,5 +64,10 @@ return {
 
 			neogit.open({ kind = "replace", cwd = root })
 		end, { desc = "Neogit status", silent = true })
+
+		keymap.set("n", "<leader><leader>lg", function()
+			local file_uri = vim.fn.expand("%")
+			neogit.action("log", "log_current", { file = file_uri })()
+		end, { desc = "Open Git Log for current file", silent = true })
 	end,
 }

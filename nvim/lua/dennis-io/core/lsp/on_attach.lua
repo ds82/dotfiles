@@ -50,7 +50,7 @@ local on_attach = function(_client, bufnr)
 	end, opts)
 
 	opts.desc = ""
-	keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+	keymap.set({ "v", "n" }, "<leader>ca", vim.lsp.buf.code_action, opts)
 
 	opts.desc = ""
 	keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)

@@ -47,7 +47,8 @@ return {
 					-- Requires `nvim-web-devicons` if `true`
 					enabled = true,
 				},
-				separator = { left = "[", right = "]" },
+				-- separator = { left = "[", right = "]" },
+				preset = "default",
 			},
 		})
 	end,

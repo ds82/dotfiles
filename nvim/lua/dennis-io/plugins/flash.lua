@@ -7,7 +7,7 @@ return {
 			multi_window = false,
 		},
 		char = {
-			enable = false,
+			enable = true,
 		},
 		modes = {
 			search = {

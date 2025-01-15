@@ -23,6 +23,7 @@ return {
 				python = { "isort", "black" },
 				sh = { "shfmt" },
 				bash = { "shfmt" },
+				xml = { "xmlformat", "xmllint" },
 			},
 			format_on_save = {
 				lsp_fallback = true,

@@ -12,6 +12,11 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+-- append to end when in insert mode
+-- https://www.reddit.com/r/neovim/comments/1hvb3ib/i_hate_auto_closing_or_so_i_am_probably_missing/
+-- this currently does not work in TMUX
+vim.api.nvim_set_keymap("i", "<C-l>", "<Esc>A", { noremap = true, silent = true })
+
 -- greatest remap ever
 -- keeps register content on pasting in visual mode with leader-p
 vim.keymap.set("x", "<leader>p", [["_dP]])

@@ -13,8 +13,8 @@ alias fix-perms='sudo chown -R dsaenger $WEB/node_modules $WEB/modules/*/package
 alias commit-cache="git add yarn.lock cache/ && git commit -m 'chore(lock/cache): update lock & cache'"
 
 if command -v eza &> /dev/null; then
-  alias ll='eza -a -l'
-  alias ls='eza -l'
+  alias ll='eza -a -l --icons=always'
+  alias ls='eza -l --icons=always'
 fi
 
 # in linux fd is called fdfind; alias it

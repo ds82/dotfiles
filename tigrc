@@ -20,10 +20,14 @@ bind main c !git commit -c %(commit)
 bind main r ?git reset %(commit)
 bind main R ?git reset --hard %(commit)
 bind main 5 refresh
+bind main w +sh -c 'open-git-hash-web.sh %(commit) $(git remote get-url origin)'
+bind main D !>nvr -l -s --remote-wait +'DiffviewOpen %(commit)~1..%(commit)'
+ bind main V !>nvr -l -s --remote-wait +'DiffviewOpen %(commit)..%(head)'
 
 bind status P !git stash push -- %(file)
 bind status a !git commit --amend
 bind status A ?git commit --amend --no-edit
+bind status G @sh -c "echo %(file) | pbcopy"
 
 bind status v !>sh -c "cd %(repo:git-dir)/../%(file) ; tig"
 bind status V !>sh -c "cd %(repo:git-dir)/../%(file) ; git pa"

@@ -1,4 +1,11 @@
-export CBIN=$(command -v docker || command -v podman)
+if command -v docker &>/dev/null; then
+  export CBIN=docker
+elif command -v podman &>/dev/null; then
+  export CBIN=podman
+  alias docker=podman
+fi
+
+
 
 function dkill() {
   CONTAINER=$1

@@ -6,7 +6,7 @@ export FZF_DEFAULT_OPTS="--history=$HOME/.fzf_history"
 
 
 function fzf-homebrew-update() {
-  brew install $(brew outdated | fzf --multi)
+  brew update && brew install $(brew outdated | fzf --multi --reverse)
 }
 
 function fzf-glab-mr-list {
@@ -26,3 +26,4 @@ function fzf-glab-mr-co() {
     | awk '{print $1}' \
     | sed -E 's/!([0-9]+)/\1/')
 }
+

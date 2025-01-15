@@ -34,3 +34,6 @@ alias r='ranger'
 if command -v bat &> /dev/null; then
   alias cat='bat'
 fi 
+
+
+alias ypwd='pwd | pbcopy'

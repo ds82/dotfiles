@@ -1,0 +1,1441 @@
+
+
+
+n  ,pm         *@<Lua 3533: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:5>
+                 Swap previous @function.outer
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,p:         *@<Lua 3382: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:5>
+                 Swap previous @property.outer
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,pa         *@<Lua 3405: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:5>
+                 Swap previous @parameter.inner
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,nm         *@<Lua 2394: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:5>
+                 Swap next @function.outer
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,na         *@<Lua 3960: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:5>
+                 Swap next @parameter.inner
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,n:         *@<Lua 3268: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:5>
+                 Swap next @property.outer
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,H          *@<Lua 3589: /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/lua/vim/lsp/buf.lua:115>
+                 
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,rn         *@<Lua 3450: /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/lua/vim/lsp/buf.lua:298>
+                 
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,ca         *@<Lua 3614: /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/lua/vim/lsp/buf.lua:830>
+                 
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,d          *@<Lua 2624: /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/lua/vim/diagnostic.lua:1694>
+                 
+	Last set from Lua (run Nvim with -V1 for more details)
+n  K           *@<Lua 2902: /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/lua/vim/lsp/buf.lua:33>
+                 
+	Last set from Lua (run Nvim with -V1 for more details)
+o  [F          *@<Lua 3875: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev function call end
+	Last set from Lua (run Nvim with -V1 for more details)
+x  [F          *@<Lua 3919: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev function call end
+	Last set from Lua (run Nvim with -V1 for more details)
+n  [F          *@<Lua 3868: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev function call end
+	Last set from Lua (run Nvim with -V1 for more details)
+o  [I          *@<Lua 3863: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev conditional end
+	Last set from Lua (run Nvim with -V1 for more details)
+x  [I          *@<Lua 3862: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev conditional end
+	Last set from Lua (run Nvim with -V1 for more details)
+n  [I          *@<Lua 3861: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev conditional end
+	Last set from Lua (run Nvim with -V1 for more details)
+o  [M          *@<Lua 3860: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev method/function def end
+	Last set from Lua (run Nvim with -V1 for more details)
+x  [M          *@<Lua 3859: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev method/function def end
+	Last set from Lua (run Nvim with -V1 for more details)
+n  [M          *@<Lua 3858: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev method/function def end
+	Last set from Lua (run Nvim with -V1 for more details)
+o  [L          *@<Lua 3857: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev loop end
+	Last set from Lua (run Nvim with -V1 for more details)
+x  [L          *@<Lua 3856: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev loop end
+	Last set from Lua (run Nvim with -V1 for more details)
+n  [L          *@<Lua 3939: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev loop end
+	Last set from Lua (run Nvim with -V1 for more details)
+o  [C          *@<Lua 3940: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev class end
+	Last set from Lua (run Nvim with -V1 for more details)
+x  [C          *@<Lua 3941: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev class end
+	Last set from Lua (run Nvim with -V1 for more details)
+n  [C          *@<Lua 3942: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev class end
+	Last set from Lua (run Nvim with -V1 for more details)
+o  [l          *@<Lua 3943: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev loop start
+	Last set from Lua (run Nvim with -V1 for more details)
+x  [l          *@<Lua 3944: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev loop start
+	Last set from Lua (run Nvim with -V1 for more details)
+n  [l          *@<Lua 3945: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev loop start
+	Last set from Lua (run Nvim with -V1 for more details)
+o  [c          *@<Lua 3946: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev class start
+	Last set from Lua (run Nvim with -V1 for more details)
+x  [c          *@<Lua 3947: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev class start
+	Last set from Lua (run Nvim with -V1 for more details)
+n  [c          *@<Lua 3957: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev class start
+	Last set from Lua (run Nvim with -V1 for more details)
+o  [i          *@<Lua 3746: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev conditional start
+	Last set from Lua (run Nvim with -V1 for more details)
+x  [i          *@<Lua 3949: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev conditional start
+	Last set from Lua (run Nvim with -V1 for more details)
+n  [i          *@<Lua 3948: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev conditional start
+	Last set from Lua (run Nvim with -V1 for more details)
+o  [f          *@<Lua 3968: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev function call start
+	Last set from Lua (run Nvim with -V1 for more details)
+x  [f          *@<Lua 3969: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev function call start
+	Last set from Lua (run Nvim with -V1 for more details)
+n  [f          *@<Lua 3961: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev function call start
+	Last set from Lua (run Nvim with -V1 for more details)
+o  [m          *@<Lua 3958: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev method/function def start
+	Last set from Lua (run Nvim with -V1 for more details)
+x  [m          *@<Lua 3959: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev method/function def start
+	Last set from Lua (run Nvim with -V1 for more details)
+n  [m          *@<Lua 3966: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Prev method/function def start
+	Last set from Lua (run Nvim with -V1 for more details)
+n  [e          *@<Lua 3659: ~/.config/nvim/lua/dennis-io/core/lsp/on_attach.lua:43>
+                 
+	Last set from Lua (run Nvim with -V1 for more details)
+n  [d          *@<Lua 2404: /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/lua/vim/diagnostic.lua:1222>
+                 
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ]I          *@<Lua 3965: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next conditional end
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ]I          *@<Lua 3964: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next conditional end
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ]I          *@<Lua 3920: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next conditional end
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ]F          *@<Lua 3927: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next function call end
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ]F          *@<Lua 3723: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next function call end
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ]F          *@<Lua 3732: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next function call end
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ]L          *@<Lua 3906: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next loop end
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ]L          *@<Lua 3730: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next loop end
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ]L          *@<Lua 3706: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next loop end
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ]M          *@<Lua 3952: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next method/function def end
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ]M          *@<Lua 3936: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next method/function def end
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ]M          *@<Lua 3926: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next method/function def end
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ]C          *@<Lua 3895: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next class end
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ]C          *@<Lua 3899: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next class end
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ]C          *@<Lua 3921: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next class end
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ]m          *@<Lua 3937: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next method/function def start
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ]m          *@<Lua 3719: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next method/function def start
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ]m          *@<Lua 3716: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next method/function def start
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ]l          *@<Lua 3722: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next loop start
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ]l          *@<Lua 3724: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next loop start
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ]l          *@<Lua 3711: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next loop start
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ]s          *@<Lua 3714: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next scope
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ]s          *@<Lua 3690: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next scope
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ]s          *@<Lua 3700: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next scope
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ]c          *@<Lua 3465: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next class start
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ]c          *@<Lua 3123: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next class start
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ]c          *@<Lua 1723: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next class start
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ]i          *@<Lua 2910: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next conditional start
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ]i          *@<Lua 3499: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next conditional start
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ]i          *@<Lua 3311: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next conditional start
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ]f          *@<Lua 3498: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next function call start
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ]f          *@<Lua 2684: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next function call start
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ]f          *@<Lua 3570: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next function call start
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ]z          *@<Lua 3524: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next fold
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ]z          *@<Lua 3596: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next fold
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ]z          *@<Lua 3577: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/attach.lua:44>
+                 Next fold
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ]e          *@<Lua 3424: ~/.config/nvim/lua/dennis-io/core/lsp/on_attach.lua:48>
+                 
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ]d          *@<Lua 3043: /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/lua/vim/diagnostic.lua:1145>
+                 
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ai          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@conditional.outer','textobjects','x')<CR>
+                 Select outer part of a conditional
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ai          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@conditional.outer','textobjects','o')<CR>
+                 Select outer part of a conditional
+	Last set from Lua (run Nvim with -V1 for more details)
+x  a=          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@assignment.outer','textobjects','x')<CR>
+                 Select outer part of an assignment
+	Last set from Lua (run Nvim with -V1 for more details)
+o  a=          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@assignment.outer','textobjects','o')<CR>
+                 Select outer part of an assignment
+	Last set from Lua (run Nvim with -V1 for more details)
+x  al          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@loop.outer','textobjects','x')<CR>
+                 Select outer part of a loop
+	Last set from Lua (run Nvim with -V1 for more details)
+o  al          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@loop.outer','textobjects','o')<CR>
+                 Select outer part of a loop
+	Last set from Lua (run Nvim with -V1 for more details)
+x  af          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@call.outer','textobjects','x')<CR>
+                 Select outer part of a function call
+	Last set from Lua (run Nvim with -V1 for more details)
+o  af          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@call.outer','textobjects','o')<CR>
+                 Select outer part of a function call
+	Last set from Lua (run Nvim with -V1 for more details)
+x  am          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@function.outer','textobjects','x')<CR>
+                 Select outer part of a method/function definition
+	Last set from Lua (run Nvim with -V1 for more details)
+o  am          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@function.outer','textobjects','o')<CR>
+                 Select outer part of a method/function definition
+	Last set from Lua (run Nvim with -V1 for more details)
+x  aa          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@parameter.outer','textobjects','x')<CR>
+                 Select outer part of a parameter/argument
+	Last set from Lua (run Nvim with -V1 for more details)
+o  aa          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@parameter.outer','textobjects','o')<CR>
+                 Select outer part of a parameter/argument
+	Last set from Lua (run Nvim with -V1 for more details)
+n  gW          *@<Lua 3339: ~/.local/share/nvim/lazy/telescope.nvim/lua/telescope/builtin/init.lua:502>
+                 
+	Last set from Lua (run Nvim with -V1 for more details)
+n  gB          *@<Lua 3542: ~/.local/share/nvim/lazy/telescope.nvim/lua/telescope/builtin/init.lua:502>
+                 
+	Last set from Lua (run Nvim with -V1 for more details)
+n  gt          *@<Lua 3369: /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/lua/vim/lsp/buf.lua:100>
+                 
+	Last set from Lua (run Nvim with -V1 for more details)
+n  gr          *@<Lua 3527: ~/.local/share/nvim/lazy/telescope.nvim/lua/telescope/builtin/init.lua:502>
+                 
+	Last set from Lua (run Nvim with -V1 for more details)
+n  gD          *@<Lua 3476: /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/lua/vim/lsp/buf.lua:108>
+                 
+	Last set from Lua (run Nvim with -V1 for more details)
+n  gd          *@<Lua 3528: /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/lua/vim/lsp/buf.lua:93>
+                 goto definition
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ia          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@parameter.inner','textobjects','x')<CR>
+                 Select inner part of a parameter/argument
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ia          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@parameter.inner','textobjects','o')<CR>
+                 Select inner part of a parameter/argument
+	Last set from Lua (run Nvim with -V1 for more details)
+x  if          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@call.inner','textobjects','x')<CR>
+                 Select inner part of a function call
+	Last set from Lua (run Nvim with -V1 for more details)
+o  if          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@call.inner','textobjects','o')<CR>
+                 Select inner part of a function call
+	Last set from Lua (run Nvim with -V1 for more details)
+x  il          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@loop.inner','textobjects','x')<CR>
+                 Select inner part of a loop
+	Last set from Lua (run Nvim with -V1 for more details)
+o  il          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@loop.inner','textobjects','o')<CR>
+                 Select inner part of a loop
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ii          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@conditional.inner','textobjects','x')<CR>
+                 Select inner part of a conditional
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ii          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@conditional.inner','textobjects','o')<CR>
+                 Select inner part of a conditional
+	Last set from Lua (run Nvim with -V1 for more details)
+x  i=          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@assignment.inner','textobjects','x')<CR>
+                 Select inner part of an assignment
+	Last set from Lua (run Nvim with -V1 for more details)
+o  i=          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@assignment.inner','textobjects','o')<CR>
+                 Select inner part of an assignment
+	Last set from Lua (run Nvim with -V1 for more details)
+x  im          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@function.inner','textobjects','x')<CR>
+                 Select inner part of a method/function definition
+	Last set from Lua (run Nvim with -V1 for more details)
+o  im          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@function.inner','textobjects','o')<CR>
+                 Select inner part of a method/function definition
+	Last set from Lua (run Nvim with -V1 for more details)
+x  l=          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@assignment.lhs','textobjects','x')<CR>
+                 Select left hand side of an assignment
+	Last set from Lua (run Nvim with -V1 for more details)
+o  l=          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@assignment.lhs','textobjects','o')<CR>
+                 Select left hand side of an assignment
+	Last set from Lua (run Nvim with -V1 for more details)
+x  r=          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@assignment.rhs','textobjects','x')<CR>
+                 Select right hand side of an assignment
+	Last set from Lua (run Nvim with -V1 for more details)
+o  r=          *@<Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@assignment.rhs','textobjects','o')<CR>
+                 Select right hand side of an assignment
+	Last set from Lua (run Nvim with -V1 for more details)
+x  <C-Space>   *@<Lua 3877: ~/.local/share/nvim/lazy/nvim-treesitter/lua/nvim-treesitter/incremental_selection.lua:58>
+                 Increment selection to named node
+	Last set from Lua (run Nvim with -V1 for more details)
+x  <BS>        *@<Lua 3874: ~/.local/share/nvim/lazy/nvim-treesitter/lua/nvim-treesitter/incremental_selection.lua:118>
+                 Shrink selection to previous named node
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <C-Space>   *@<Lua 3911: ~/.local/share/nvim/lazy/nvim-treesitter/lua/nvim-treesitter/incremental_selection.lua:15>
+                 Start selecting nodes with nvim-treesitter
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Tab>       * <Cmd>bnext<CR>
+                 Next Buffer
+	Last set from Lua (run Nvim with -V1 for more details)
+x  #           * <Lua 7: vim/_defaults.lua:0>
+                 :help v_#-default
+	Last set from Lua (run Nvim with -V1 for more details)
+o  %             <Plug>(MatchitOperationForward)
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 74
+x  %             <Plug>(MatchitVisualForward)
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 72
+n  %             <Plug>(MatchitNormalForward)
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 70
+n  &           * :&&<CR>
+                 :help &-default
+	Last set from Lua (run Nvim with -V1 for more details)
+x  *           * <Lua 3: vim/_defaults.lua:0>
+                 :help v_star-default
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,l          * <Lua 942: ~/.config/nvim/lua/dennis-io/plugins/linting.lua:26>
+                 Trigger linting for current file
+	Last set from Lua (run Nvim with -V1 for more details)
+v  ,f          * <Lua 773: ~/.config/nvim/lua/dennis-io/plugins/conform-format.lua:34>
+                 Format file or range (in visual mode)
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,f          * <Lua 966: ~/.config/nvim/lua/dennis-io/plugins/conform-format.lua:34>
+                 Format file or range (in visual mode)
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ,           * <Lua 483: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:127>
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ,           * <Lua 77: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:127>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,           * <Lua 448: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:127>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,q          * <Cmd>Noice dismiss<CR>
+                 Close all noice popups
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,,dd        * <Lua 346: ~/.config/nvim/lua/dennis-io/plugins/nvim-dap.lua:58>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,,ds        * <Lua 345: ~/.config/nvim/lua/dennis-io/plugins/nvim-dap.lua:53>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,,df        * <Lua 337: ~/.config/nvim/lua/dennis-io/plugins/nvim-dap.lua:48>
+	Last set from Lua (run Nvim with -V1 for more details)
+v  ,,dp        * <Lua 336: ~/.config/nvim/lua/dennis-io/plugins/nvim-dap.lua:45>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,,dp        * <Lua 334: ~/.config/nvim/lua/dennis-io/plugins/nvim-dap.lua:45>
+	Last set from Lua (run Nvim with -V1 for more details)
+v  ,,dh        * <Lua 333: ~/.config/nvim/lua/dennis-io/plugins/nvim-dap.lua:42>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,,dh        * <Lua 330: ~/.config/nvim/lua/dennis-io/plugins/nvim-dap.lua:42>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,,dl        * <Lua 329: ~/.config/nvim/lua/dennis-io/plugins/nvim-dap.lua:39>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,,dr        * <Lua 325: ~/.config/nvim/lua/dennis-io/plugins/nvim-dap.lua:36>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,lp         * <Lua 264: ~/.config/nvim/lua/dennis-io/plugins/nvim-dap.lua:33>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,B          * <Lua 166: ~/.config/nvim/lua/dennis-io/plugins/nvim-dap.lua:30>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,,m         * <Lua 382: ~/.config/nvim/lua/dennis-io/plugins/neogit.lua:54>
+                 Neogit status
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,,l         * <Lua 381: ~/.config/nvim/lua/dennis-io/plugins/neogit.lua:50>
+                 Open Git Log
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,,g         * <Lua 380: ~/.config/nvim/lua/dennis-io/plugins/neogit.lua:41>
+                 Neogit status
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,,w         * <Lua 371: ~/.config/nvim/lua/dennis-io/plugins/neogit.lua:33>
+                 Save & stage current file
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,,F         * <Lua 59: ~/.config/nvim/lua/dennis-io/plugins/diffview.lua:10>
+                 Toggle DiffviewToggleFiles
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,,f         * <Cmd>Oil<CR>
+                 Open parent directory
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,T          * <Lua 174: ~/.config/nvim/lua/dennis-io/plugins/trouble.lua:7>
+	Last set from Lua (run Nvim with -V1 for more details)
+v  ,rg         * <Lua 161: ~/.config/nvim/lua/dennis-io/plugins/telescope.lua:112>
+                 Search visual selection in project
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,rg         * :Telescope grep_string search=<C-R><C-W><CR>
+                 Search word under cursor in project
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,,G         * <Lua 160: ~/.local/share/nvim/lazy/telescope.nvim/lua/telescope/builtin/init.lua:502>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,b          * <Lua 159: ~/.local/share/nvim/lazy/telescope.nvim/lua/telescope/builtin/init.lua:502>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,ps         * <Lua 158: ~/.config/nvim/lua/dennis-io/plugins/telescope.lua:98>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,J          * <Lua 156: ~/.local/share/nvim/lazy/telescope.nvim/lua/telescope/builtin/init.lua:502>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,D          * <Lua 155: ~/.config/nvim/lua/dennis-io/plugins/telescope.lua:92>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,o          * <Lua 154: ~/.local/share/nvim/lazy/telescope.nvim/lua/telescope/builtin/init.lua:502>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,e          * <Lua 153: ~/.local/share/nvim/lazy/telescope-emoji.nvim/lua/telescope/_extensions/emoji.lua:16>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,t          * <Lua 152: ~/.local/share/nvim/lazy/telescope.nvim/lua/telescope/builtin/init.lua:502>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,gf         * :Telescope find_files default_text=<C-R><C-W><CR>
+	Last set from Lua (run Nvim with -V1 for more details)
+v  ,gf         * <Lua 151: ~/.config/nvim/lua/dennis-io/plugins/telescope.lua:81>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,R          * <Lua 150: ~/.local/share/nvim/lazy/telescope.nvim/lua/telescope/builtin/init.lua:502>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,F          * <Cmd>NvimTreeToggle<CR>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,G          * <Lua 109: ~/.config/nvim/lua/dennis-io/plugins/clipboard.lua:38>
+                 Copy current file path to clipboard
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,z          * <Lua 100: ~/.config/nvim/lua/dennis-io/plugins/zen-mode.lua:14>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,,1         * <Cmd>Lazy update<CR>
+                 Update Plugins using Lazy
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,rr         * <Plug>RestNvim
+                 Run REST Request under Cursor
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,w          * <Cmd>:w<CR>
+	Last set from Lua (run Nvim with -V1 for more details)
+v  ,O          * <Lua 31: ~/.config/nvim/lua/dennis-io/core/keymaps.lua:59>
+                 Open visual selection with default application
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,O          * !open <C-R><C-W><CR>
+                 Open word under cursor with default application
+	Last set from Lua (run Nvim with -V1 for more details)
+v  ,s          * <Lua 29: ~/.config/nvim/lua/dennis-io/core/keymaps.lua:25>
+                 Open visual selection with default application
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,s          * :%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,k          * <Cmd>lnext<CR>zz
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ,j          * <Cmd>lprev<CR>zz
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ,p          * "_dP
+	Last set from Lua (run Nvim with -V1 for more details)
+o  -           * <Lua 70: ~/.config/nvim/lua/dennis-io/plugins/flash.lua:17>
+                 Flash
+	Last set from Lua (run Nvim with -V1 for more details)
+x  -           * <Lua 69: ~/.config/nvim/lua/dennis-io/plugins/flash.lua:17>
+                 Flash
+	Last set from Lua (run Nvim with -V1 for more details)
+n  -           * <Lua 61: ~/.config/nvim/lua/dennis-io/plugins/flash.lua:17>
+                 Flash
+	Last set from Lua (run Nvim with -V1 for more details)
+o  ;           * <Lua 444: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:90>
+	Last set from Lua (run Nvim with -V1 for more details)
+x  ;           * <Lua 439: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:90>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ;           * <Lua 415: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:90>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <p            <Plug>(unimpaired-put-below-leftward)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 440
+n  <P            <Plug>(unimpaired-put-above-leftward)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 439
+n  <s<Esc>     & <Nop>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 371
+n  <s            <Plug>(unimpaired-enable)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 368
+n  =p            <Plug>(unimpaired-put-below-reformat)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 442
+n  =P            <Plug>(unimpaired-put-above-reformat)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 441
+n  =s<Esc>     & <Nop>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 370
+n  =s            <Plug>(unimpaired-toggle)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 367
+x  =           * <Lua 71: ~/.config/nvim/lua/dennis-io/plugins/flash.lua:18>
+                 Flash
+	Last set from Lua (run Nvim with -V1 for more details)
+o  =           * <Lua 68: ~/.config/nvim/lua/dennis-io/plugins/flash.lua:18>
+                 Flash
+	Last set from Lua (run Nvim with -V1 for more details)
+n  =           * <Lua 66: ~/.config/nvim/lua/dennis-io/plugins/flash.lua:18>
+                 Flash
+	Last set from Lua (run Nvim with -V1 for more details)
+n  >p            <Plug>(unimpaired-put-below-rightward)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 438
+n  >P            <Plug>(unimpaired-put-above-rightward)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 437
+n  >s<Esc>     & <Nop>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 372
+n  >s            <Plug>(unimpaired-disable)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 369
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+	Last set from Lua (run Nvim with -V1 for more details)
+o  F           * <Lua 410: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:278>
+	Last set from Lua (run Nvim with -V1 for more details)
+x  F           * <Lua 332: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:278>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  F           * <Lua 33: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:278>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  J           * mzJ`z
+	Last set from Lua (run Nvim with -V1 for more details)
+v  J           * :m '>+1<CR>gv=gv
+	Last set from Lua (run Nvim with -V1 for more details)
+v  K           * :m '<-2<CR>gv=gv
+	Last set from Lua (run Nvim with -V1 for more details)
+n  N           * Nzzzv
+	Last set from Lua (run Nvim with -V1 for more details)
+n  Q           * <Lua 30: ~/.config/nvim/lua/dennis-io/core/keymaps.lua:40>
+	Last set from Lua (run Nvim with -V1 for more details)
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+	Last set from Lua (run Nvim with -V1 for more details)
+x  S           * <Plug>(nvim-surround-visual)
+                 Add a surrounding pair around a visual selection
+	Last set from Lua (run Nvim with -V1 for more details)
+o  T           * <Lua 437: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:302>
+	Last set from Lua (run Nvim with -V1 for more details)
+x  T           * <Lua 436: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:302>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  T           * <Lua 417: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:302>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  Y           * y$
+                 :help Y-default
+	Last set from Lua (run Nvim with -V1 for more details)
+n  [xx           <Plug>(unimpaired-xml-encode-line)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 610
+x  [x            <Plug>(unimpaired-xml-encode)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 609
+n  [x            <Plug>(unimpaired-xml-encode)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 608
+n  [uu           <Plug>(unimpaired-url-encode-line)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 610
+x  [u            <Plug>(unimpaired-url-encode)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 609
+n  [u            <Plug>(unimpaired-url-encode)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 608
+n  [CC           <Plug>(unimpaired-string-encode-line)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 610
+x  [C            <Plug>(unimpaired-string-encode)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 609
+n  [C            <Plug>(unimpaired-string-encode)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 608
+n  [yy           <Plug>(unimpaired-string-encode-line)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 610
+x  [y            <Plug>(unimpaired-string-encode)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 609
+n  [y            <Plug>(unimpaired-string-encode)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 608
+n  [P            <Plug>(unimpaired-put-above)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 434
+n  [p            <Plug>(unimpaired-put-above)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 432
+n  [o<Esc>     & <Nop>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 365
+n  [o            <Plug>(unimpaired-enable)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 362
+x  [e            <Plug>(unimpaired-move-selection-up)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 295
+n  [e            <Plug>(unimpaired-move-up)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 293
+n  [<Space>      <Plug>(unimpaired-blank-up)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 253
+o  [n            <Plug>(unimpaired-context-previous)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 185
+x  [n            <Plug>(unimpaired-context-previous)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 183
+n  [n            <Plug>(unimpaired-context-previous)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 181
+n  [f            <Plug>(unimpaired-directory-previous)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 170
+n  [<C-T>        <Plug>(unimpaired-ptprevious)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 67
+n  [T            <Plug>(unimpaired-tfirst)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 53
+n  [t            <Plug>(unimpaired-tprevious)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 51
+n  [<C-Q>        <Plug>(unimpaired-cpfile)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 60
+n  [Q            <Plug>(unimpaired-cfirst)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 53
+n  [q            <Plug>(unimpaired-cprevious)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 51
+n  [<C-L>        <Plug>(unimpaired-lpfile)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 60
+n  [L            <Plug>(unimpaired-lfirst)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 53
+n  [l            <Plug>(unimpaired-lprevious)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 51
+n  [B            <Plug>(unimpaired-bfirst)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 53
+n  [b            <Plug>(unimpaired-bprevious)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 51
+n  [A            <Plug>(unimpaired-first)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 53
+n  [a            <Plug>(unimpaired-previous)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 51
+o  [%            <Plug>(MatchitOperationMultiBackward)
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 82
+x  [%            <Plug>(MatchitVisualMultiBackward)
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 80
+n  [%            <Plug>(MatchitNormalMultiBackward)
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 78
+n  [d          * <Lua 15: vim/_defaults.lua:0>
+                 Jump to the previous diagnostic
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ]xx           <Plug>(unimpaired-xml-decode-line)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 610
+x  ]x            <Plug>(unimpaired-xml-decode)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 609
+n  ]x            <Plug>(unimpaired-xml-decode)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 608
+n  ]uu           <Plug>(unimpaired-url-decode-line)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 610
+x  ]u            <Plug>(unimpaired-url-decode)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 609
+n  ]u            <Plug>(unimpaired-url-decode)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 608
+n  ]CC           <Plug>(unimpaired-string-decode-line)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 610
+x  ]C            <Plug>(unimpaired-string-decode)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 609
+n  ]C            <Plug>(unimpaired-string-decode)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 608
+n  ]yy           <Plug>(unimpaired-string-decode-line)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 610
+x  ]y            <Plug>(unimpaired-string-decode)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 609
+n  ]y            <Plug>(unimpaired-string-decode)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 608
+n  ]P            <Plug>(unimpaired-put-below)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 435
+n  ]p            <Plug>(unimpaired-put-below)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 433
+n  ]o<Esc>     & <Nop>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 366
+n  ]o            <Plug>(unimpaired-disable)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 363
+x  ]e            <Plug>(unimpaired-move-selection-down)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 296
+n  ]e            <Plug>(unimpaired-move-down)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 294
+n  ]<Space>      <Plug>(unimpaired-blank-down)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 254
+o  ]n            <Plug>(unimpaired-context-next)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 186
+x  ]n            <Plug>(unimpaired-context-next)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 184
+n  ]n            <Plug>(unimpaired-context-next)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 182
+n  ]f            <Plug>(unimpaired-directory-next)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 169
+n  ]<C-T>        <Plug>(unimpaired-ptnext)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 68
+n  ]T            <Plug>(unimpaired-tlast)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 54
+n  ]t            <Plug>(unimpaired-tnext)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 52
+n  ]<C-Q>        <Plug>(unimpaired-cnfile)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 61
+n  ]Q            <Plug>(unimpaired-clast)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 54
+n  ]q            <Plug>(unimpaired-cnext)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 52
+n  ]<C-L>        <Plug>(unimpaired-lnfile)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 61
+n  ]L            <Plug>(unimpaired-llast)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 54
+n  ]l            <Plug>(unimpaired-lnext)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 52
+n  ]B            <Plug>(unimpaired-blast)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 54
+n  ]b            <Plug>(unimpaired-bnext)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 52
+n  ]A            <Plug>(unimpaired-last)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 54
+n  ]a            <Plug>(unimpaired-next)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 52
+o  ]%            <Plug>(MatchitOperationMultiForward)
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 83
+x  ]%            <Plug>(MatchitVisualMultiForward)
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 81
+n  ]%            <Plug>(MatchitNormalMultiForward)
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 79
+n  ]d          * <Lua 14: vim/_defaults.lua:0>
+                 Jump to the next diagnostic
+	Last set from Lua (run Nvim with -V1 for more details)
+x  _           * <Lua 73: ~/.config/nvim/lua/dennis-io/plugins/flash.lua:19>
+                 Flash Treesitter
+	Last set from Lua (run Nvim with -V1 for more details)
+n  _           * <Lua 72: ~/.config/nvim/lua/dennis-io/plugins/flash.lua:19>
+                 Flash Treesitter
+	Last set from Lua (run Nvim with -V1 for more details)
+o  _           * <Lua 67: ~/.config/nvim/lua/dennis-io/plugins/flash.lua:19>
+                 Flash Treesitter
+	Last set from Lua (run Nvim with -V1 for more details)
+x  a%            <Plug>(MatchitVisualTextObject)
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 86
+n  cS          * <Plug>(nvim-surround-change-line)
+                 Change a surrounding pair, putting replacements on new lines
+	Last set from Lua (run Nvim with -V1 for more details)
+n  cs          * <Plug>(nvim-surround-change)
+                 Change a surrounding pair
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ds          * <Plug>(nvim-surround-delete)
+                 Delete a surrounding pair
+	Last set from Lua (run Nvim with -V1 for more details)
+o  f           * <Lua 54: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:266>
+	Last set from Lua (run Nvim with -V1 for more details)
+x  f           * <Lua 113: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:266>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  f           * <Lua 478: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:266>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  gcA         * <Lua 590: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:218>
+                 Comment insert end of line
+	Last set from Lua (run Nvim with -V1 for more details)
+n  gcO         * <Lua 588: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:179>
+                 Comment insert above
+	Last set from Lua (run Nvim with -V1 for more details)
+n  gco         * <Lua 11: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:182>
+                 Comment insert below
+	Last set from Lua (run Nvim with -V1 for more details)
+x  gb          * <Plug>(comment_toggle_blockwise_visual)
+                 Comment toggle blockwise (visual)
+	Last set from Lua (run Nvim with -V1 for more details)
+n  gbc         * <Lua 12: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/init.lua:107>
+                 Comment toggle current block
+	Last set from Lua (run Nvim with -V1 for more details)
+n  gb          * <Plug>(comment_toggle_blockwise)
+                 Comment toggle blockwise
+	Last set from Lua (run Nvim with -V1 for more details)
+x  gS          * <Plug>(nvim-surround-visual-line)
+                 Add a surrounding pair around a visual selection, on new lines
+	Last set from Lua (run Nvim with -V1 for more details)
+o  g%            <Plug>(MatchitOperationBackward)
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 75
+x  g%            <Plug>(MatchitVisualBackward)
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 73
+n  g%            <Plug>(MatchitNormalBackward)
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 71
+o  gc          * <Lua 13: vim/_defaults.lua:0>
+                 Comment textobject
+	Last set from Lua (run Nvim with -V1 for more details)
+n  gcc         * <Lua 10: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/init.lua:103>
+                 Comment toggle current line
+	Last set from Lua (run Nvim with -V1 for more details)
+x  gc          * <Plug>(comment_toggle_linewise_visual)
+                 Comment toggle linewise (visual)
+	Last set from Lua (run Nvim with -V1 for more details)
+n  gc          * <Plug>(comment_toggle_linewise)
+                 Comment toggle linewise
+	Last set from Lua (run Nvim with -V1 for more details)
+x  gx          * <Lua 9: vim/_defaults.lua:0>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+	Last set from Lua (run Nvim with -V1 for more details)
+n  gx          * <Lua 8: vim/_defaults.lua:0>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+	Last set from Lua (run Nvim with -V1 for more details)
+n  n           * nzzzv
+	Last set from Lua (run Nvim with -V1 for more details)
+n  shn         * <Lua 434: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:1252>
+                 Highlight next surrounding
+	Last set from Lua (run Nvim with -V1 for more details)
+n  sFn         * <Lua 433: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:1252>
+                 Find next left surrounding
+	Last set from Lua (run Nvim with -V1 for more details)
+n  sfn         * <Lua 432: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:1252>
+                 Find next right surrounding
+	Last set from Lua (run Nvim with -V1 for more details)
+n  srn         * <Lua 431: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:1252>
+                 Replace next surrounding
+	Last set from Lua (run Nvim with -V1 for more details)
+n  sdn         * <Lua 430: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:1252>
+                 Delete next surrounding
+	Last set from Lua (run Nvim with -V1 for more details)
+n  shl         * <Lua 429: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:1252>
+                 Highlight previous surrounding
+	Last set from Lua (run Nvim with -V1 for more details)
+n  sFl         * <Lua 428: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:1252>
+                 Find previous left surrounding
+	Last set from Lua (run Nvim with -V1 for more details)
+n  sfl         * <Lua 427: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:1252>
+                 Find previous right surrounding
+	Last set from Lua (run Nvim with -V1 for more details)
+n  srl         * <Lua 426: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:1252>
+                 Replace previous surrounding
+	Last set from Lua (run Nvim with -V1 for more details)
+n  sdl         * <Lua 425: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:1252>
+                 Delete previous surrounding
+	Last set from Lua (run Nvim with -V1 for more details)
+x  sa          * :<C-U>lua MiniSurround.add('visual')<CR>
+                 Add surrounding to selection
+	Last set from Lua (run Nvim with -V1 for more details)
+n  sn          * <Lua 424: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:892>
+                 Update `MiniSurround.config.n_lines`
+	Last set from Lua (run Nvim with -V1 for more details)
+n  sh          * <Lua 423: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:1252>
+                 Highlight surrounding
+	Last set from Lua (run Nvim with -V1 for more details)
+n  sF          * <Lua 422: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:1252>
+                 Find left surrounding
+	Last set from Lua (run Nvim with -V1 for more details)
+n  sf          * <Lua 421: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:1252>
+                 Find right surrounding
+	Last set from Lua (run Nvim with -V1 for more details)
+n  sr          * <Lua 420: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:1252>
+                 Replace surrounding
+	Last set from Lua (run Nvim with -V1 for more details)
+n  sd          * <Lua 419: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:1252>
+                 Delete surrounding
+	Last set from Lua (run Nvim with -V1 for more details)
+n  sa          * <Lua 418: ~/.local/share/nvim/lazy/mini.surround/lua/mini/surround.lua:1252>
+                 Add surrounding
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ss          * <C-W>s
+	Last set from Lua (run Nvim with -V1 for more details)
+o  t           * <Lua 416: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:290>
+	Last set from Lua (run Nvim with -V1 for more details)
+x  t           * <Lua 414: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:290>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  t           * <Lua 413: ~/.local/share/nvim/lazy/nvim-treesitter-textobjects/lua/nvim-treesitter/textobjects/repeatable_move.lua:290>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  vv          * <C-W>v
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ySS         * <Plug>(nvim-surround-normal-cur-line)
+                 Add a surrounding pair around the current line, on new lines (normal mode)
+	Last set from Lua (run Nvim with -V1 for more details)
+n  yS          * <Plug>(nvim-surround-normal-line)
+                 Add a surrounding pair around a motion, on new lines (normal mode)
+	Last set from Lua (run Nvim with -V1 for more details)
+n  yss         * <Plug>(nvim-surround-normal-cur)
+                 Add a surrounding pair around the current line (normal mode)
+	Last set from Lua (run Nvim with -V1 for more details)
+n  ys          * <Plug>(nvim-surround-normal)
+                 Add a surrounding pair around a motion (normal mode)
+	Last set from Lua (run Nvim with -V1 for more details)
+n  yo<Esc>     & <Nop>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 364
+n  yo            <Plug>(unimpaired-toggle)
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 361
+n  |           * <Cmd>NvimTreeFindFile<CR>
+	Last set from Lua (run Nvim with -V1 for more details)
+x  <Plug>(comment_toggle_blockwise_visual) * <Esc><Cmd>lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())<CR>
+                 Comment toggle blockwise (visual)
+	Last set from Lua (run Nvim with -V1 for more details)
+x  <Plug>(comment_toggle_linewise_visual) * <Esc><Cmd>lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())<CR>
+                 Comment toggle linewise (visual)
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Plug>(comment_toggle_blockwise_count) * <Lua 877: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle blockwise with count
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Plug>(comment_toggle_linewise_count) * <Lua 866: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle linewise with count
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Plug>(comment_toggle_blockwise_current) * <Lua 878: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle current block
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Plug>(comment_toggle_linewise_current) * <Lua 931: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle current line
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Plug>(comment_toggle_blockwise) * <Lua 919: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle blockwise
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Plug>(comment_toggle_linewise) * <Lua 920: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle linewise
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Plug>(nvim-surround-change-line) * <Lua 365: ~/.local/share/nvim/lazy/nvim-surround/lua/nvim-surround/config.lua:747>
+                 Change a surrounding pair, putting replacements on new lines
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Plug>(nvim-surround-change) * <Lua 363: ~/.local/share/nvim/lazy/nvim-surround/lua/nvim-surround/config.lua:734>
+                 Change a surrounding pair
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Plug>(nvim-surround-delete) * <Lua 366: ~/.local/share/nvim/lazy/nvim-surround/lua/nvim-surround/init.lua:155>
+                 Delete a surrounding pair
+	Last set from Lua (run Nvim with -V1 for more details)
+x  <Plug>(nvim-surround-visual-line) * <Lua 771: ~/.local/share/nvim/lazy/nvim-surround/lua/nvim-surround/config.lua:705>
+                 Add a surrounding pair around a visual selection, on new lines
+	Last set from Lua (run Nvim with -V1 for more details)
+x  <Plug>(nvim-surround-visual) * <Lua 776: ~/.local/share/nvim/lazy/nvim-surround/lua/nvim-surround/config.lua:686>
+                 Add a surrounding pair around a visual selection
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Plug>(nvim-surround-normal-cur-line) * <Lua 636: ~/.local/share/nvim/lazy/nvim-surround/lua/nvim-surround/config.lua:673>
+                 Add a surrounding pair around the current line, on new lines (normal mode)
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Plug>(nvim-surround-normal-line) * <Lua 75: ~/.local/share/nvim/lazy/nvim-surround/lua/nvim-surround/config.lua:660>
+                 Add a surrounding pair around a motion, on new lines (normal mode)
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Plug>(nvim-surround-normal-cur) * <Lua 848: ~/.local/share/nvim/lazy/nvim-surround/lua/nvim-surround/config.lua:647>
+                 Add a surrounding pair around the current line (normal mode)
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Plug>(nvim-surround-normal) * <Lua 875: ~/.local/share/nvim/lazy/nvim-surround/lua/nvim-surround/config.lua:634>
+                 Add a surrounding pair around a motion (normal mode)
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Plug>(unimpaired-xml-decode-line) * <SNR>49_TransformSetup("xml_decode")."_"
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 607
+x  <Plug>(unimpaired-xml-decode) * <SNR>49_TransformSetup("xml_decode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 606
+n  <Plug>(unimpaired-xml-decode) * <SNR>49_TransformSetup("xml_decode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 605
+n  <Plug>unimpaired_line_xml_decode * <SNR>49_TransformSetup("xml_decode")."_"
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 604
+x  <Plug>unimpaired_xml_decode * <SNR>49_TransformSetup("xml_decode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 603
+n  <Plug>unimpaired_xml_decode * <SNR>49_TransformSetup("xml_decode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 602
+n  <Plug>(unimpaired-xml-encode-line) * <SNR>49_TransformSetup("xml_encode")."_"
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 607
+x  <Plug>(unimpaired-xml-encode) * <SNR>49_TransformSetup("xml_encode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 606
+n  <Plug>(unimpaired-xml-encode) * <SNR>49_TransformSetup("xml_encode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 605
+n  <Plug>unimpaired_line_xml_encode * <SNR>49_TransformSetup("xml_encode")."_"
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 604
+x  <Plug>unimpaired_xml_encode * <SNR>49_TransformSetup("xml_encode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 603
+n  <Plug>unimpaired_xml_encode * <SNR>49_TransformSetup("xml_encode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 602
+n  <Plug>(unimpaired-url-decode-line) * <SNR>49_TransformSetup("url_decode")."_"
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 607
+x  <Plug>(unimpaired-url-decode) * <SNR>49_TransformSetup("url_decode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 606
+n  <Plug>(unimpaired-url-decode) * <SNR>49_TransformSetup("url_decode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 605
+n  <Plug>unimpaired_line_url_decode * <SNR>49_TransformSetup("url_decode")."_"
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 604
+x  <Plug>unimpaired_url_decode * <SNR>49_TransformSetup("url_decode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 603
+n  <Plug>unimpaired_url_decode * <SNR>49_TransformSetup("url_decode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 602
+n  <Plug>(unimpaired-url-encode-line) * <SNR>49_TransformSetup("url_encode")."_"
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 607
+x  <Plug>(unimpaired-url-encode) * <SNR>49_TransformSetup("url_encode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 606
+n  <Plug>(unimpaired-url-encode) * <SNR>49_TransformSetup("url_encode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 605
+n  <Plug>unimpaired_line_url_encode * <SNR>49_TransformSetup("url_encode")."_"
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 604
+x  <Plug>unimpaired_url_encode * <SNR>49_TransformSetup("url_encode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 603
+n  <Plug>unimpaired_url_encode * <SNR>49_TransformSetup("url_encode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 602
+n  <Plug>(unimpaired-string-decode-line) * <SNR>49_TransformSetup("string_decode")."_"
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 607
+x  <Plug>(unimpaired-string-decode) * <SNR>49_TransformSetup("string_decode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 606
+n  <Plug>(unimpaired-string-decode) * <SNR>49_TransformSetup("string_decode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 605
+n  <Plug>unimpaired_line_string_decode * <SNR>49_TransformSetup("string_decode")."_"
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 604
+x  <Plug>unimpaired_string_decode * <SNR>49_TransformSetup("string_decode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 603
+n  <Plug>unimpaired_string_decode * <SNR>49_TransformSetup("string_decode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 602
+n  <Plug>(unimpaired-string-encode-line) * <SNR>49_TransformSetup("string_encode")."_"
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 607
+x  <Plug>(unimpaired-string-encode) * <SNR>49_TransformSetup("string_encode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 606
+n  <Plug>(unimpaired-string-encode) * <SNR>49_TransformSetup("string_encode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 605
+n  <Plug>unimpaired_line_string_encode * <SNR>49_TransformSetup("string_encode")."_"
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 604
+x  <Plug>unimpaired_string_encode * <SNR>49_TransformSetup("string_encode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 603
+n  <Plug>unimpaired_string_encode * <SNR>49_TransformSetup("string_encode")
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 602
+n  <Plug>unimpairedPutBelow * :call <SNR>49_putline(']p', 'below')<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 430
+n  <Plug>unimpairedPutAbove * :call <SNR>49_putline('[p', 'above')<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 429
+n  <Plug>(unimpaired-put-below-reformat) * :<C-U>call <SNR>49_putline(v:count1 . ']p', 'Below')<CR>=']
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 428
+n  <Plug>(unimpaired-put-above-reformat) * :<C-U>call <SNR>49_putline(v:count1 . '[p', 'Above')<CR>=']
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 427
+n  <Plug>(unimpaired-put-below-leftward) * :<C-U>call <SNR>49_putline(v:count1 . ']p', 'Below')<CR><']
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 426
+n  <Plug>(unimpaired-put-above-leftward) * :<C-U>call <SNR>49_putline(v:count1 . '[p', 'Above')<CR><']
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 425
+n  <Plug>(unimpaired-put-below-rightward) * :<C-U>call <SNR>49_putline(v:count1 . ']p', 'Below')<CR>>']
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 424
+n  <Plug>(unimpaired-put-above-rightward) * :<C-U>call <SNR>49_putline(v:count1 . '[p', 'Above')<CR>>']
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 423
+n  <Plug>(unimpaired-put-below) * :call <SNR>49_putline(']p', 'below')<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 422
+n  <Plug>(unimpaired-put-above) * :call <SNR>49_putline('[p', 'above')<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 421
+n  <Plug>(unimpaired-toggle)p & :<C-U>call <SNR>49_SetupPaste()<CR>0C
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 405
+n  <Plug>(unimpaired-disable)p & :<C-U>call <SNR>49_SetupPaste()<CR>o
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 404
+n  <Plug>(unimpaired-enable)p & :<C-U>call <SNR>49_SetupPaste()<CR>O
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 403
+n  <Plug>(unimpaired-paste) & :<C-U>call <SNR>49_SetupPaste()<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 401
+n  <Plug>unimpairedPaste * :call <SNR>49_SetupPaste()<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 400
+n  <Plug>(unimpaired-toggle)t & :<C-U>set colorcolumn=<C-R>=<SNR>49_ColorColumn(!empty(&cc))<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 359
+n  <Plug>(unimpaired-disable)t & :<C-U>set colorcolumn=<C-R>=<SNR>49_ColorColumn(1)<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 358
+n  <Plug>(unimpaired-enable)t & :<C-U>set colorcolumn=<C-R>=<SNR>49_ColorColumn(0)<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 357
+n  <Plug>(unimpaired-toggle)+ & :<C-U>set <C-R>=<SNR>49_CursorOptions()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 349
+n  <Plug>(unimpaired-disable)+ & :<C-U>set nocursorline nocursorcolumn<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 348
+n  <Plug>(unimpaired-enable)+ & :<C-U>set cursorline cursorcolumn<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 347
+n  <Plug>(unimpaired-toggle)x & :<C-U>set <C-R>=<SNR>49_CursorOptions()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 346
+n  <Plug>(unimpaired-disable)x & :<C-U>set nocursorline nocursorcolumn<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 345
+n  <Plug>(unimpaired-enable)x & :<C-U>set cursorline cursorcolumn<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 344
+n  <Plug>(unimpaired-toggle)v & :<C-U>set <C-R>=(&virtualedit =~# "all") ? "virtualedit-=all" : "virtualedit+=all"<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 343
+n  <Plug>(unimpaired-disable)v & :<C-U>set virtualedit-=all<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 342
+n  <Plug>(unimpaired-enable)v & :<C-U>set virtualedit+=all<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 341
+n  <Plug>(unimpaired-toggle)z & :<C-U>setlocal <C-R>=<SNR>49_Toggle("spell")<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 317
+n  <Plug>(unimpaired-disable)z & :<C-U>setlocal nospell<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 316
+n  <Plug>(unimpaired-enable)z & :<C-U>setlocal spell<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 315
+n  <Plug>(unimpaired-toggle)w & :<C-U>setlocal <C-R>=<SNR>49_Toggle("wrap")<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 317
+n  <Plug>(unimpaired-disable)w & :<C-U>setlocal nowrap<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 316
+n  <Plug>(unimpaired-enable)w & :<C-U>setlocal wrap<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 315
+n  <Plug>(unimpaired-toggle)s & :<C-U>setlocal <C-R>=<SNR>49_Toggle("spell")<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 317
+n  <Plug>(unimpaired-disable)s & :<C-U>setlocal nospell<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 316
+n  <Plug>(unimpaired-enable)s & :<C-U>setlocal spell<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 315
+n  <Plug>(unimpaired-toggle)r & :<C-U>setlocal <C-R>=<SNR>49_Toggle("relativenumber")<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 317
+n  <Plug>(unimpaired-disable)r & :<C-U>setlocal norelativenumber<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 316
+n  <Plug>(unimpaired-enable)r & :<C-U>setlocal relativenumber<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 315
+n  <Plug>(unimpaired-toggle)n & :<C-U>setlocal <C-R>=<SNR>49_Toggle("number")<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 317
+n  <Plug>(unimpaired-disable)n & :<C-U>setlocal nonumber<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 316
+n  <Plug>(unimpaired-enable)n & :<C-U>setlocal number<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 315
+n  <Plug>(unimpaired-toggle)l & :<C-U>setlocal <C-R>=<SNR>49_Toggle("list")<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 317
+n  <Plug>(unimpaired-disable)l & :<C-U>setlocal nolist<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 316
+n  <Plug>(unimpaired-enable)l & :<C-U>setlocal list<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 315
+n  <Plug>(unimpaired-toggle)i & :<C-U>set <C-R>=<SNR>49_Toggle("ignorecase")<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 317
+n  <Plug>(unimpaired-disable)i & :<C-U>set noignorecase<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 316
+n  <Plug>(unimpaired-enable)i & :<C-U>set ignorecase<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 315
+n  <Plug>(unimpaired-toggle)h & :<C-U>set <C-R>=<SNR>49_Toggle("hlsearch")<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 317
+n  <Plug>(unimpaired-disable)h & :<C-U>set nohlsearch<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 316
+n  <Plug>(unimpaired-enable)h & :<C-U>set hlsearch<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 315
+n  <Plug>(unimpaired-toggle)d & :<C-U><C-R>=&diff ? "diffoff" : "diffthis"<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 330
+n  <Plug>(unimpaired-disable)d & :<C-U>diffoff<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 329
+n  <Plug>(unimpaired-enable)d & :<C-U>diffthis<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 328
+n  <Plug>(unimpaired-toggle)| & :<C-U>setlocal <C-R>=<SNR>49_Toggle("cursorcolumn")<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 317
+n  <Plug>(unimpaired-disable)| & :<C-U>setlocal nocursorcolumn<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 316
+n  <Plug>(unimpaired-enable)| & :<C-U>setlocal cursorcolumn<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 315
+n  <Plug>(unimpaired-toggle)u & :<C-U>setlocal <C-R>=<SNR>49_Toggle("cursorcolumn")<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 317
+n  <Plug>(unimpaired-disable)u & :<C-U>setlocal nocursorcolumn<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 316
+n  <Plug>(unimpaired-enable)u & :<C-U>setlocal cursorcolumn<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 315
+n  <Plug>(unimpaired-toggle)_ & :<C-U>setlocal <C-R>=<SNR>49_Toggle("cursorline")<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 317
+n  <Plug>(unimpaired-disable)_ & :<C-U>setlocal nocursorline<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 316
+n  <Plug>(unimpaired-enable)_ & :<C-U>setlocal cursorline<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 315
+n  <Plug>(unimpaired-toggle)- & :<C-U>setlocal <C-R>=<SNR>49_Toggle("cursorline")<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 317
+n  <Plug>(unimpaired-disable)- & :<C-U>setlocal nocursorline<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 316
+n  <Plug>(unimpaired-enable)- & :<C-U>setlocal cursorline<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 315
+n  <Plug>(unimpaired-toggle)c & :<C-U>setlocal <C-R>=<SNR>49_Toggle("cursorline")<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 317
+n  <Plug>(unimpaired-disable)c & :<C-U>setlocal nocursorline<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 316
+n  <Plug>(unimpaired-enable)c & :<C-U>setlocal cursorline<C-R>=<SNR>49_StatuslineRefresh()<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 315
+n  <Plug>(unimpaired-toggle)b & :<C-U>set background=<C-R>=&background == "dark" ? "light" : "dark"<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 322
+n  <Plug>(unimpaired-disable)b & :<C-U>set background=dark<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 321
+n  <Plug>(unimpaired-enable)b & :<C-U>set background=light<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 320
+   <Plug>unimpairedMoveSelectionDown * :<C-U>call <SNR>49_MoveSelectionDown(v:count1)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 291
+   <Plug>unimpairedMoveSelectionUp * :<C-U>call <SNR>49_MoveSelectionUp(v:count1)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 290
+n  <Plug>unimpairedMoveDown * :<C-U>call <SNR>49_Move('+',v:count1,'down')<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 289
+n  <Plug>unimpairedMoveUp * :<C-U>call <SNR>49_Move('--',v:count1,'up')<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 288
+   <Plug>(unimpaired-move-selection-down) * :<C-U>call <SNR>49_MoveSelectionDown(v:count1)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 287
+   <Plug>(unimpaired-move-selection-up) * :<C-U>call <SNR>49_MoveSelectionUp(v:count1)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 286
+n  <Plug>(unimpaired-move-down) * :<C-U>call <SNR>49_Move('+',v:count1,'down')<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 285
+n  <Plug>(unimpaired-move-up) * :<C-U>call <SNR>49_Move('--',v:count1,'up')<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 284
+n  <Plug>unimpairedBlankDown * :<C-U>exe <SNR>49_BlankDown()<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 251
+n  <Plug>unimpairedBlankUp * :<C-U>exe <SNR>49_BlankUp()<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 250
+n  <Plug>(unimpaired-blank-down) * :<C-U>exe <SNR>49_BlankDown()<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 248
+n  <Plug>(unimpaired-blank-up) * :<C-U>exe <SNR>49_BlankUp()<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 247
+o  <Plug>unimpairedContextNext * :<C-U>call <SNR>49_ContextMotion(0)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 193
+o  <Plug>unimpairedContextPrevious * :<C-U>call <SNR>49_ContextMotion(1)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 192
+x  <Plug>unimpairedContextNext * :<C-U>exe 'normal! gv'|call <SNR>49_Context(0)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 191
+x  <Plug>unimpairedContextPrevious * :<C-U>exe 'normal! gv'|call <SNR>49_Context(1)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 190
+n  <Plug>unimpairedContextNext * :<C-U>call <SNR>49_Context(0)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 189
+n  <Plug>unimpairedContextPrevious * :<C-U>call <SNR>49_Context(1)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 188
+o  <Plug>(unimpaired-context-next) * :<C-U>call <SNR>49_ContextMotion(0)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 179
+o  <Plug>(unimpaired-context-previous) * :<C-U>call <SNR>49_ContextMotion(1)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 178
+v  <Plug>(unimpaired-context-next) * :<C-U>exe 'normal! gv'|call <SNR>49_Context(0)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 177
+v  <Plug>(unimpaired-context-previous) * :<C-U>exe 'normal! gv'|call <SNR>49_Context(1)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 176
+n  <Plug>(unimpaired-context-next) * :<C-U>call <SNR>49_Context(0)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 175
+n  <Plug>(unimpaired-context-previous) * :<C-U>call <SNR>49_Context(1)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 174
+n  <Plug>unimpairedDirectoryPrevious * :<C-U>execute <SNR>49_PreviousFileEntry(v:count1)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 168
+n  <Plug>unimpairedDirectoryNext * :<C-U>execute <SNR>49_NextFileEntry(v:count1)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 167
+n  <Plug>(unimpaired-directory-previous) * :<C-U>execute <SNR>49_PreviousFileEntry(v:count1)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 166
+n  <Plug>(unimpaired-directory-next) * :<C-U>execute <SNR>49_NextFileEntry(v:count1)<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 165
+n  <Plug>unimpairedTPNext * :<C-U>exe "p".(v:count ? v:count : "")."tnext"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 66
+n  <Plug>unimpairedTPPrevious * :<C-U>exe "p".(v:count ? v:count : "")."tprevious"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 65
+n  <Plug>(unimpaired-ptnext) * :<C-U>exe v:count1 . "ptnext"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 64
+n  <Plug>(unimpaired-ptprevious) * :<C-U>exe v:count1 . "ptprevious"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 63
+n  <Plug>unimpairedTLast * :<C-U>exe "".(v:count ? v:count : "")."tlast"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 50
+n  <Plug>unimpairedTFirst * :<C-U>exe "".(v:count ? v:count : "")."tfirst"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 49
+n  <Plug>unimpairedTNext * :<C-U>exe "".(v:count ? v:count : "")."tnext"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 48
+n  <Plug>unimpairedTPrevious * :<C-U>exe "".(v:count ? v:count : "")."tprevious"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 47
+n  <Plug>(unimpaired-tlast) * :<C-U><C-R>=v:count ? v:count . "trewind" : "tlast"<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 46
+n  <Plug>(unimpaired-tfirst) * :<C-U><C-R>=v:count ? v:count . "trewind" : "tfirst"<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 45
+n  <Plug>(unimpaired-tnext) * :<C-U>exe "".(v:count ? v:count : "")."tnext"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 44
+n  <Plug>(unimpaired-tprevious) * :<C-U>exe "".(v:count ? v:count : "")."tprevious"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 43
+n  <Plug>unimpairedQNFile * :<C-U>exe "".(v:count ? v:count : "")."cnfile"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 59
+n  <Plug>unimpairedQPFile * :<C-U>exe "".(v:count ? v:count : "")."cpfile"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 58
+n  <Plug>(unimpaired-cnfile) * :<C-U>exe "".(v:count ? v:count : "")."cnfile"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 57
+n  <Plug>(unimpaired-cpfile) * :<C-U>exe "".(v:count ? v:count : "")."cpfile"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 56
+n  <Plug>unimpairedQLast * :<C-U>exe "".(v:count ? v:count : "")."clast"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 50
+n  <Plug>unimpairedQFirst * :<C-U>exe "".(v:count ? v:count : "")."cfirst"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 49
+n  <Plug>unimpairedQNext * :<C-U>exe "".(v:count ? v:count : "")."cnext"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 48
+n  <Plug>unimpairedQPrevious * :<C-U>exe "".(v:count ? v:count : "")."cprevious"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 47
+n  <Plug>(unimpaired-clast) * :<C-U><C-R>=v:count ? v:count . "cc" : "clast"<CR><CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 46
+n  <Plug>(unimpaired-cfirst) * :<C-U><C-R>=v:count ? v:count . "cc" : "cfirst"<CR><CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 45
+n  <Plug>(unimpaired-cnext) * :<C-U>exe "".(v:count ? v:count : "")."cnext"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 44
+n  <Plug>(unimpaired-cprevious) * :<C-U>exe "".(v:count ? v:count : "")."cprevious"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 43
+n  <Plug>unimpairedLNFile * :<C-U>exe "".(v:count ? v:count : "")."lnfile"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 59
+n  <Plug>unimpairedLPFile * :<C-U>exe "".(v:count ? v:count : "")."lpfile"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 58
+n  <Plug>(unimpaired-lnfile) * :<C-U>exe "".(v:count ? v:count : "")."lnfile"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 57
+n  <Plug>(unimpaired-lpfile) * :<C-U>exe "".(v:count ? v:count : "")."lpfile"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 56
+n  <Plug>unimpairedLLast * :<C-U>exe "".(v:count ? v:count : "")."llast"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 50
+n  <Plug>unimpairedLFirst * :<C-U>exe "".(v:count ? v:count : "")."lfirst"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 49
+n  <Plug>unimpairedLNext * :<C-U>exe "".(v:count ? v:count : "")."lnext"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 48
+n  <Plug>unimpairedLPrevious * :<C-U>exe "".(v:count ? v:count : "")."lprevious"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 47
+n  <Plug>(unimpaired-llast) * :<C-U><C-R>=v:count ? v:count . "ll" : "llast"<CR><CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 46
+n  <Plug>(unimpaired-lfirst) * :<C-U><C-R>=v:count ? v:count . "ll" : "lfirst"<CR><CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 45
+n  <Plug>(unimpaired-lnext) * :<C-U>exe "".(v:count ? v:count : "")."lnext"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 44
+n  <Plug>(unimpaired-lprevious) * :<C-U>exe "".(v:count ? v:count : "")."lprevious"<CR>zv
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 43
+n  <Plug>unimpairedBLast * :<C-U>exe "".(v:count ? v:count : "")."blast"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 50
+n  <Plug>unimpairedBFirst * :<C-U>exe "".(v:count ? v:count : "")."bfirst"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 49
+n  <Plug>unimpairedBNext * :<C-U>exe "".(v:count ? v:count : "")."bnext"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 48
+n  <Plug>unimpairedBPrevious * :<C-U>exe "".(v:count ? v:count : "")."bprevious"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 47
+n  <Plug>(unimpaired-blast) * :<C-U><C-R>=v:count ? v:count . "buffer" : "blast"<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 46
+n  <Plug>(unimpaired-bfirst) * :<C-U><C-R>=v:count ? v:count . "buffer" : "bfirst"<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 45
+n  <Plug>(unimpaired-bnext) * :<C-U>exe "".(v:count ? v:count : "")."bnext"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 44
+n  <Plug>(unimpaired-bprevious) * :<C-U>exe "".(v:count ? v:count : "")."bprevious"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 43
+n  <Plug>unimpairedALast * :<C-U>exe "".(v:count ? v:count : "")."last"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 50
+n  <Plug>unimpairedAFirst * :<C-U>exe "".(v:count ? v:count : "")."first"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 49
+n  <Plug>unimpairedANext * :<C-U>exe "".(v:count ? v:count : "")."next"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 48
+n  <Plug>unimpairedAPrevious * :<C-U>exe "".(v:count ? v:count : "")."previous"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 47
+n  <Plug>(unimpaired-last) * :<C-U><C-R>=v:count ? v:count . "argument" : "last"<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 46
+n  <Plug>(unimpaired-first) * :<C-U><C-R>=v:count ? v:count . "argument" : "first"<CR><CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 45
+n  <Plug>(unimpaired-next) * :<C-U>exe "".(v:count ? v:count : "")."next"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 44
+n  <Plug>(unimpaired-previous) * :<C-U>exe "".(v:count ? v:count : "")."previous"<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-unimpaired/plugin/unimpaired.vim line 43
+n  <F12>       * <Cmd>execute v:count . "ToggleTerm"<CR>
+                 Toggle Terminal
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <F11>       * <Lua 208: ~/.config/nvim/lua/dennis-io/plugins/nvim-dap.lua:24>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <F10>       * <Lua 206: ~/.config/nvim/lua/dennis-io/plugins/nvim-dap.lua:21>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <F5>        * <Lua 196: ~/.config/nvim/lua/dennis-io/plugins/nvim-dap.lua:18>
+	Last set from Lua (run Nvim with -V1 for more details)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 67
+o  <Plug>(MatchitOperationMultiForward) * :<C-U>call matchit#MultiMatch("W",  "o")<CR>
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 64
+o  <Plug>(MatchitOperationMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "o")<CR>
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 63
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 62
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 61
+n  <Plug>(MatchitNormalMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 60
+n  <Plug>(MatchitNormalMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 59
+o  <Plug>(MatchitOperationBackward) * :<C-U>call matchit#Match_wrapper('',0,'o')<CR>
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 56
+o  <Plug>(MatchitOperationForward) * :<C-U>call matchit#Match_wrapper('',1,'o')<CR>
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 55
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 54
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 52
+n  <Plug>(MatchitNormalBackward) * :<C-U>call matchit#Match_wrapper('',0,'n')<CR>
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 51
+n  <Plug>(MatchitNormalForward) * :<C-U>call matchit#Match_wrapper('',1,'n')<CR>
+	Last set from /opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 50
+n  <C-Bslash>  * :<C-U>TmuxNavigatePrevious<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-tmux-navigator/plugin/tmux_navigator.vim line 23
+n  <C-K>       * :<C-U>TmuxNavigateUp<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-tmux-navigator/plugin/tmux_navigator.vim line 21
+n  <C-J>       * :<C-U>TmuxNavigateDown<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-tmux-navigator/plugin/tmux_navigator.vim line 20
+n  <C-H>       * :<C-U>TmuxNavigateLeft<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-tmux-navigator/plugin/tmux_navigator.vim line 19
+s  <Plug>luasnip-jump-prev * <Lua 195: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:57>
+                 LuaSnip: Jump to the previous node
+	Last set from Lua (run Nvim with -V1 for more details)
+s  <Plug>luasnip-jump-next * <Lua 194: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:54>
+                 LuaSnip: Jump to the next node
+	Last set from Lua (run Nvim with -V1 for more details)
+s  <Plug>luasnip-prev-choice * <Lua 193: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:51>
+                 LuaSnip: Change to the previous choice from the choiceNode
+	Last set from Lua (run Nvim with -V1 for more details)
+s  <Plug>luasnip-next-choice * <Lua 192: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:48>
+                 LuaSnip: Change to the next choice from the choiceNode
+	Last set from Lua (run Nvim with -V1 for more details)
+s  <Plug>luasnip-expand-snippet * <Lua 191: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:45>
+                 LuaSnip: Expand the current snippet
+	Last set from Lua (run Nvim with -V1 for more details)
+s  <Plug>luasnip-expand-or-jump * <Lua 190: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:42>
+                 LuaSnip: Expand or jump in the current snippet
+	Last set from Lua (run Nvim with -V1 for more details)
+   <Plug>luasnip-expand-repeat * <Lua 188: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:35>
+                 LuaSnip: Repeat last node expansion
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Plug>luasnip-delete-check * <Lua 186: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:28>
+                 LuaSnip: Removes current snippet from jumplist
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <C-P>       * <Lua 157: ~/.local/share/nvim/lazy/telescope.nvim/lua/telescope/builtin/init.lua:502>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <F2>        * <Cmd>NvimTreeToggle<CR>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <Plug>PlenaryTestFile * :lua require('plenary.test_harness').test_file(vim.fn.expand("%:p"))<CR>
+	Last set from ~/.local/share/nvim/lazy/plenary.nvim/plugin/plenary.vim line 9
+v  <Plug>(bullets-promote) * :BulletPromoteVisual<CR>
+	Last set from ~/.local/share/nvim/lazy/bullets.vim/plugin/bullets.vim line 1114
+n  <Plug>(bullets-promote) * :BulletPromote<CR>
+	Last set from ~/.local/share/nvim/lazy/bullets.vim/plugin/bullets.vim line 1113
+v  <Plug>(bullets-demote) * :BulletDemoteVisual<CR>
+	Last set from ~/.local/share/nvim/lazy/bullets.vim/plugin/bullets.vim line 1111
+n  <Plug>(bullets-demote) * :BulletDemote<CR>
+	Last set from ~/.local/share/nvim/lazy/bullets.vim/plugin/bullets.vim line 1110
+n  <Plug>(bullets-toggle-checkbox) * :ToggleCheckbox<CR>
+	Last set from ~/.local/share/nvim/lazy/bullets.vim/plugin/bullets.vim line 1106
+n  <Plug>(bullets-renumber) * :RenumberList<CR>
+	Last set from ~/.local/share/nvim/lazy/bullets.vim/plugin/bullets.vim line 1103
+v  <Plug>(bullets-renumber) * :RenumberSelection<CR>
+	Last set from ~/.local/share/nvim/lazy/bullets.vim/plugin/bullets.vim line 1102
+n  <Plug>(bullets-newline) * :call <SNR>7_insert_new_bullet()<CR>
+	Last set from ~/.local/share/nvim/lazy/bullets.vim/plugin/bullets.vim line 1099
+n  <S-Down>    * <Nop>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <S-Up>      * <Nop>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <S-Right>   * <Cmd>tabnext<CR>
+                 Next Tab
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <S-Left>    * <Cmd>tabprevious<CR>
+                 Previous Tab
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <S-Tab>     * <Cmd>bprevious<CR>
+                 Previous Buffer
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <C-I>       * <Tab>zz
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <C-O>       * <C-O>zz
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <C-F>       * <C-^>
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <C-U>       * <C-U>zz
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <C-D>       * <C-D>zz
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <C-W><C-D>    <C-W>d
+                 Show diagnostics under the cursor
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <C-W>d      * <Lua 16: vim/_defaults.lua:0>
+                 Show diagnostics under the cursor
+	Last set from Lua (run Nvim with -V1 for more details)
+n  <C-L>       * :<C-U>TmuxNavigateRight<CR>
+	Last set from ~/.local/share/nvim/lazy/vim-tmux-navigator/plugin/tmux_navigator.vim line 22

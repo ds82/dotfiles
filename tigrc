@@ -22,7 +22,8 @@ bind main R ?git reset --hard %(commit)
 bind main 5 refresh
 bind main w +sh -c 'open-git-hash-web.sh %(commit) $(git remote get-url origin)'
 bind main D !>nvr -l -s --remote-wait +'DiffviewOpen %(commit)~1..%(commit)'
- bind main V !>nvr -l -s --remote-wait +'DiffviewOpen %(commit)..%(head)'
+bind main v !>nvim +'DiffviewOpen %(commit)~1..%(head)'
+bind main V !>nvr -l -s --remote-wait +'DiffviewOpen %(commit)~1..%(head)'
 
 bind status P !git stash push -- %(file)
 bind status a !git commit --amend

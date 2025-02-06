@@ -25,7 +25,7 @@ if [[ $# -eq 1 ]]; then
     git branch "$@" --sort=-committerdate --sort=-HEAD --format=$'%(HEAD) %(color:yellow)%(refname:short) %(color:green)(%(committerdate:relative))\t%(color:blue)%(subject)%(color:reset)' --color=always | column -ts$'\t'
   }
   refs() {
-    git for-each-ref --sort=-creatordate --sort=-HEAD --color=always --format=$'%(refname) %(color:green)(%(creatordate:relative))\t%(color:blue)%(subject)%(color:reset)' |
+    git for-each-ref --sort=-committerdate --sort=-HEAD --color=always --format=$'%(refname) %(color:green)(%(creatordate:relative))\t%(color:blue)%(subject)%(color:reset)' |
       eval "$1" |
       sed 's#^refs/remotes/#\x1b[95mremote-branch\t\x1b[33m#; s#^refs/heads/#\x1b[92mbranch\t\x1b[33m#; s#^refs/tags/#\x1b[96mtag\t\x1b[33m#; s#refs/stash#\x1b[91mstash\t\x1b[33mrefs/stash#' |
       column -ts$'\t'
@@ -145,8 +145,9 @@ _fzf_git_files() {
 
 _fzf_git_branches() {
   _fzf_git_check || return
-  bash "$__fzf_git" branches |
+  bash "$__fzf_git" all-branches |
   _fzf_git_fzf --ansi \
+    --no-sort \
     --prompt '🌲 Branches> ' \
     --header-lines 2 \
     --tiebreak begin \
@@ -155,9 +156,9 @@ _fzf_git_branches() {
     --no-hscroll \
     --bind 'ctrl-/:change-preview-window(down,70%|hidden|)' \
     --bind "ctrl-o:execute-silent:bash $__fzf_git branch {}" \
-    --bind "ctrl-b:change-prompt(🌳 All branches> )+reload:bash \"$__fzf_git\" all-branches" \
+    --bind "ctrl-b:change-prompt(🌳 local branches> )+reload:bash \"$__fzf_git\" branches" \
     --preview 'git log --oneline --graph --date=short --color=always --pretty="format:%C(auto)%cd %h%d %s" $(sed s/^..// <<< {} | cut -d" " -f1)' "$@" |
-  sed 's/^..//' | cut -d' ' -f1
+  sed 's/^..//' | sed 's/origin\///' | cut -d' ' -f1
 }
 
 _fzf_git_tags() {

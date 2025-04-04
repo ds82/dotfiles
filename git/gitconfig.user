@@ -61,6 +61,8 @@
 
   reseto = "!git reset origin/$(git branch-name)"
   rho = "!git reset --hard origin/$(git branch-name)"
+  rh1 = reset --hard HEAD~1
+  r1 = reset HEAD~1
 
   up = "!f() { git fa && git ro; }; f" 
   rom = "!f() { git rebase origin/main; }; f"

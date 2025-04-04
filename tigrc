@@ -11,10 +11,14 @@ set main-view = id:yes date:default author commit-title:refs=true,overflow=72
 # bindings
 #
 bind generic Y !@sh -c "git rev-parse --short %(commit) | tr -d '[:space:]' | pbcopy"
-bind generic H !tig log %(file)
+bind generic L !>tig main %(file)
+#bind tree L :set file-args = %(file)
 bind generic B view-refs
+bind generic u !>sh -c 'cd %(file) ; tig'
 
-bind main F !git commit --fixup %(commit) --no-verify
+bind main F ?git commit --fixup %(commit) --no-verify
+bind main Q ?git commit --squash %(commit) --no-verify
+
 bind main I !git rebase -i --autosquash %(commit)^1
 bind main c !git commit -c %(commit)
 bind main r ?git reset %(commit)
@@ -22,16 +26,17 @@ bind main R ?git reset --hard %(commit)
 bind main 5 refresh
 bind main w +sh -c 'open-git-hash-web.sh %(commit) $(git remote get-url origin)'
 bind main D !>nvr -l -s --remote-wait +'DiffviewOpen %(commit)~1..%(commit)'
-bind main v !>nvim +'DiffviewOpen %(commit)~1..%(head)'
-bind main V !>nvr -l -s --remote-wait +'DiffviewOpen %(commit)~1..%(head)'
+bind main v !>nvr +'DiffviewOpen %(commit)~1..%(head)' 
+# bind main v !echo "nvim +'DiffviewOpen %(commit)~1..%(head)'"
+# bind main V !>nvr -l -s --remote-wait +'DiffviewOpen %(commit)~1..%(refname)'
+bind main V !echo "%(commit) %(head) %(revargs)"
 
+# bind status M !>sh -c 'cd %(file) ; tig'
 bind status P !git stash push -- %(file)
 bind status a !git commit --amend
 bind status A ?git commit --amend --no-edit
 bind status G @sh -c "echo %(file) | pbcopy"
 
-bind status v !>sh -c "cd %(repo:git-dir)/../%(file) ; tig"
-bind status V !>sh -c "cd %(repo:git-dir)/../%(file) ; git pa"
 bind status U ?git csmu %(file)
 
 bind diff D :toggle diff-options --minimal	# Use minimal diff algorithm

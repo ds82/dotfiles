@@ -4,6 +4,7 @@
 
 [alias]
   a = add
+  r = rebase
   ir = rebase -i --autosquash
   cp = cherry-pick
   cpc = cherry-pick --continue
@@ -13,6 +14,8 @@
   rc = rebase --continue
 	amend = commit --amend
 	ane = commit --amend --no-edit
+  stau = stash save -a -u
+
 
 [rebase]
 	autoSquash = true

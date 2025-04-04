@@ -6,32 +6,24 @@ return {
 	-- install jsregexp (optional!).
 	build = "make install_jsregexp",
 	config = function()
-		local luasnip = require("luasnip")
+		local ls = require("luasnip")
 
-		vim.api.nvim_set_keymap(
-			"i",
-			"<C-j>",
-			"<cmd>lua require'luasnip'.jump(1)<CR>",
-			{ noremap = true, silent = true }
-		)
-		vim.api.nvim_set_keymap(
-			"i",
-			"<C-k>",
-			"<cmd>lua require'luasnip'.jump(-1)<CR>",
-			{ noremap = true, silent = true }
-		)
-
-		vim.api.nvim_set_keymap(
-			"s",
-			"<C-j>",
-			"<cmd>lua require'luasnip'.jump(1)<CR>",
-			{ noremap = true, silent = true }
-		)
-		vim.api.nvim_set_keymap(
-			"s",
-			"<C-k>",
-			"<cmd>lua require'luasnip'.jump(-1)<CR>",
-			{ noremap = true, silent = true }
-		)
+		-- vim.keymap.set({ "i" }, "<C-L>", function()
+		-- 	ls.expand()
+		-- end, { silent = true })
+		--
+		-- vim.keymap.set({ "i", "s" }, "<C-j>", function()
+		-- 	ls.jump(1)
+		-- end, { silent = true })
+		--
+		-- vim.keymap.set({ "i", "s" }, "<C-k>", function()
+		-- 	ls.jump(-1)
+		-- end, { silent = true })
+		--
+		-- vim.keymap.set({ "i", "s" }, "<C-e>", function()
+		-- 	if ls.choice_active() then
+		-- 		ls.change_choice(1)
+		-- 	end
+		-- end, { silent = true })
 	end,
 }

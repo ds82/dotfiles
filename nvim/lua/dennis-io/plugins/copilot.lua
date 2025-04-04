@@ -7,7 +7,7 @@ return {
 				typescript = true, -- allow specific filetype
 				typescriptreact = true,
 				sh = true,
-				rust = false,
+				rust = true,
 				lua = true,
 
 				-- ["*"] = false, -- disable for all other filetypes and ignore default `filetypes`

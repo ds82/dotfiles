@@ -65,9 +65,11 @@ return {
 			neogit.open({ kind = "replace", cwd = root })
 		end, { desc = "Neogit status", silent = true })
 
-		keymap.set("n", "<leader><leader>lg", function()
-			local file_uri = vim.fn.expand("%")
-			neogit.action("log", "log_current", { file = file_uri })()
-		end, { desc = "Open Git Log for current file", silent = true })
+		keymap.set(
+			"n",
+			"<leader><leader>L",
+			":NeogitLogCurrent<CR>",
+			{ desc = "Open Git Log for current file", silent = true }
+		)
 	end,
 }

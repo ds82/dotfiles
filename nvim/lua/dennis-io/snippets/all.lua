@@ -3,6 +3,7 @@ local ls = require("luasnip")
 local t = ls.text_node
 local s = ls.snippet
 local i = ls.insert_node
+local c = ls.choice_node
 
 local fmt = require("luasnip.extras.fmt").fmt
 
@@ -20,9 +21,9 @@ ls.add_snippets("all", {
 local function insert_codefence()
 	ls.snip_expand(s("codefence", {
 		t("```"),
-		i(1, "language"),
+		-- i(1, "language"),
 		t({ "", "" }),
-		i(2, "code"),
+		i(1, "code"),
 		t({ "", "```" }),
 	}))
 end

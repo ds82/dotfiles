@@ -21,6 +21,8 @@ vim.api.nvim_set_keymap("i", "<C-l>", "<Esc>A", { noremap = true, silent = true 
 -- keeps register content on pasting in visual mode with leader-p
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
+vim.keymap.set("x", "<leader>P", '"0p')
+
 -- quickfix window
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
@@ -80,3 +82,6 @@ vim.keymap.set("n", "<leader><leader>1", "<cmd>Lazy update<CR>", { desc = "Updat
 -- disable shift-arrow keys in normal mode (left/right are used above)
 vim.keymap.set("n", "<S-Up>", "<Nop>")
 vim.keymap.set("n", "<S-Down>", "<Nop>")
+
+-- exit terminal mode in terminal
+vim.keymap.set("t", "<leader><Esc>", "<C-\\><C-n>")

@@ -62,3 +62,10 @@ vim.api.nvim_create_autocmd("VimResized", {
 
 -- disable swapfile
 opt.swapfile = false
+
+-- color status column based on error/warning
+-- works with neovim >= 0.11
+-- https://www.reddit.com/r/neovim/comments/1ikb7hm/heres_how_to_enable_line_number_colors_as/?utm_source=pocket_saves
+vim.opt.numberwidth = 3
+vim.opt.signcolumn = "yes:1"
+vim.opt.statuscolumn = "%l%s"

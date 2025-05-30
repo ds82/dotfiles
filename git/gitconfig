@@ -40,6 +40,7 @@
   # checkout
   co = checkout                     # checkout
   nb = checkout -b                  # create and switch to a new branch (mnemonic: "git new branch branchname...")
+  sr = "!git recent-branches | fzf | xargs git switch" # switch to the most recent branch
 
   # cherry-pick
   cp = cherry-pick -x               # grab a change from a branch
@@ -65,6 +66,8 @@
   # rebase
   rc = rebase --continue            # continue rebase
   rs = rebase --skip                # skip rebase
+  ra = rebase --abort                # skip rebase
+  rlb = !git rebase $(git lbn)
 
   # remote
   r = remote -v                     # show remotes (verbose)

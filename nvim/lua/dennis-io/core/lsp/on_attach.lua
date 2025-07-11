@@ -1,9 +1,10 @@
 local telescope = require("telescope.builtin")
 local keymap = vim.keymap -- for conciseness
 
-local opts = { noremap = true, silent = true }
+local opts = { noremap = false, silent = true }
 local on_attach = function(_client, bufnr)
 	opts.buffer = bufnr
+	vim.print("LSP attached to buffer: " .. bufnr)
 
 	-- set keybinds
 	opts.desc = "goto definition"

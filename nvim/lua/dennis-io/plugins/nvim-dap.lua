@@ -9,28 +9,31 @@ return {
 		local dap = require("dap")
 		local mason_registry = require("mason-registry")
 
-		local codelldb_root = mason_registry.get_package("codelldb"):get_install_path() .. "/extension/"
-		local codelldb_path = codelldb_root .. "adapter/codelldb"
-		local liblldb_path = codelldb_root .. "lldb/lib/liblldb"
-		local this_os = vim.loop.os_uname().sysname
-		liblldb_path = liblldb_path .. (this_os == "Linux" and ".so" or ".dylib")
+		-- local codelldb_root = mason_registry.get_package("codelldb"):get_install_path() .. "/extension/"
+		-- local codelldb_path = codelldb_root .. "adapter/codelldb"
+		-- local liblldb_path = codelldb_root .. "lldb/lib/liblldb"
+		-- local this_os = vim.loop.os_uname().sysname
+		-- liblldb_path = liblldb_path .. (this_os == "Linux" and ".so" or ".dylib")
+
+		vim.fn.sign_define("DapBreakpoint", { text = "⛔", texthl = "", linehl = "", numhl = "" })
+		vim.fn.sign_define("DapStopped", { text = "▶️", texthl = "", linehl = "", numhl = "" })
 
 		vim.keymap.set("n", "<F5>", function()
 			dap.continue()
 		end)
-		vim.keymap.set("n", "<F10>", function()
+		vim.keymap.set("n", "<F6>", function()
 			dap.step_over()
 		end)
-		vim.keymap.set("n", "<F11>", function()
+		vim.keymap.set("n", "<F7>", function()
 			dap.step_into()
 		end)
-		vim.keymap.set("n", "<F12>", function()
+		vim.keymap.set("n", "<F8>", function()
 			dap.step_out()
 		end)
-		vim.keymap.set("n", "<Leader>B", function()
+		vim.keymap.set("n", "<leader>B", function()
 			dap.toggle_breakpoint()
 		end)
-		vim.keymap.set("n", "<Leader>lp", function()
+		vim.keymap.set("n", "<leader>lp", function()
 			dap.set_breakpoint(nil, nil, vim.fn.input("Log point message: "))
 		end)
 		vim.keymap.set("n", "<leader><leader>dr", function()

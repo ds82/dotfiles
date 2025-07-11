@@ -1,5 +1,5 @@
 return {
-	"williamboman/mason.nvim",
+	"mason-org/mason.nvim",
 	dependencies = {
 		"williamboman/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
@@ -29,15 +29,15 @@ return {
 				"ts_ls",
 				"html",
 				"cssls",
-				"tailwindcss",
-				"svelte",
+				-- "tailwindcss",
+				-- "svelte",
 				"lua_ls",
-				"graphql",
-				"emmet_ls",
-				"prismals",
+				-- "graphql",
+				-- "emmet_ls",
+				-- "prismals",
 				"pyright",
 				"clangd",
-				"rust_analyzer",
+				-- "rust_analyzer",
 			},
 			-- auto-install configured servers (with lspconfig)
 			automatic_installation = true, -- not the same as ensure_installed

@@ -69,3 +69,8 @@ opt.swapfile = false
 vim.opt.numberwidth = 3
 vim.opt.signcolumn = "yes:1"
 vim.opt.statuscolumn = "%l%s"
+
+-- lsp inline hints
+if vim.lsp.inlay_hint then
+	vim.lsp.inlay_hint.enable(true, { 0 })
+end

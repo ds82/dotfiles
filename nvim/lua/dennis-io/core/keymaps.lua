@@ -85,3 +85,8 @@ vim.keymap.set("n", "<S-Down>", "<Nop>")
 
 -- exit terminal mode in terminal
 vim.keymap.set("t", "<leader><Esc>", "<C-\\><C-n>")
+
+-- toggle line numbers
+vim.keymap.set({ "n", "v" }, "<leader><leader>n", function()
+	vim.opt.relativenumber = not vim.opt.relativenumber:get()
+end)

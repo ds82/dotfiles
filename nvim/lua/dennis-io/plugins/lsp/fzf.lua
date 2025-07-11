@@ -1,0 +1,20 @@
+return {}
+-- return {
+-- 	"ibhagwan/fzf-lua",
+-- 	opts = { { "telescope", "fzf-native" }, winopts = { fullscreen = true } },
+-- 	keys = {
+-- 		{
+-- 			"<C-x><C-f>",
+-- 			function()
+-- 				require("fzf-lua").complete_file({
+-- 					cmd = "rg --files",
+-- 					cwd = vim.fn.expand("%:p:h"),
+-- 					winopts = { preview = { hidden = true } },
+-- 				})
+-- 			end,
+-- 			silent = true,
+-- 			desc = "Fuzzy complete file",
+-- 			mode = "i",
+-- 		},
+-- 	},
+-- }

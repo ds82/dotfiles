@@ -2,6 +2,7 @@ return {
 	"zbirenbaum/copilot.lua",
 	config = function()
 		require("copilot").setup({
+			copilot_model = "gpt-4o-copilot",
 			filetypes = {
 				javascript = true, -- allow specific filetype
 				typescript = true, -- allow specific filetype
@@ -45,7 +46,7 @@ return {
 					dismiss = "<C-m>",
 				},
 			},
-			copilot_node_command = "node", -- Node.js version must be > 16.x
+			copilot_node_command = vim.fn.expand("$HOME") .. "/.nvm/versions/node/v22.14.0/bin/node", -- Node.js version must be > 20
 			server_opts_overrides = {},
 		})
 	end,

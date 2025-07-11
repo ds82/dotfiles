@@ -1,9 +1,64 @@
-return {
-	"MeanderingProgrammer/render-markdown.nvim",
-	-- dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" }, -- if you use the mini.nvim suite
-	-- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
-	dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" }, -- if you prefer nvim-web-devicons
-	---@module 'render-markdown'
-	---@type render.md.UserConfig
-	opts = {},
-}
+return {}
+-- return {
+-- 	"MeanderingProgrammer/render-markdown.nvim",
+-- 	-- dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" }, -- if you use the mini.nvim suite
+-- 	-- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
+-- 	dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" }, -- if you prefer nvim-web-devicons
+-- 	---@module 'render-markdown'
+-- 	---@type render.md.UserConfig
+-- 	opts = {
+--
+-- 		code = {
+-- 			border = "thick",
+-- 		},
+-- 		anti_conceal = {
+-- 			-- This enables hiding any added text on the line the cursor is on.
+-- 			enabled = true,
+-- 			-- Which elements to always show, ignoring anti conceal behavior. Values can either be
+-- 			-- booleans to fix the behavior or string lists representing modes where anti conceal
+-- 			-- behavior will be ignored. Valid values are:
+-- 			--   head_icon, head_background, head_border, code_language, code_background, code_border,
+-- 			--   dash, bullet, check_icon, check_scope, quote, table_border, callout, link, sign
+-- 			ignore = {
+-- 				head_icon = true,
+-- 				head_background = true,
+-- 				head_border = true,
+-- 				code_language = true,
+-- 				code_background = true,
+-- 				code_border = true,
+-- 				dash = true,
+-- 				bullet = true,
+-- 				check_icon = true,
+-- 				check_scope = true,
+-- 				quote = true,
+-- 				table_border = true,
+-- 				callout = true,
+-- 				link = true,
+-- 				sign = true,
+-- 			},
+-- 			-- Number of lines above cursor to show.
+-- 			above = 1,
+-- 			-- Number of lines below cursor to show.
+-- 			below = 1,
+-- 		},
+-- 		html = {
+-- 			-- Turn on / off all HTML rendering.
+-- 			enabled = true,
+-- 			-- Additional modes to render HTML.
+-- 			render_modes = false,
+-- 			comment = {
+-- 				-- Turn on / off HTML comment concealing.
+-- 				conceal = false,
+-- 				-- Optional text to inline before the concealed comment.
+-- 				text = nil,
+-- 				-- Highlight for the inlined text.
+-- 				highlight = "RenderMarkdownHtmlComment",
+-- 			},
+-- 			-- HTML tags whose start and end will be hidden and icon shown.
+-- 			-- The key is matched against the tag name, value type below.
+-- 			-- | icon      | gets inlined at the start |
+-- 			-- | highlight | highlight for the icon    |
+-- 			tag = {},
+-- 		},
+-- 	},
+-- }

@@ -9,11 +9,13 @@ return {
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		"nvim-tree/nvim-web-devicons",
 		"xiyaowong/telescope-emoji.nvim",
+		"kiyoon/telescope-insert-path.nvim",
 	},
 	config = function()
 		local telescope = require("telescope")
 		local actions = require("telescope.actions")
 		local builtin = require("telescope.builtin")
+		local path_actions = require("telescope_insert_path")
 
 		telescope.setup({
 			defaults = {
@@ -46,6 +48,12 @@ return {
 						["<C-j>"] = actions.move_selection_next, -- move to next result
 						["<C-Q>"] = actions.smart_send_to_qflist + actions.open_qflist,
 						["<C-h>"] = "which_key",
+						["["] = path_actions.insert_reltobufpath_visual,
+						["]"] = path_actions.insert_abspath_visual,
+						["{"] = path_actions.insert_reltobufpath_insert,
+						["}"] = path_actions.insert_abspath_insert,
+						["-"] = path_actions.insert_reltobufpath_normal,
+						["="] = path_actions.insert_abspath_normal,
 					},
 				},
 			},

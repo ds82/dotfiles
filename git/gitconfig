@@ -43,6 +43,7 @@
   sr = "!git recent-branches | fzf | xargs git switch" # switch to the most recent branch
 
   # cherry-pick
+  pick = cherry-pick
   cp = cherry-pick -x               # grab a change from a branch
 
   # diff
@@ -79,7 +80,7 @@
   mt = mergetool                    # fire up the merge tool
 
   # stash
-  ss = stash                        # stash changes
+  ss = stash save -a -u             # stash changes
   sl = stash list                   # list stashes
   sa = stash apply                  # apply stash (restore changes)
   sd = stash drop                   # drop stashes (destory changes)

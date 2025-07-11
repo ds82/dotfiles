@@ -15,6 +15,17 @@
 	amend = commit --amend
 	ane = commit --amend --no-edit
   stau = stash save -a -u
+  cos = "!f() { \
+    parent_dir=$(git rev-parse --show-superproject-working-tree); \
+    if [ -z \"$parent_dir\" ]; then \
+      echo 'Not inside a submodule.' >&2; exit 1; \
+    fi; \
+    branch=$(git -C \"$parent_dir\" rev-parse --abbrev-ref HEAD); \
+    if [ -z \"$branch\" ]; then \
+      echo 'Could not determine parent branch.' >&2; exit 1; \
+    fi; \
+    git checkout -b \"$branch\"; \
+  }; f"
 
 
 [rebase]

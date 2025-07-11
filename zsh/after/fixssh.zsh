@@ -6,6 +6,12 @@ fixssh() {
   SSH_AGENT_PID=`ps x | grep ssh-agent | grep -v grep | head | awk '{print $1}'`
 
   # TODO: start ssh-agent if none is found
+  if [[ -z "${SSH_AGENT_PID}" ]]; then
+    echo "No ssh-agent found. Starting a new one..."
+    eval $(ssh-agent -s)
+    addssh
+    return 0
+  fi
 
   # try to find SOCK via lsof
   # https://unix.stackexchange.com/questions/748105/connecting-to-currently-running-ssh-agent#:~:text=If%20you%20know%20the%20agent,would%20be%20the%20agent%20socket.

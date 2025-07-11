@@ -6,7 +6,7 @@ export FZF_DEFAULT_OPTS="--history=$HOME/.fzf_history"
 
 
 function fzf-homebrew-update() {
-  brew update && brew install $(brew outdated | fzf --multi --reverse)
+  brew update && brew install $(brew outdated | fzf --multi --reverse --bind '?:preview:brew info {}')
 }
 
 function fzf-glab-mr-list {
@@ -27,3 +27,13 @@ function fzf-glab-mr-co() {
     | sed -E 's/!([0-9]+)/\1/')
 }
 
+function fzf-kill() {
+  local pid
+  pid=$(ps -ef | fzf --height 40% --reverse --inline-info --multi \
+    | awk '{print $2}')
+  if [[ -n "$pid" ]]; then
+    echo "Killing $pid"
+    echo "$pid" | xargs kill -9
+  fi 
+}
+alias fkill=fzf-kill

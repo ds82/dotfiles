@@ -22,6 +22,10 @@ if command -v fdfind &> /dev/null; then
   alias fd=fdfind
 fi
 
+if command -v gfind &> /dev/null; then
+  alias find=noglob gfind
+fi
+
 
 alias reflog='git reflog --pretty=raw | tig --pretty=raw'
 
@@ -37,3 +41,17 @@ fi
 
 
 alias ypwd='pwd | pbcopy'
+
+function git_worktree_cd() {
+  base_dir=${1:-$(pwd)}
+  dir=$(cd $base_dir && ( git worktree list | fzf | awk '{print $1}' ))
+  echo "Changing to $dir"
+  if [[ -n $dir ]]; then
+    cd "$dir" || return
+  fi
+}
+
+alias webcd='git_worktree_cd ~/code/titan-web'
+alias wcd='git_worktree_cd'
+
+alias tigo="tig origin/$(git bn)"

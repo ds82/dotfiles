@@ -28,5 +28,18 @@ downloadFirmware() {
   
 }
 
+installBuild() {
+  IP=$1
+  BUILD=$2
+  HRU_FULE=$(find ~/Downloads -iname "update*${BUILD}*.hru" -print -quit)
+
+  if [[ -z "$HRU_FULE" ]]; then
+    downloadFirmware $BUILD
+    HRU_FULE=$(find ~/Downloads -iname "update*${BUILD}*.hru" -print -quit)
+  fi
+
+  updateDevice $IP $HRU_FULE
+}
+
 
 alias git-me-rea='git config user.name "Dennis Sänger" ; git config user.email "dsaenger@rea.de"'

@@ -1,3 +1,4 @@
+-- Bullets.vim is a Vim plugin for automated bullet lists.
 return {
 	"bullets-vim/bullets.vim",
 	setup = function()

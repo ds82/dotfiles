@@ -130,10 +130,21 @@ return {
 			require("telescope.builtin").grep_string({ search = s, use_regex = true })
 		end, { nargs = 1 })
 
+		vim.api.nvim_create_user_command("Rgs", function(opts)
+			local s = table.concat(opts.fargs, " ")
+			require("telescope.builtin").grep_string({ search = s, use_regex = false })
+		end, { nargs = 1 })
+
 		vim.api.nvim_create_user_command("Rgd", function(opts)
 			local file_dir = vim.fn.expand("%:h")
 			local s = table.concat(opts.fargs, " ")
-			require("telescope.builtin").grep_string({ cwd = file_dir, search = s })
+			require("telescope.builtin").grep_string({ cwd = file_dir, search = s, use_regex = true })
+		end, { nargs = 1 })
+
+		vim.api.nvim_create_user_command("Rgds", function(opts)
+			local file_dir = vim.fn.expand("%:h")
+			local s = table.concat(opts.fargs, " ")
+			require("telescope.builtin").grep_string({ cwd = file_dir, search = s, use_regex = false })
 		end, { nargs = 1 })
 	end,
 }

@@ -147,6 +147,23 @@ _fzf_git_branches() {
   _fzf_git_check || return
   bash "$__fzf_git" all-branches |
   _fzf_git_fzf --ansi \
+    --prompt '🌲 Branches> ' \
+    --header-lines 2 \
+    --tiebreak begin \
+    --preview-window down,border-top,40% \
+    --color hl:underline,hl+:underline \
+    --no-hscroll \
+    --bind 'ctrl-/:change-preview-window(down,70%|hidden|)' \
+    --bind "ctrl-o:execute-silent:bash $__fzf_git branch {}" \
+    --bind "ctrl-b:change-prompt(🌳 local branches> )+reload:bash \"$__fzf_git\" branches" \
+    --preview 'git log --oneline --graph --date=short --color=always --pretty="format:%C(auto)%cd %h%d %s" $(sed s/^..// <<< {} | cut -d" " -f1)' "$@" |
+  sed 's/^..//' | sed 's/origin\///' | cut -d' ' -f1
+}
+
+_fzf_git_branches_nosort() {
+  _fzf_git_check || return
+  bash "$__fzf_git" all-branches |
+  _fzf_git_fzf --ansi \
     --no-sort \
     --prompt '🌲 Branches> ' \
     --header-lines 2 \

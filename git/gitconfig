@@ -201,9 +201,9 @@
 
 [include]
   path = ~/.gitconfig.user
+  path = ~/.gitconfig.rea
 
 [includeIf "hasconfig:remote.*.url:**rea.de*/**"]
-  path = ~/.gitconfig.rea
 
 [rebase]
 	autoStash = true

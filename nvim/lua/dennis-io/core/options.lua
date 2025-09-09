@@ -74,3 +74,5 @@ vim.opt.statuscolumn = "%l%s"
 if vim.lsp.inlay_hint then
 	vim.lsp.inlay_hint.enable(true, { 0 })
 end
+
+opt.jumpoptions = "stack" -- jump to previous location in the stack when using `Ctrl-o` or `Ctrl-i`

@@ -14,7 +14,9 @@ bind generic Y !@sh -c "git rev-parse --short %(commit) | tr -d '[:space:]' | pb
 bind generic L !>tig main %(file)
 #bind tree L :set file-args = %(file)
 bind generic B view-refs
-bind generic u !>sh -c 'cd %(file) ; tig'
+bind generic o !>sh -c 'cd %(file) ; tig'
+
+bind generic E !>nvr +"DiffviewOpen %(commit) -- %(file)"
 
 bind main F ?git commit --fixup %(commit) --no-verify
 bind main Q ?git commit --squash %(commit) --no-verify

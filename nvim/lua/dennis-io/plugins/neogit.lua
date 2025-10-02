@@ -37,6 +37,8 @@ return {
 			local file_uri = vim.fn.expand("%:t")
 			local file_dir = vim.fn.expand("%:p:h")
 			local exec_result = vim.system({ "git", "add", file_uri }, { text = true, cwd = file_dir }):wait()
+
+			vim.notify("file staged: " .. file_uri, vim.log.levels.INFO)
 		end, { desc = "Save & stage current file" })
 
 		-- status
@@ -49,11 +51,6 @@ return {
 			neogit.open({ kind = "replace", cwd = root })
 		end, { desc = "Neogit status", silent = true })
 
-		-- log
-		keymap.set("n", "<leader><leader>l", function()
-			neogit.action("log", "log_current", {})()
-		end, { desc = "Open Git Log", silent = true }) -- mapping to restart lsp if necessary
-
 		keymap.set("n", "<leader><leader>m", function()
 			local file_dir = vim.fn.expand("%:h")
 			print("file_dir: " .. file_dir)
@@ -65,11 +62,10 @@ return {
 			neogit.open({ kind = "replace", cwd = root })
 		end, { desc = "Neogit status", silent = true })
 
-		keymap.set(
-			"n",
-			"<leader><leader>L",
-			":NeogitLogCurrent<CR>",
-			{ desc = "Open Git Log for current file", silent = true }
-		)
+		-- log
+		keymap.set("n", "<leader>L", function()
+			neogit.action("log", "log_current", {})()
+		end, { desc = "Open Git Log", silent = true }) -- mapping to restart lsp if necessary
+		keymap.set("n", "<leader>h", ":NeogitLogCurrent<CR>", { desc = "Open Git Log for current file", silent = true })
 	end,
 }

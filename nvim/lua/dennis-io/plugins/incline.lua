@@ -1,4 +1,6 @@
 return {
+	-- Incline is a plugin for creating lightweight floating statuslines. It works great with Neovim's global statusline
+	-- https://github.com/b0o/incline.nvim
 	"b0o/incline.nvim",
 	dependencies = { "catppuccin/nvim" },
 	event = "BufReadPre",

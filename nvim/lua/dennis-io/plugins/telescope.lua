@@ -1,5 +1,6 @@
 return {
 	"nvim-telescope/telescope.nvim",
+	enable = false,
 	event = { "VimEnter" },
 	cmd = "Telescope",
 	module = "telescope",
@@ -16,6 +17,7 @@ return {
 		local actions = require("telescope.actions")
 		local builtin = require("telescope.builtin")
 		local path_actions = require("telescope_insert_path")
+		local utils = require("dennis-io.core.utils")
 
 		telescope.setup({
 			defaults = {
@@ -84,7 +86,7 @@ return {
 		-- set keymaps
 		local keymap = vim.keymap -- for conciseness
 
-		keymap.set("n", "<leader>h", builtin.help_tags, {})
+		keymap.set("n", "<leader><leader>h", builtin.help_tags, {})
 		keymap.set("n", "<leader>R", builtin.resume, {})
 
 		keymap.set("v", "<leader>gf", function()
@@ -94,13 +96,16 @@ return {
 		end, {})
 		keymap.set("n", "<leader>gf", ":Telescope find_files default_text=<C-R><C-W><CR>", {})
 
-		keymap.set("n", "<leader>t", builtin.find_files, {})
+		-- disbaled in favor for fff ./fff.lua
+		-- keymap.set("n", "<leader>t", builtin.find_files, {})
+
 		keymap.set("n", "<leader>e", telescope.extensions.emoji.emoji, {})
 
 		keymap.set("n", "<leader>o", builtin.oldfiles, {})
-		keymap.set("n", "<leader>D", function()
-			builtin.diagnostics({ sort_by = "severity" })
-		end, {})
+		keymap.set("n", "<leader>O", builtin.jumplist, {})
+		-- keymap.set("n", "<leader>D", function()
+		-- 	builtin.diagnostics({ sort_by = "severity" })
+		-- end, {})
 		keymap.set("n", "<leader>J", builtin.jumplist, {})
 
 		keymap.set("n", "<C-p>", builtin.git_files, {})
@@ -124,6 +129,12 @@ return {
 			local text = vim.fn.getreg("v")
 			vim.cmd(":Telescope grep_string search=" .. text)
 		end, { desc = "Search visual selection in project" })
+
+		vim.keymap.set({ "n", "i", "v", "x", "t" }, "<leader><leader>f", function()
+			local line = vim.api.nvim_get_current_line()
+			local path = utils.strip_leading_relatives(utils.extract_path_from_line(line))
+			builtin.find_files({ default_text = path })
+		end)
 
 		vim.api.nvim_create_user_command("Rg", function(opts)
 			local s = table.concat(opts.fargs, " ")

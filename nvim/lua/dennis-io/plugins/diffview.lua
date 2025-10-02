@@ -12,5 +12,12 @@ return {
 			end,
 			desc = "Toggle DiffviewToggleFiles",
 		},
+		-- {
+		-- 	"<leader>h",
+		-- 	function()
+		-- 		vim.cmd("DiffviewFileHistory %")
+		-- 	end,
+		-- 	desc = "Open DiffviewFileHistory",
+		-- },
 	},
 }

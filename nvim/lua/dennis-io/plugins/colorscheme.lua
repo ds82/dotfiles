@@ -36,6 +36,11 @@ function SetColors(color)
 	vim.o.termguicolors = true
 	vim.cmd.colorscheme(color)
 
+	-- require("onedark").setup({
+	-- 	style = "warmer",
+	-- })
+	-- require("onedark").load()
+
 	-- vim.api.nvim_set_hl(0, "BufferCurrent", { bg = colors.crust })
 	-- vim.api.nvim_set_hl(0, "BufferCurrentSign", { bg = colors.crust })
 	-- vim.api.nvim_set_hl(0, "BufferCurrentMod", { bg = colors.crust })
@@ -80,6 +85,7 @@ return {
 			color_overrides = {},
 			custom_highlights = {},
 			integrations = {
+				blink_cmp = true,
 				alpha = true,
 				barbar = true,
 				flash = true,

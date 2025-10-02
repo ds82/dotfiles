@@ -4,28 +4,35 @@ set git-colors = no
 set blame-options = -C -C -C
 set diff-options = --submodule
 
-color cursor			black	green	bold
+color cursor          color0 color2 bold
+color cursor-blur     color0 color10 bold
+color author          color2 default
+color search-result   color0 color0
+color title-blur		  black	blue
+color title-focus		  black	blue	bold
+
+
+
+color default         color7 default
 
 set main-view = id:yes date:default author commit-title:refs=true,overflow=72
 #
 # bindings
 #
 bind generic Y !@sh -c "git rev-parse --short %(commit) | tr -d '[:space:]' | pbcopy"
-bind generic L !>tig main %(file)
+bind generic L !>tig log %(file)
 #bind tree L :set file-args = %(file)
 bind generic B view-refs
 bind generic o !>sh -c 'cd %(file) ; tig'
+bind generic I !git rebase -i --autosquash %(commit)^1
+bind generic E !>nvim --remote +"DiffviewOpen %(commit) -- %(file)"
+bind generic F ?git commit --fixup %(commit) --no-verify
+bind generic 5 refresh
 
-bind generic E !>nvr +"DiffviewOpen %(commit) -- %(file)"
-
-bind main F ?git commit --fixup %(commit) --no-verify
 bind main Q ?git commit --squash %(commit) --no-verify
-
-bind main I !git rebase -i --autosquash %(commit)^1
 bind main c !git commit -c %(commit)
 bind main r ?git reset %(commit)
 bind main R ?git reset --hard %(commit)
-bind main 5 refresh
 bind main w +sh -c 'open-git-hash-web.sh %(commit) $(git remote get-url origin)'
 bind main D !>nvr -l -s --remote-wait +'DiffviewOpen %(commit)~1..%(commit)'
 bind main v !>nvr +'DiffviewOpen %(commit)~1..%(head)' 
@@ -41,6 +48,6 @@ bind status G @sh -c "echo %(file) | pbcopy"
 
 bind status U ?git csmu %(file)
 
-bind diff D :toggle diff-options --minimal	# Use minimal diff algorithm
-bind diff [ :toggle diff-context -3		# Decrease context (-U arg)
-bind diff ] :toggle diff-context +3		# Increase context
+bind diff D :toggle diff-options --minimal  # Use minimal diff algorithm
+bind diff [ :toggle diff-context -3   # Decrease context (-U arg)
+bind diff ] :toggle diff-context +3   # Increase context

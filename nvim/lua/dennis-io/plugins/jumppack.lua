@@ -1,5 +1,6 @@
 return {
 	"suliatis/Jumppack.nvim",
+	enabled = false,
 	opts = {
 		options = {
 			global_mappings = true, -- Override <C-o>/<C-i> with Jumppack

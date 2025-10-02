@@ -23,7 +23,7 @@ if command -v fdfind &> /dev/null; then
 fi
 
 if command -v gfind &> /dev/null; then
-  alias find=noglob gfind
+  alias find='noglob gfind'
 fi
 
 

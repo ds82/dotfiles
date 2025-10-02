@@ -31,7 +31,7 @@ downloadFirmware() {
 installBuild() {
   IP=$1
   BUILD=$2
-  HRU_FULE=$(find ~/Downloads -iname "update*${BUILD}*.hru" -print -quit)
+  HRU_FULE=$(find $HOME/Downloads -iname "update*${BUILD}*.hru" -print -quit)
 
   if [[ -z "$HRU_FULE" ]]; then
     downloadFirmware $BUILD

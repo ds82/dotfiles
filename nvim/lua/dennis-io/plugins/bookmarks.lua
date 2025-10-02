@@ -1,5 +1,6 @@
 return {
 	"LintaoAmons/bookmarks.nvim",
+	enabled = false,
 	-- recommand, pin the plugin at specific version for stability
 	-- backup your db.json file when you want to upgrade the plugin
 	tag = "v2.0.0",
